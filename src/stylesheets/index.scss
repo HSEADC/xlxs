@@ -12,6 +12,14 @@ body.index {
 
     img {
       margin: 1.1vw;
+      width: 11vw;
+    }
+
+    a {
+      img {
+        margin: 1.1vw;
+        width: 23.6vw;
+      }
     }
   }
 
@@ -35,6 +43,7 @@ body.index {
       left: 50%;
       z-index: 1;
       transform: translate(-50%, -50%);
+      width: 67%;
     }
 
     h3 {
