@@ -1,0 +1,190 @@
+body.about {
+  background-image: url('images/zaglushka_bg.png');
+  font-family: 'SF Pro', Arial, Helvetica, sans-serif;
+
+  h1,
+  h2 {
+    font-family: 'CoFo Kak Trial';
+    text-transform: uppercase;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  h3,
+  p,
+  button,
+  label,
+  input {
+    font-family: 'SF Pro', Arial, Helvetica, sans-serif;
+    color: var(--black);
+    font-weight: 500;
+  }
+
+  h1 {
+    font-size: 18.7vw;
+    color: var(--white);
+    text-align: center;
+  }
+
+  h2 {
+    color: var(--green);
+    font-size: 3.7vw;
+    text-align: center;
+  }
+
+  input {
+    border: 0;
+    font-size: 1.3vw;
+    border-radius: 0.8vw;
+    padding-left: 2vw;
+    margin-left: 12px;
+    width: 36%;
+    height: calc(2.25rem + 0.9vw);
+    background-color: var(--pink);
+    color: var(--blue);
+    border: 2px solid var(--pink);
+    outline: none;
+  }
+
+  input::placeholder {
+    color: var(--blue);
+  }
+
+  input:focus {
+    border: 2px solid var(--blue);
+  }
+
+  button {
+    background-color: var(--green);
+    border: 0;
+    font-size: 1.3vw;
+    border-radius: 0.8vw;
+    width: 24%;
+    margin-left: 0.3vw;
+    height: calc(2.25rem + 1.3vw);
+    color: var(--blue);
+    border: 2px solid var(--green);
+    font-weight: 500;
+  }
+
+  button:hover {
+    background-color: #a7dc2a;
+    border: 2px solid #a7dc2a;
+  }
+
+  button:active {
+    background-color: var(--blue);
+    border: 2px solid var(--blue);
+    color: white;
+  }
+
+  form {
+    width: 77vw;
+    display: inline-block;
+    color: white;
+  }
+
+  .layout {
+    width: 98vw;
+    height: 18.3vw;
+    background-color: var(--white);
+    margin: 0 auto;
+    border-radius: 1.25vw;
+    border: none;
+    margin-top: 25vh;
+
+    h3 {
+      font-size: 1.7vw;
+      width: 54vw;
+      padding: 1.6vw;
+      margin-bottom: 0.5vw;
+    }
+
+    p,
+    a {
+      font-size: 1.3vw;
+      padding: 1.6vw;
+      color: white;
+    }
+  }
+
+  .buttns {
+    display: flex;
+    flex-direction: row;
+    border: 0;
+    vertical-align: middle;
+  }
+
+  .medias {
+    display: flex;
+    flex-direction: row;
+    gap: 0.6vw;
+    height: calc(2.25rem + 1.4vw);
+    text-align: center;
+
+    a:nth-child(1) {
+      background-color: var(--blue);
+      font-size: 1.3vw;
+      border-radius: 0.8vw;
+      color: var(--white);
+      padding-top: 1.1vw;
+      border: 2px solid var(--blue);
+    }
+
+    a:nth-child(1):hover {
+      border: 2px solid #01576a;
+      background-color: #01576a;
+    }
+    a:nth-child(1):active {
+      border: 2px solid var(--green);
+      background-color: var(--green);
+      color: var(--blue);
+    }
+
+    a:nth-child(2) {
+      font-size: 1.3vw;
+      border-radius: 0.8vw;
+      padding-top: 1.1vw;
+      background-color: var(--orange);
+      color: var(--white);
+      border: 2px solid var(--orange);
+    }
+
+    a:nth-child(2):hover {
+      background-color: #ee6921;
+      border: 2px solid #ee6921;
+    }
+    a:nth-child(2):active {
+      border: 2px solid var(--pink);
+      background-color: var(--pink);
+      color: var(--blue);
+    }
+
+    button,
+    label {
+      font-size: 1.25vw;
+    }
+
+    #my-form-button {
+      background-color: var(--green);
+      color: var(--blue);
+    }
+  }
+
+  .photos {
+    img:nth-child(2) {
+      position: absolute;
+      left: 56vw;
+      top: 36.3vw;
+      width: 24%;
+    }
+    img:nth-child(1) {
+      position: absolute;
+      left: 75vw;
+      top: 25vw;
+      width: 22%;
+    }
+  }
+}
