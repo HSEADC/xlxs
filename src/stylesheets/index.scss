@@ -180,27 +180,32 @@ body.index {
     flex-direction: row;
     align-items: center;
 
-    h2:nth-child(1) {
-      color: var(--green);
-      opacity: 100;
-      padding: 1.6vw 4vw 1.6vw 4vw;
-      width: 41%;
-      background-color: var(--blue);
-      border-radius: 0.8vw;
-      text-align: center;
-    }
-    h2:nth-child(1):hover {
-      background-color: #01576a;
-    }
-    h2:nth-child(1):active {
-      background-color: var(--green);
-      color: var(--blue);
+    a {
+      text-decoration: none;
+      width: 100%;
+
+      h2:nth-child(1) {
+        color: var(--green);
+        opacity: 100;
+        padding: 1.6vw 4vw 1.6vw 4vw;
+        width: 85%;
+        background-color: var(--blue);
+        border-radius: 0.8vw;
+        text-align: center;
+      }
+      h2:nth-child(1):hover {
+        background-color: #01576a;
+      }
+      h2:nth-child(1):active {
+        background-color: var(--green);
+        color: var(--blue);
+      }
     }
 
     h2:nth-child(2) {
       color: var(--orange);
       opacity: 100;
-      width: 41%;
+      width: 85%;
       padding: 1.6vw 4vw 1.6vw 4vw;
       background-color: var(--pink);
       border-radius: 0.8vw;
