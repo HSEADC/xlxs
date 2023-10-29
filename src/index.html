@@ -22,6 +22,128 @@
       <h3>Онлайн-библиотека визуализации данных</h3>
     </section>
 
+    <section class="s2">
+      <h2>Что такое икселикс?</h2>
+      <h4>
+        Икселикс — зумерский медиасервис-библиотека, где собраны всевозможные
+        системы, графики, диаграммы и другие виды визуализации данных,
+        а так же статьи на тему, тесты и лекции от экспертов, где сложные темы
+        будут объясняться простым молодёжным языком
+      </h4>
+
+      <div class="benefits">
+        <img src="images/benefit1.svg" alt="" />
+        <img src="images/benefit2.svg" alt="" />
+        <img src="images/benefit3.svg" alt="" />
+      </div>
+    </section>
+
+    <section class="s3">
+      <h3>
+        Икселикс&nbsp;&mdash; это сервис, который сделает жизнь каждого
+        пользователя проще и&nbsp;комфортнее. Благодаря нашей лёгкой
+        и&nbsp;понятной подаче материала, с&nbsp;которым несложно разобраться
+        даже ребёнку, мы&nbsp;обеспечиваем быстрое усвоение темы в&nbsp;игровой
+        форме и&nbsp;его запоминание на&nbsp;долгое время.
+      </h3>
+    </section>
+
+    <section class="s4">
+      <h2>Мы вам поможем с такими вопросами:</h2>
+      <img src="images/01_.svg" alt="" />
+      <img src="images/02_.svg" alt="" />
+      <img src="images/03_.svg" alt="" />
+    </section>
+
+    <section class="s5">
+      <h3>
+        Бибизяны помогут понять, как систематизировать даже самый жуткий датасет
+      </h3>
+    </section>
+
+    <section class="s6">
+      <h3>Читай клёвые посты в&nbsp;наших социальных сетях</h3>
+      <h2>САША, Ксюша и&nbsp;Варя</h2>
+      <h4>Активно работали и&nbsp;работают над&nbsp;проектом</h4>
+    </section>
+
+    <section class="s7">
+      <h2>Прототип в Figma</h2>
+      <h2>Промо проекта</h2>
+    </section>
+
+    <div class="layout">
+      <h3>
+        Мы&nbsp;готовим новый сервис по&nbsp;знакомствам 💅🏻 с&nbsp;графиками
+        и&nbsp;диаграммами 📊 У&nbsp;нас будет понятно😎, интересно🧐
+        и&nbsp;смешно🔥 Cистематизируем твой датасет⚙️ чтобы он&nbsp;больше
+        никогда <br />
+        не&nbsp;был sad🥹 Узнай о&nbsp;запуске первым!
+        <br />
+        <br />
+        Узнай о&nbsp;запуске первым!
+      </h3>
+      <div class="buttns">
+        <!-- modify this form HTML and place wherever you want your form -->
+        <form
+          id="my-form"
+          action="https://formspree.io/f/xpzgkbkn"
+          method="POST"
+        >
+          <input type="email" name="email" placeholder="Ваш e-mail" />
+
+          <button id="my-form-button">Подписаться</button>
+          <p id="my-form-status"></p>
+        </form>
+        <!-- Place this script at the end of the body tag -->
+        <script>
+          var form = document.getElementById('my-form')
+
+          async function handleSubmit(event) {
+            event.preventDefault()
+            var status = document.getElementById('my-form-status')
+            var data = new FormData(event.target)
+            fetch(event.target.action, {
+              method: form.method,
+              body: data,
+              headers: {
+                Accept: 'application/json'
+              }
+            })
+              .then((response) => {
+                if (response.ok) {
+                  status.innerHTML =
+                    'Спасибо! Скоро будут обновления! Заходите к нам на соцсети'
+                  form.reset()
+                } else {
+                  response.json().then((data) => {
+                    if (Object.hasOwn(data, 'errors')) {
+                      status.innerHTML = data['errors']
+                        .map((error) => error['message'])
+                        .join(', ')
+                    } else {
+                      status.innerHTML =
+                        'Упс! Есть какая-то проблема с твоим email('
+                    }
+                  })
+                }
+              })
+              .catch((error) => {
+                status.innerHTML = 'Упс! Есть проблема с отправкой формы'
+              })
+          }
+          form.addEventListener('submit', handleSubmit)
+        </script>
+
+        <div class="medias">
+          <a href="https://t.me/+mnW_0hNK9b1hMjZi" target="_blank"
+            >Мы в Телеге</a
+          >
+          <a href="https://vk.com/xlsx_media" target="_blank">Мы в ВК</a>
+        </div>
+      </div>
+    </div>
+
     <!-- <h1>Привет! Это медиа про системы!</h1>
 
     <h2>Разделы</h2>

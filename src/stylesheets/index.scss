@@ -2,6 +2,15 @@ body.index {
   background-color: var(--dark);
   font-family: 'SF Pro', Arial, Helvetica, sans-serif;
 
+  h1,
+  h2 {
+    font-family: 'CoFo Kak Trial', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    opacity: 30%;
+    color: white;
+    margin-bottom: 2.7vw;
+  }
+
   .promo-menu {
     width: 95.5vw;
     margin: 2.2vw;
@@ -24,6 +33,8 @@ body.index {
   }
 
   section.s1 {
+    height: calc(100vh - 24px);
+
     video {
       border-radius: 30px;
       margin-left: 2.2vw;
@@ -55,6 +66,294 @@ body.index {
       left: 50%;
       z-index: 1;
       transform: translate(-50%, -50%);
+    }
+  }
+
+  section.s2 {
+    width: 92.8vw;
+    margin: 3.6vw;
+    margin-top: 0;
+
+    h4 {
+      margin-top: 2.7vw;
+      font-size: 2.7vw;
+      color: white;
+      margin-bottom: 2.7vw;
+    }
+
+    .benefits {
+      display: flex;
+      flex-direction: row;
+      gap: 2.2vw;
+    }
+
+    img {
+      width: 29.4vw;
+      height: 100%;
+    }
+  }
+
+  section.s3 {
+    background-image: url('images/goals.svg');
+    width: 92.8vw;
+    margin: 3.6vw;
+    height: 38.3vw;
+    background-repeat: no-repeat;
+
+    h3 {
+      margin: 2.7vw;
+      padding-top: 2.7vw;
+      display: flex;
+      font-size: 2.5vw;
+      color: white;
+      width: 43vw;
+    }
+  }
+
+  section.s4 {
+    width: 92.8vw;
+    margin: 3.6vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  section.s5 {
+    background-image: url('images/summary.svg');
+    width: 92.8vw;
+    margin: 3.6vw;
+    height: 20.8vw;
+    background-repeat: no-repeat;
+
+    h3 {
+      margin: 2.1vw;
+      padding-top: 5.4vw;
+      display: flex;
+      font-size: 2.5vw;
+      color: white;
+      width: 63vw;
+    }
+  }
+
+  section.s6 {
+    background-image: url('images/mock.svg');
+    width: 92.8vw;
+    margin: 3.6vw;
+    height: 52.4vw;
+    background-repeat: no-repeat;
+
+    h3 {
+      margin: 2.1vw;
+      padding-top: 5.4vw;
+      display: flex;
+      font-size: 2.5vw;
+      color: var(--blue);
+      width: 33vw;
+    }
+    h2 {
+      color: black;
+      opacity: 100;
+      font-size: 1.8vw;
+      margin: 2.1vw;
+      margin-left: 14vw;
+      margin-top: 30vw;
+      width: 30vw;
+    }
+    h4 {
+      font-size: 1.1vw;
+      margin-left: 14vw;
+      margin-top: -1vw;
+      width: 20vw;
+    }
+  }
+
+  section.s7 {
+    width: 92.8vw;
+    margin: 3.6vw;
+    display: flex;
+    gap: 2vw;
+    flex-direction: row;
+    align-items: center;
+
+    h2:nth-child(1) {
+      color: var(--green);
+      opacity: 100;
+      padding: 1.6vw 4vw 1.6vw 4vw;
+      width: 41%;
+      background-color: var(--blue);
+      border-radius: 0.8vw;
+      text-align: center;
+    }
+    h2:nth-child(1):hover {
+      background-color: #01576a;
+    }
+    h2:nth-child(1):active {
+      background-color: var(--green);
+      color: var(--blue);
+    }
+
+    h2:nth-child(2) {
+      color: var(--orange);
+      opacity: 100;
+      width: 41%;
+      padding: 1.6vw 4vw 1.6vw 4vw;
+      background-color: var(--pink);
+      border-radius: 0.8vw;
+      text-align: center;
+    }
+    h2:nth-child(2):hover {
+      background-color: #ffb9e5;
+    }
+    h2:nth-child(2):active {
+      background-color: var(--orange);
+      color: var(--blue);
+    }
+  }
+
+  //layout
+
+  input {
+    border: 0;
+    font-size: 1.3vw;
+    border-radius: 0.8vw;
+    padding-left: 2vw;
+    margin-left: 12px;
+    width: 36%;
+    height: calc(2.25rem + 0.9vw);
+    background-color: var(--pink);
+    color: var(--blue);
+    border: 2px solid var(--pink);
+    outline: none;
+  }
+
+  input::placeholder {
+    color: var(--blue);
+  }
+
+  input:focus {
+    border: 2px solid var(--blue);
+  }
+
+  button {
+    background-color: var(--green);
+    border: 0;
+    font-size: 1.3vw;
+    border-radius: 0.8vw;
+    width: 24%;
+    margin-left: 0.3vw;
+    height: calc(2.25rem + 1.3vw);
+    color: var(--blue);
+    border: 2px solid var(--green);
+    font-weight: 500;
+  }
+
+  button:hover {
+    background-color: #a7dc2a;
+    border: 2px solid #a7dc2a;
+  }
+
+  button:active {
+    background-color: var(--blue);
+    border: 2px solid var(--blue);
+    color: white;
+  }
+
+  form {
+    width: 77vw;
+    display: inline-block;
+    color: white;
+  }
+
+  .layout {
+    width: 98vw;
+    height: 18.3vw;
+    background-color: var(--white);
+    margin: 0 auto;
+    border-radius: 1.25vw;
+    border: none;
+    margin-top: -2vw;
+
+    h3 {
+      font-size: 1.7vw;
+      width: 54vw;
+      padding: 1.6vw;
+      margin-bottom: 0.5vw;
+    }
+
+    p,
+    a {
+      font-size: 1.3vw;
+      padding: 1.6vw;
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  .buttns {
+    display: flex;
+    flex-direction: row;
+    border: 0;
+    vertical-align: middle;
+  }
+
+  .medias {
+    display: flex;
+    flex-direction: row;
+    gap: 0.6vw;
+    height: calc(2.25rem + 1.4vw);
+    text-align: center;
+
+    a:nth-child(1) {
+      background-color: var(--blue);
+      font-size: 1.3vw;
+      border-radius: 0.8vw;
+      color: var(--white);
+      padding-top: 1.1vw;
+      border: 2px solid var(--blue);
+    }
+
+    a:nth-child(1):hover {
+      border: 2px solid #01576a;
+      background-color: #01576a;
+    }
+    a:nth-child(1):active {
+      border: 2px solid var(--green);
+      background-color: var(--green);
+      color: var(--blue);
+    }
+
+    a:nth-child(2) {
+      font-size: 1.3vw;
+      border-radius: 0.8vw;
+      padding-top: 1.1vw;
+      background-color: var(--orange);
+      color: var(--white);
+      border: 2px solid var(--orange);
+    }
+
+    a:nth-child(2):hover {
+      background-color: #ee6921;
+      border: 2px solid #ee6921;
+    }
+    a:nth-child(2):active {
+      border: 2px solid var(--pink);
+      background-color: var(--pink);
+      color: var(--blue);
+    }
+
+    button,
+    label {
+      font-size: 1.25vw;
+    }
+
+    #my-form-button {
+      background-color: var(--green);
+      color: var(--blue);
     }
   }
 }
