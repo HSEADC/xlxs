@@ -1,6 +1,6 @@
 body.about {
   background-image: url('images/zaglushka_bg.png');
-  font-family: 'SF Pro', Arial, Helvetica, sans-serif;
+  font-family: 'SF Pro', 'CoFo Kak Trial', Arial, Helvetica, sans-serif;
 
   h1,
   h2 {
@@ -14,9 +14,12 @@ body.about {
 
   h3,
   p,
+  a,
   button,
   label,
-  input {
+  input,
+  h4,
+  h5 {
     font-family: 'SF Pro', Arial, Helvetica, sans-serif;
     color: var(--black);
     font-weight: 500;
@@ -99,13 +102,13 @@ body.about {
       border-radius: 0.8vw;
       text-align: center;
     }
-  }
-  h2:hover {
-    background-color: #ffb9e5;
-  }
-  h2:active {
-    background-color: var(--orange);
-    color: var(--blue);
+    h2:hover {
+      background-color: #ffb9e5;
+    }
+    h2:active {
+      background-color: var(--orange);
+      color: var(--blue);
+    }
   }
 
   .layout {
