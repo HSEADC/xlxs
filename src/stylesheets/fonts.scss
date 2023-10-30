@@ -1,12 +1,5 @@
 @font-face {
   font-family: 'SF Pro';
-  src: url('fonts/SF-Pro-Display-Bold.otf') format('otf');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'SF Pro';
   src: url('fonts/SF-Pro-Display-Medium.otf') format('otf');
   font-weight: 500;
   font-style: normal;
@@ -21,7 +14,7 @@
 
 @font-face {
   font-family: 'CoFo Kak Trial';
-  src: url('fonts/CoFoKak-Black-Trial.otf') format('otf');
+  src: url('CoFoKak-Black-Trial.otf');
   font-weight: 900;
   font-style: normal;
 }
