@@ -12,6 +12,19 @@ body.index {
     margin-bottom: 2.7vw;
   }
 
+  h3,
+  p,
+  a,
+  button,
+  label,
+  input,
+  h4,
+  h5 {
+    font-family: 'SF Pro', Arial, Helvetica, sans-serif;
+    color: var(--black);
+    font-weight: 500;
+  }
+
   .promo-menu {
     width: 95.5vw;
     margin: 2.2vw;
