@@ -8,7 +8,8 @@ const path = require('path')
 
 module.exports = {
   entry: {
-    index: './src/index.js'
+    index: './src/index.js',
+    theory: './src/theory.js'
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -88,39 +89,52 @@ module.exports = {
       chunkFilename: '[id].[contenthash].css'
     }),
 
+    // Chunk theory
+    new HtmlWebpackPlugin({
+      template: './src/theory.html',
+      filename: './theory.html',
+      chunks: ['theory'] // Дублируем имя Chunks в массив, чтоб он подгружал
+    }),
+
     // Index
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      filename: './index.html'
+      filename: './index.html',
+      chunks: ['index'] // добавляем ко всем html, которые у нас были до это пары
     }),
 
     // Section
     //Tests
     new HtmlWebpackPlugin({
       template: './src/tests.html',
-      filename: './tests.html'
+      filename: './tests.html',
+      chunks: ['index'] // добавляем ко всем html, которые у нас были до это пары
     }),
     //Articles
     new HtmlWebpackPlugin({
       template: './src/articles.html',
-      filename: './articles.html'
+      filename: './articles.html',
+      chunks: ['index'] // добавляем ко всем html, которые у нас были до это пары
     }),
     // Cards
     new HtmlWebpackPlugin({
       template: './src/cards.html',
-      filename: './cards.html'
+      filename: './cards.html',
+      chunks: ['index'] // добавляем ко всем html, которые у нас были до это пары
     }),
 
     //Article
     // Test 1
     new HtmlWebpackPlugin({
       template: './src/testss/test1.html',
-      filename: './testss/test1.html'
+      filename: './testss/test1.html',
+      chunks: ['index'] // добавляем ко всем html, которые у нас были до это пары
     }),
     // Article 1
     new HtmlWebpackPlugin({
       template: './src/articles/art1.html',
-      filename: './articles/art1.html'
+      filename: './articles/art1.html',
+      chunks: ['index'] // добавляем ко всем html, которые у нас были до это пары
     }),
     // Card 1
     new HtmlWebpackPlugin({
@@ -131,13 +145,15 @@ module.exports = {
     // Responsive
     new HtmlWebpackPlugin({
       template: './src/responsive-images.html',
-      filename: './responsive-images.html'
+      filename: './responsive-images.html',
+      chunks: ['index'] // добавляем ко всем html, которые у нас были до это пары
     }),
 
     // About
     new HtmlWebpackPlugin({
       template: './src/about.html',
-      filename: './about.html'
+      filename: './about.html',
+      chunks: ['index'] // добавляем ко всем html, которые у нас были до это пары
     }),
 
     // Partials
