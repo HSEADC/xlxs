@@ -1,5 +1,5 @@
 body.index {
-  background-color: var(--dark);
+  background-color: var(--white);
   font-family: 'SF Pro', Arial, Helvetica, sans-serif;
 
   h1,
@@ -8,7 +8,6 @@ body.index {
     font-weight: 900;
     text-transform: uppercase;
     color: white;
-    margin-bottom: 2.7vw;
   }
 
   h1 {
@@ -30,14 +29,16 @@ body.index {
   }
 
   .promo-menu {
-    width: 96vw;
+    width: 92.2vw;
     align-items: center;
     justify-content: space-between;
-    margin: 2vw;
+    margin-left: 3.9vw;
+    margin-top: 2.5vw;
     display: flex;
     background: rgba(255, 255, 255, 0.15);
     border-radius: 1.1vw;
     backdrop-filter: blur(21px);
+    position: fixed;
 
     .home-navig {
       display: flex;
@@ -45,16 +46,26 @@ body.index {
       justify-content: space-between;
 
       a {
+        display: inline-flex;
+        gap: 0.49vw;
+
         p {
           font-size: 1.25vw;
-          margin-left: 3.8vw;
+          margin-right: 4vw;
           color: white;
+        }
+
+        img {
+          width: 1.32vw;
+          height: 100%;
+          margin: 0;
         }
       }
 
       img {
-        margin: 1.1vw;
-        width: 5.2vw;
+        margin: 0.97vw;
+        margin-right: 6.67vw;
+        width: 5.28vw;
       }
     }
 
@@ -73,96 +84,100 @@ body.index {
   }
 
   section.s1 {
-    height: calc(126vh);
+    background-image: url('images/bg-start.svg');
+    width: 100vw;
+    height: 50vw;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
 
-    .img-fon {
-      position: absolute;
-      width: 100vw;
-    }
-
-    h1 {
-      font-size: 4.7vw;
-      padding-top: 4.86vw;
-      margin: 0 auto;
-      display: flex;
-    }
-
-    h3 {
-      font-size: 1.94vw;
-      display: flex;
-      margin: 0 auto;
-      color: white;
-    }
     img {
       display: flex;
-      margin-top: -8vw;
-      width: 100vw;
+      margin-top: 18vw;
+      width: 72.64vw;
+      margin-left: 3.9vw;
     }
   }
 
   // секция 2
 
   section.s2 {
-    width: 93vw;
-    margin: 3.6vw;
-    margin-top: 0;
+    width: 100vw;
+    margin-top: -2vw;
+    background-color: white;
+    border-radius: 3vw;
 
-    h2 {
-      font-size: 2.22vw;
-      color: rgba(255, 255, 255, 0.5);
-    }
+    .folder {
+      background-image: url('images/folder.svg');
+      width: 92.2vw;
+      margin: 3.9vw;
+      height: 40vw;
 
-    h4 {
-      margin-top: 1.94vw;
-      font-size: 2.2vw;
-      color: white;
-      margin-bottom: 2.7vw;
-      letter-spacing: -0.32px;
-    }
+      .info {
+        position: relative;
+        top: 2.57vw;
+        left: 1vw;
+        display: inline-flex;
+        align-items: flex-start;
+        gap: 4.17vw;
+        margin: 2.22vw;
 
-    .benefits {
-      width: 93vw;
-      display: flex;
-      flex-direction: row;
-      gap: 2.2vw;
+        h2 {
+          font-size: 3.33vw;
+          color: var(--black);
+        }
 
-      h2,
-      p {
-        color: white;
-        margin-bottom: 8px;
+        h4 {
+          font-size: 1.4vw;
+          color: black;
+          width: 43vw;
+        }
       }
 
-      h2 {
-        font-size: 3vw;
-      }
-      p {
-        font-size: 1.38vw;
-      }
-    }
+      .ready {
+        display: inline-flex;
+        align-items: flex-start;
+        gap: 32px;
+        margin-left: 2.22vw;
+        margin-top: 4.5vw;
 
-    .ben1,
-    .ben2,
-    .ben3 {
-      width: 29.1vw;
-      height: 100%;
-      padding: 2.7vw;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      border-radius: 2.4vw;
-    }
-    .ben1 {
-      background-color: var(--green);
-    }
-    .ben2 {
-      background-color: var(--pink);
-    }
-    .ben3 {
-      background-color: var(--orange);
+        .m1,
+        .m2,
+        .m3 {
+          background-color: white;
+          border-radius: 3.33vw;
+          width: 22.15vw;
+          height: 24.72vw;
+
+          img:first-child {
+            height: 13.13vw;
+          }
+
+          img:nth-child(2) {
+            margin-top: -2vw;
+            height: 4.17vw;
+            margin-left: 1.39vw;
+          }
+          h3 {
+            font-size: 1.25vw;
+            color: black;
+            margin-bottom: 0.42vw;
+            margin-top: 0.53vw;
+            margin-left: 1.39vw;
+          }
+          h2 {
+            font-size: 1.39vw;
+            color: black;
+            margin-top: 1vw;
+            margin-left: 1.39vw;
+          }
+          h4 {
+            font-size: 1.25vw;
+            color: black;
+            opacity: 0.5;
+            margin-top: 1vw;
+            margin-left: 1.39vw;
+          }
+        }
+      }
     }
   }
 
