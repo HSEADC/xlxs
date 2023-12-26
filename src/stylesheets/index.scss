@@ -249,6 +249,10 @@ body.index {
         }
       }
     }
+
+    .person3 {
+      width: 90vw;
+    }
   }
 
   section.s4 {
@@ -259,7 +263,7 @@ body.index {
     gap: 0.5vw;
 
     h2 {
-      font-size: 2.22vw;
+      font-size: 7.5vw;
       padding-bottom: 2.78vw;
       color: rgba(0, 0, 0, 0.5);
     }
@@ -275,11 +279,11 @@ body.index {
       border-radius: 1.67vw;
     }
     h3 {
-      font-size: 1.11vw;
+      font-size: 4.21vw;
       font-family: 'CoFo Kak Trial', Arial, Helvetica, sans-serif;
     }
     p {
-      font-size: 1.8vw;
+      font-size: 4.44vw;
     }
   }
 
@@ -308,7 +312,7 @@ body.index {
       padding-top: 6.11vw;
       padding-bottom: 4.44vw;
       color: white;
-      font-size: 3.33vw;
+      font-size: 7.5vw;
       text-align: center;
     }
 
@@ -316,6 +320,16 @@ body.index {
       padding-bottom: 4.44vw;
       width: 92.2vw;
       margin-left: 3.9vw;
+    }
+  }
+
+  section.s5 {
+    background-image: url(images/summary-360.png);
+    height: 61.11vw;
+
+    h3 {
+      font-size: 5.56vw;
+      margin: 5.22vw;
     }
   }
 
