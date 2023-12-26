@@ -105,12 +105,15 @@ body.index {
     margin-top: -2vw;
     background-color: white;
     border-radius: 3vw;
+    padding: 3.9vw;
 
     .folder {
-      background-image: url('images/folder.svg');
-      width: 92.2vw;
-      margin: 3.9vw;
-      height: 40vw;
+      background-image: url('images/folder.png');
+      max-width: 100%;
+      height: auto;
+      // object-fit: cover;
+      // object-position: bottom;
+      background-repeat: no-repeat;
 
       .info {
         position: relative;
@@ -139,6 +142,7 @@ body.index {
         gap: 32px;
         margin-left: 2.22vw;
         margin-top: 4.5vw;
+        margin-bottom: 2.78vw;
 
         .m1,
         .m2,
@@ -424,6 +428,198 @@ body.index {
         }
       }
     }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    background-color: var(--pink);
+
+    .promo-menu .tg a p {
+      font-size: 15px;
+      padding: 12px 30px;
+    }
+    .promo-menu {
+      width: 710px;
+      height: 56px;
+    }
+    .promo-menu .home-navig img {
+      width: 54px;
+    }
+
+    .promo-menu .home-navig a p {
+      font-size: 15px;
+    }
+
+    section.s1 h1 {
+      font-size: 42px;
+    }
+
+    section.s1 h3 {
+      font-size: 15px;
+    }
+
+    section.s1 {
+      height: 620px;
+    }
+
+    section.s2 h2 {
+      font-size: 2.22vw;
+    }
+  }
+
+  @media screen and (min-width: 360px) and (max-width: 767px) {
+    background-color: var(--white);
+
+    .promo-menu {
+      opacity: 1;
+
+      .home-navig a {
+        overflow: hidden;
+      }
+    }
+
+    .promo-menu .home-navig a p {
+      font-size: 15px;
+    }
+
+    section.s1 {
+      font-size: 42px;
+      background-repeat: no-repeat;
+      height: 85vh;
+
+      img {
+        background-repeat: no-repeat;
+        width: 86.64vw;
+      }
+    }
+
+    body.index section.s1 img {
+      display: flex;
+      margin-top: 18vw;
+      width: 72.64vw;
+      margin-left: 3.9vw;
+    }
+
+    section.s2 .folder {
+      background-image: url('images/folder-360.svg');
+      width: 100%;
+      height: auto;
+      background-repeat: no-repeat;
+    }
+
+    section.s2 .folder .ready {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-left: 2.22vw;
+      margin-top: 4.5vw;
+      margin-bottom: 2.78vw;
+
+      .m1,
+      .m2,
+      .m3 {
+        background-color: white;
+        border-radius: 3.33vw;
+        width: 85vw;
+        height: 59vw;
+
+        img:first-child {
+          height: 22.78vw;
+        }
+
+        img:nth-child(2) {
+          height: 15.5vw;
+          margin-top: -6vw;
+        }
+
+        h2 {
+          font-size: 5.56vw;
+        }
+
+        h3,
+        h4 {
+          font-size: 4.44vw;
+        }
+      }
+    }
+
+    section.s2 {
+      width: 100vw;
+      margin-top: 2vw;
+      background-color: white;
+      border-radius: 3vw;
+      padding: 3.9vw;
+    }
+
+    section.s2 .folder .info {
+      position: relative;
+      top: 2.57vw;
+      left: 1vw;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 4.17vw;
+      margin: 2.22vw;
+    }
+
+    section.s2 .folder .info h4 {
+      font-size: 4vw;
+      width: 85vw;
+    }
+
+    section.s2 .folder .info h2 {
+      font-size: 7vw;
+    }
+
+    section.s3 {
+      height: 180.83vw;
+
+      h2 {
+        font-size: 7.78vw;
+        line-height: 7.9vw;
+      }
+
+      h3 {
+        font-size: 4.44vw;
+        width: 98.33vw;
+      }
+      .f-line {
+        flex-direction: column;
+      }
+
+      .person1 .s3-1 h4,
+      .person2 .s3-1 h4,
+      .person3 .s3-1 h4 {
+        font-size: 5.56vw;
+      }
+      .person1 .s3-1 p,
+      .person2 .s3-1 p,
+      .person3 .s3-1 p {
+        font-size: 4.44vw;
+        width: 74.5vw;
+      }
+
+      .person3 .s3-1 p {
+        width: 70.5vw;
+      }
+
+      .person1 img,
+      .person2 img,
+      .person3 img {
+        width: 13.89vw;
+      }
+    }
+
+    // section.s1 h3 {
+    //   font-size: 15px;
+    // }
+
+    // section.s1 {
+    //   height: 620px;
+    // }
+
+    // section.s2 h2 {
+    //   font-size: 2.22vw;
+    // }
   }
 
   // input {
