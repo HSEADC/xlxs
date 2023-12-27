@@ -130,6 +130,13 @@ module.exports = {
       filename: './testss/test1.html',
       chunks: ['index'] // добавляем ко всем html, которые у нас были до это пары
     }),
+
+    new HtmlWebpackPlugin({
+      template: './src/testss/test1-true.html',
+      filename: './testss/test1-true.html',
+      chunks: ['index'] // добавляем ко всем html, которые у нас были до это пары
+    }),
+
     // Article 1
     new HtmlWebpackPlugin({
       template: './src/articles/art1.html',
@@ -140,6 +147,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/cards/card1.html',
       filename: './cards/card1.html'
+    }),
+    // Card 1 Back
+    new HtmlWebpackPlugin({
+      template: './src/cards/card1-b.html',
+      filename: './cards/card1-b.html'
     }),
 
     // Responsive

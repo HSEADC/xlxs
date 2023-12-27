@@ -8,10 +8,28 @@ body.cards {
     font-weight: 900;
     text-transform: uppercase;
     color: black;
+    font-size: 4.17vw;
+    padding-bottom: 0.33vw;
   }
 
-  h1 {
-    text-align: center;
+  h3,
+  p,
+  a,
+  button,
+  label,
+  input,
+  h4,
+  h5,
+  li {
+    font-family: 'SF Pro', Arial, Helvetica, sans-serif;
+    color: var(--black);
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: -0.18px;
+  }
+
+  li {
+    padding-bottom: 0vw;
   }
 
   .promo-menu {
@@ -20,12 +38,12 @@ body.cards {
     justify-content: space-between;
     margin-left: 3.9vw;
     margin-top: 2.5vw;
-    margin-bottom: 2.5vw;
-
     display: flex;
-    background: #dfdfe5;
+    background: #f2f2f7;
     border-radius: 2.1vw;
     backdrop-filter: blur(21px);
+    margin-bottom: 2.5vw;
+    display: flex;
 
     .home-navig {
       display: flex;
@@ -35,15 +53,24 @@ body.cards {
       a {
         display: inline-flex;
         gap: 0.49vw;
-        margin: 0.97vw;
-        margin-right: 6.67vw;
-        width: 5.28vw;
 
         p {
           font-size: 1.25vw;
           margin-right: 4vw;
-          color: white;
+          color: black;
         }
+
+        img {
+          width: 1.32vw;
+          height: 100%;
+          margin: 0;
+        }
+      }
+
+      img.go-home {
+        margin: 0.97vw;
+        margin-right: 6.67vw;
+        width: 5.28vw;
       }
     }
 
@@ -119,7 +146,7 @@ body.cards {
 
     .promo-menu {
       opacity: 1;
-      width: 87.2vw;
+      width: 91.2vw;
 
       .home-navig a {
         display: none;
@@ -129,7 +156,7 @@ body.cards {
         display: block;
       }
 
-      .home-navig a img {
+      .home-navig img.go-home {
         margin: 4.44vw;
         width: 19.61vw;
       }
