@@ -35,24 +35,15 @@ body.cards {
       a {
         display: inline-flex;
         gap: 0.49vw;
+        margin: 0.97vw;
+        margin-right: 6.67vw;
+        width: 5.28vw;
 
         p {
           font-size: 1.25vw;
           margin-right: 4vw;
           color: white;
         }
-
-        img {
-          width: 1.32vw;
-          height: 100%;
-          margin: 0;
-        }
-      }
-
-      img {
-        margin: 0.97vw;
-        margin-right: 6.67vw;
-        width: 5.28vw;
       }
     }
 
@@ -70,7 +61,7 @@ body.cards {
     }
   }
 
-  img {
+  .card img {
     width: 68.71vw;
     margin: 0 auto;
     display: flex;
@@ -121,5 +112,79 @@ body.cards {
   .btns img {
     width: 5vw;
     margin-left: 1vw;
+  }
+
+  @media screen and (min-width: 360px) and (max-width: 767px) {
+    background-color: var(--white);
+
+    .promo-menu {
+      opacity: 1;
+      width: 87.2vw;
+
+      .home-navig a {
+        display: none;
+      }
+
+      .home-navig a:first-child {
+        display: block;
+      }
+
+      .home-navig a img {
+        margin: 4.44vw;
+        width: 19.61vw;
+      }
+
+      .tg a p {
+        font-size: 4.44vw;
+        margin-right: 3.4000000000000004vw;
+        color: white;
+        padding: 2.7vw 5vw;
+        border-radius: 3.1vw;
+      }
+
+      .promo-menu .home-navig a p {
+        font-size: 15px;
+      }
+    }
+
+    .card img {
+      width: 85.71vw;
+      margin: 0 auto;
+      padding-top: 16vw;
+      display: flex;
+    }
+
+    .name {
+      position: relative;
+      top: -99vw;
+      left: 13vw;
+      width: 73vw;
+
+      h2 {
+        font-size: 7.4vw;
+        line-height: 8vw;
+      }
+
+      h4 {
+        font-size: 3.33vw;
+        margin-top: 2vw;
+      }
+    }
+
+    .name img {
+      width: 18.71vw;
+      margin-top: 43vw;
+      margin-left: 29vw;
+    }
+
+    .btns img {
+      width: 15vw;
+      margin-left: 4vw;
+    }
+
+    .btns {
+      gap: 54vw;
+      top: -37vw;
+    }
   }
 }
