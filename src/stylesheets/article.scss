@@ -4,7 +4,7 @@ body.article {
 
   h1,
   h2 {
-    font-family: 'CoFo Kak Trial', Arial, Helvetica, sans-serif;
+    font-family: 'Druk Wide Cyr', Arial, Helvetica, sans-serif;
     font-weight: 900;
     text-transform: uppercase;
     color: black;
@@ -255,6 +255,36 @@ body.article {
 
   @media screen and (min-width: 360px) and (max-width: 767px) {
     background-color: var(--white);
+
+    .promo-menu {
+      opacity: 1;
+      width: 91.2vw;
+
+      .home-navig a {
+        display: none;
+      }
+
+      .home-navig a:first-child {
+        display: block;
+      }
+
+      .home-navig img.go-home {
+        margin: 4.44vw;
+        width: 19.61vw;
+      }
+
+      .tg a p {
+        font-size: 4.44vw;
+        margin-right: 3.4000000000000004vw;
+        color: white;
+        padding: 2.7vw 5vw;
+        border-radius: 3.1vw;
+      }
+
+      .promo-menu .home-navig a p {
+        font-size: 15px;
+      }
+    }
 
     .art-col {
       display: flex;

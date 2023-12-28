@@ -103,6 +103,13 @@ module.exports = {
       chunks: ['index'] // добавляем ко всем html, которые у нас были до это пары
     }),
 
+    // Style
+    new HtmlWebpackPlugin({
+      template: './src/style.html',
+      filename: './style.html',
+      chunks: ['index'] // добавляем ко всем html, которые у нас были до это пары
+    }),
+
     // Section
     //Tests
     new HtmlWebpackPlugin({

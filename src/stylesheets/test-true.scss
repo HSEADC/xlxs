@@ -4,7 +4,7 @@ body.test-true {
 
   h1,
   h2 {
-    font-family: 'CoFo Kak Trial', Arial, Helvetica, sans-serif;
+    font-family: 'Druk Wide Cyr', Arial, Helvetica, sans-serif;
     font-weight: 900;
     text-transform: uppercase;
     color: black;
@@ -129,5 +129,86 @@ body.test-true {
     border-radius: 0.97vw;
     font-size: 1.67vw;
     margin-top: 1vw;
+  }
+
+  @media screen and (min-width: 360px) and (max-width: 767px) {
+    background-color: var(--white);
+
+    .promo-menu {
+      opacity: 1;
+      width: 92vw;
+
+      .home-navig a {
+        display: none;
+      }
+
+      .home-navig a:first-child {
+        display: block;
+      }
+
+      .home-navig img.go-home {
+        margin: 4.44vw;
+        width: 19.61vw;
+      }
+
+      .tg a p {
+        font-size: 4.44vw;
+        margin-right: 3.4000000000000004vw;
+        color: white;
+        padding: 2.7vw 5vw;
+        border-radius: 3.1vw;
+      }
+
+      .promo-menu .home-navig a p {
+        font-size: 15px;
+      }
+    }
+
+    section.bg {
+      display: flex;
+      flex-direction: column;
+      margin: 3.9vw;
+      gap: 2vw;
+      margin-bottom: 1vw;
+
+      .block-1 {
+        background-color: #f2f2f7;
+        border-radius: 8.21vw;
+        padding: 2.22vw;
+        width: 88.25vw;
+        height: 154.3vw;
+
+        img {
+          width: 86%;
+          margin-left: 6vw;
+          margin-bottom: 6vw;
+        }
+
+        h2 {
+          font-size: 7.18vw;
+          padding-bottom: 4vw;
+        }
+
+        h4 {
+          font-size: 5.13vw;
+          width: 90vw;
+        }
+      }
+
+      .block-2 {
+        display: none;
+      }
+    }
+
+    h5 {
+      margin: 3.9vw;
+      background-color: #007aff;
+      text-align: center;
+      color: white;
+      padding: 4.67vw;
+      border-radius: 3.59vw;
+      font-size: 5.67vw;
+      margin-top: 4vw;
+    }
   }
 }

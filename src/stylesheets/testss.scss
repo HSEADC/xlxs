@@ -4,7 +4,7 @@ body.test {
 
   h1,
   h2 {
-    font-family: 'CoFo Kak Trial', Arial, Helvetica, sans-serif;
+    font-family: 'Druk Wide Cyr', Arial, Helvetica, sans-serif;
     font-weight: 900;
     text-transform: uppercase;
     color: black;
@@ -127,6 +127,72 @@ body.test {
         flex-direction: row;
         gap: 0.56vw;
         padding-bottom: 0.56vw;
+      }
+    }
+  }
+
+  @media screen and (min-width: 360px) and (max-width: 767px) {
+    background-color: var(--white);
+
+    .promo-menu {
+      opacity: 1;
+      width: 92vw;
+
+      .home-navig a {
+        display: none;
+      }
+
+      .home-navig a:first-child {
+        display: block;
+      }
+
+      .home-navig img.go-home {
+        margin: 4.44vw;
+        width: 19.61vw;
+      }
+
+      .tg a p {
+        font-size: 4.44vw;
+        margin-right: 3.4000000000000004vw;
+        color: white;
+        padding: 2.7vw 5vw;
+        border-radius: 3.1vw;
+      }
+
+      .promo-menu .home-navig a p {
+        font-size: 15px;
+      }
+    }
+
+    section.bg {
+      border-radius: 8.21vw;
+
+      .first-line {
+        display: flex;
+        flex-direction: column;
+        padding: 2.22vw;
+
+        h2 {
+          font-size: 7.18vw;
+          padding: 5.7vw;
+        }
+      }
+
+      .ans {
+        .l-1,
+        .l-2 {
+          flex-direction: column;
+          gap: 3vw;
+          padding-bottom: 3vw;
+        }
+
+        h5 {
+          padding: 5.22vw;
+          background-color: white;
+          font-size: 5.22vw;
+          width: 77vw;
+          border-radius: 3.85vw;
+        }
       }
     }
   }
