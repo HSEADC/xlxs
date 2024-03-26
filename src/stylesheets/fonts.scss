@@ -7,9 +7,16 @@
 
 @font-face {
   font-family: 'SF Pro';
-  src: url('fonts/SF-Pro-Display-Regular.otf') format('otf');
-  font-weight: 400;
+  src: url('SF-Pro-Display-Bold.otf') format('otf');
+  font-weight: 700;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro';
+  src: url('SF-Pro-Display-RegularItalic.otf') format('otf');
+  font-style: italic;
+  font-weight: 400;
 }
 
 @font-face {

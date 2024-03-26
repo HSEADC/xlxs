@@ -9,7 +9,8 @@ const path = require('path')
 module.exports = {
   entry: {
     index: './src/index.js',
-    theory: './src/theory.js'
+    theory: './src/theory.js',
+    select: './src/select.js'
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -96,10 +97,24 @@ module.exports = {
       chunks: ['theory'] // Дублируем имя Chunks в массив, чтоб он подгружал
     }),
 
+    // Chunk select
+    new HtmlWebpackPlugin({
+      template: './src/select.html',
+      filename: './select.html',
+      chunks: ['select'] // Дублируем имя Chunks в массив, чтоб он подгружал
+    }),
+
     // Index
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: './index.html',
+      chunks: ['index'] // добавляем ко всем html, которые у нас были до это пары
+    }),
+
+    // Main
+    new HtmlWebpackPlugin({
+      template: './src/main.html',
+      filename: './main.html',
       chunks: ['index'] // добавляем ко всем html, которые у нас были до это пары
     }),
 
@@ -146,10 +161,144 @@ module.exports = {
 
     // Article 1
     new HtmlWebpackPlugin({
-      template: './src/articles/art1.html',
-      filename: './articles/art1.html',
-      chunks: ['index'] // добавляем ко всем html, которые у нас были до это пары
+      template: './src/articles/block.html',
+      filename: './articles/block.html',
+      chunks: ['index']
     }),
+
+    // Article 2
+    new HtmlWebpackPlugin({
+      template: './src/articles/calend.html',
+      filename: './articles/calend.html',
+      chunks: ['index']
+    }),
+
+    // Article 3
+    new HtmlWebpackPlugin({
+      template: './src/articles/demo.html',
+      filename: './articles/demo.html',
+      chunks: ['index']
+    }),
+
+    // Article 4
+    new HtmlWebpackPlugin({
+      template: './src/articles/derevo.html',
+      filename: './articles/derevo.html',
+      chunks: ['index']
+    }),
+
+    // Article 5
+    new HtmlWebpackPlugin({
+      template: './src/articles/kolco.html',
+      filename: './articles/kolco.html',
+      chunks: ['index']
+    }),
+
+    // Article 6
+    new HtmlWebpackPlugin({
+      template: './src/articles/krug.html',
+      filename: './articles/krug.html',
+      chunks: ['index']
+    }),
+
+    // Article 7
+    new HtmlWebpackPlugin({
+      template: './src/articles/linear.html',
+      filename: './articles/linear.html',
+      chunks: ['index']
+    }),
+
+    // Article 8
+    new HtmlWebpackPlugin({
+      template: './src/articles/matrica.html',
+      filename: './articles/matrica.html',
+      chunks: ['index']
+    }),
+
+    // Article 9
+    new HtmlWebpackPlugin({
+      template: './src/articles/obl.html',
+      filename: './articles/obl.html',
+      chunks: ['index']
+    }),
+
+    // Article 10
+    new HtmlWebpackPlugin({
+      template: './src/articles/stolb.html',
+      filename: './articles/stolb.html',
+      chunks: ['index']
+    }),
+
+    // Article 11
+    new HtmlWebpackPlugin({
+      template: './src/articles/svech.html',
+      filename: './articles/svech.html',
+      chunks: ['index']
+    }),
+
+    // Article 12
+    new HtmlWebpackPlugin({
+      template: './src/articles/usi.html',
+      filename: './articles/usi.html',
+      chunks: ['index']
+    }),
+
+    // Article 13
+    new HtmlWebpackPlugin({
+      template: './src/articles/pusyr.html',
+      filename: './articles/pusyr.html',
+      chunks: ['index']
+    }),
+
+    // Article 14
+    new HtmlWebpackPlugin({
+      template: './src/articles/plotn.html',
+      filename: './articles/plotn.html',
+      chunks: ['index']
+    }),
+
+    // Article 15
+    new HtmlWebpackPlugin({
+      template: './src/articles/hord.html',
+      filename: './articles/hord.html',
+      chunks: ['index']
+    }),
+
+    // Article 16
+    new HtmlWebpackPlugin({
+      template: './src/articles/gant.html',
+      filename: './articles/gant.html',
+      chunks: ['index']
+    }),
+
+    // Article 17
+    new HtmlWebpackPlugin({
+      template: './src/articles/pogresh.html',
+      filename: './articles/pogresh.html',
+      chunks: ['index']
+    }),
+
+    // Article 18
+    new HtmlWebpackPlugin({
+      template: './src/articles/venna.html',
+      filename: './articles/venna.html',
+      chunks: ['index']
+    }),
+
+    // Article 19
+    new HtmlWebpackPlugin({
+      template: './src/articles/rass.html',
+      filename: './articles/rass.html',
+      chunks: ['index']
+    }),
+
+    // Article 20
+    new HtmlWebpackPlugin({
+      template: './src/articles/diapaz.html',
+      filename: './articles/diapaz.html',
+      chunks: ['index']
+    }),
+
     // Card 1
     new HtmlWebpackPlugin({
       template: './src/cards/card1.html',

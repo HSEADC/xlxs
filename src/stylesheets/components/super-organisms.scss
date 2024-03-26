@@ -1,0 +1,558 @@
+body.main {
+  background-color: var(--white);
+  font-family: 'SF Pro', Arial, Helvetica, sans-serif;
+}
+
+.S_NavBar {
+  width: 1380px;
+  display: flex;
+  z-index: 3;
+  margin: 0 auto;
+}
+
+.S_Cover {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 34px;
+  width: 100vw;
+  margin: 0 auto;
+  background-image: url('images/atoms/Q_MainCover.png');
+  margin-top: -70px;
+  background-repeat: no-repeat;
+  z-index: -1;
+
+  &.none {
+    display: none;
+  }
+
+  .A_Title {
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    width: 780px;
+    margin-top: 270px;
+    margin-left: 60px;
+  }
+
+  p {
+    display: flex;
+    width: 460px;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+    margin-left: 60px;
+    color: var(--secgray, #acadb2);
+    font-family: 'SF Pro Display';
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 25.2px */
+    letter-spacing: -0.315px;
+  }
+
+  .A_ActionButton {
+    width: 288px;
+    margin-left: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+.S_Now {
+  position: relative;
+  display: flex;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: var(--light);
+  border-radius: 45px;
+
+  .A_Title {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 30px;
+  }
+
+  .O_Now {
+    display: flex;
+    margin-top: 32px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    gap: 12px;
+
+    .O_ArticleNamePlusTag {
+      .Q_Image {
+        height: 220px;
+
+        &.one {
+          background-image: url('images/atoms/now_bg1.png');
+        }
+
+        &.two {
+          background-image: url('images/atoms/now_bg2.png');
+        }
+
+        &.three {
+          background-image: url('images/atoms/now_bg3.png');
+        }
+      }
+    }
+  }
+
+  .O_Clickable_Image {
+    position: relative;
+    top: 72px;
+    height: 100%;
+
+    .A_Title {
+      text-align: center;
+      color: var(--white);
+      margin-left: 0 auto;
+    }
+    .Q_Image {
+      background-image: url('images/atoms/Q_Top_Guide_1440.png');
+      margin-top: -136px;
+      width: 1374px;
+      height: 582px;
+    }
+  }
+
+  .S_NowTests {
+    display: flex;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--light);
+    border-radius: 45px;
+
+    .A_Title {
+      display: flex;
+      margin-top: 50px;
+      margin-left: 30px;
+    }
+
+    .O_NowTests {
+      display: inline-flex;
+      height: 350px;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-shrink: 0;
+      width: 1372px;
+      margin-left: 30px;
+
+      .Q_Image {
+        &.test {
+          background-image: url('images/atoms/Q_Image_Test.png');
+        }
+
+        &.test_wide {
+          background-image: url('images/atoms/Q_Image_Test_Wide.png');
+        }
+      }
+    }
+
+    .A_Title1 {
+      font-size: 21px;
+      width: 100%;
+      text-align: center;
+      margin-top: 16px;
+    }
+  }
+
+  .S_NowCards {
+    display: flex;
+    margin-top: 72px;
+    top: 72px;
+    position: relative;
+    display: flex;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--light);
+    border-radius: 45px;
+
+    .A_Title {
+      display: flex;
+      margin-top: 50px;
+      margin-left: 30px;
+    }
+
+    .O_NowCards {
+      display: inline-flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 1372px;
+      margin-left: 30px;
+
+      .Q_Image {
+        &.one {
+          background-image: url('images/atoms/Q_Now_Card_1.png');
+        }
+        &.two {
+          background-image: url('images/atoms/Q_Now_Card_2.png');
+        }
+        &.three {
+          background-image: url('images/atoms/Q_Now_Card_3.png');
+        }
+        &.four {
+          background-image: url('images/atoms/Q_Now_Card_4.png');
+        }
+        &.five {
+          background-image: url('images/atoms/Q_Now_Card_5.png');
+        }
+        &.six {
+          background-image: url('images/atoms/Q_Now_Card_6.png');
+        }
+      }
+    }
+
+    .A_Title1 {
+      font-size: 21px;
+      width: 100%;
+      text-align: center;
+      margin-top: 16px;
+    }
+  }
+
+  footer {
+    margin-top: 140px;
+  }
+}
+
+.S_ArticleCover {
+  width: 1380px;
+  margin: auto;
+
+  .Q_Image {
+    margin: auto;
+    display: flex;
+    margin-top: 24px;
+  }
+
+  .S_ArticleBody {
+    display: flex;
+    width: 800px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    margin: 0 auto;
+    margin-top: 44px;
+
+    .A_Title {
+    }
+    p {
+      color: var(--black);
+      font-family: 'SF Pro Display';
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 120%;
+      letter-spacing: -0.27px;
+    }
+
+    li,
+    ul {
+      color: var(--black);
+      font-family: 'SF Pro Display';
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 120%;
+      letter-spacing: -0.27px;
+      list-style: disc;
+      margin-left: 8px;
+    }
+  }
+
+  .W_SmilePlusText {
+    display: flex;
+    align-items: flex-start;
+    gap: 42px;
+    align-self: stretch;
+  }
+
+  .O_Info {
+    display: flex;
+    width: 800px;
+    padding: 27px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 27px;
+    border-radius: 24px;
+    background: #f2f2f7;
+
+    .W_SmilePlusText {
+      display: flex;
+      align-items: flex-start;
+      gap: 24px;
+      align-self: stretch;
+      width: 800px;
+
+      .Q_Smile {
+      }
+    }
+  }
+}
+
+.S_Authors {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  width: 800px;
+  gap: 24px;
+  margin: 0 auto;
+  margin-top: 44px;
+
+  .W_People {
+    display: flex;
+    align-items: flex-start;
+    gap: 24.75px;
+
+    .S_Person {
+      .W_Person {
+        display: flex;
+        align-items: flex-start;
+
+        .Q_Person {
+          &.sasha {
+            background-image: url('images/atoms/Q_Sasha.png');
+          }
+
+          &.ksusha {
+            background-image: url('images/atoms/Q_Ksusha.png');
+          }
+        }
+
+        .W_PersonText {
+          display: flex;
+          height: 108px;
+          padding: 27px;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          gap: 12px;
+
+          p {
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+  }
+}
+
+.S_Recomm {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 auto;
+  margin-top: 96px;
+  gap: 40px;
+
+  .W_Recomm {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+  }
+}
+
+footer {
+  margin: 0 auto;
+  margin-top: 92px;
+  display: flex;
+  width: 1377.358px;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+
+  .W_Links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 36px;
+    align-self: stretch;
+
+    .W_Content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      align-self: stretch;
+
+      .W_Columns {
+        display: flex;
+        width: 892px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-self: stretch;
+
+        .O_Links {
+          display: flex;
+          align-items: flex-start;
+        }
+      }
+
+      .W_Socials {
+        display: flex;
+        width: 324.084px;
+        flex-direction: column;
+        align-items: center;
+        gap: 13.504px;
+        align-self: stretch;
+
+        .W_Cell {
+          display: flex;
+          padding: 14px 0px;
+          align-items: center;
+          gap: 18px;
+          align-self: stretch;
+          width: 324px;
+
+          .W_TextWrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 4.501px;
+            flex: 1 0 0;
+
+            p {
+              color: var(--light-text-primary-text-color-primary, #0f0f0f);
+              font-family: 'SF Pro Display';
+              font-size: 18.005px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 22.506px; /* 125% */
+            }
+          }
+        }
+
+        .W_SocialButtons {
+          width: 324px;
+          display: flex;
+          align-items: flex-start;
+          gap: 18px;
+          align-self: stretch;
+        }
+      }
+    }
+  }
+}
+
+// статьи главная
+
+.S_SearchArt {
+  display: flex;
+  width: 1377.75px;
+  height: 258px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 18px;
+  border-radius: 12px;
+  background-image: url('images/atoms/Q_MainBanner.png');
+  margin: 0 auto;
+  margin-top: 24px;
+}
+
+.S_ArticleCollection {
+  width: 1380px;
+  margin: 0 auto;
+  margin-top: 32px;
+
+  .W_ArticleCollection {
+    display: flex;
+    width: 1380px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+    margin-top: 24px;
+
+    .W_ArticleLine {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 28px;
+      align-self: stretch;
+    }
+  }
+
+  p.watch {
+    margin: 0 auto;
+    margin-top: 36px;
+    width: 1380px;
+    text-align: center;
+    text-decoration: underline solid var(--blue);
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+  }
+}
+
+.S_SearchCard {
+  display: flex;
+  width: 1377.75px;
+  height: 258px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 18px;
+  border-radius: 12px;
+  background-image: url('images/atoms/Q_MainBanner_Card.png');
+  margin: 0 auto;
+  margin-top: 24px;
+}
+
+.S_CardCollection {
+  width: 1380px;
+  margin: 0 auto;
+  margin-top: 54px;
+
+  .W_CardCollection {
+    display: flex;
+    width: 1380px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+    margin-top: 24px;
+
+    .W_CardLine {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 8px;
+      align-self: stretch;
+      width: 1380px;
+    }
+  }
+
+  p.watch {
+    margin: 0 auto;
+    margin-top: 36px;
+    width: 1380px;
+    text-align: center;
+    text-decoration: underline solid var(--blue);
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+  }
+}
+
+.S_TestsCollection {
+  width: 1380px;
+  margin: 0 auto;
+  margin-top: 80px;
+
+  p.watch {
+    margin: 0 auto;
+    margin-top: 36px;
+    width: 1380px;
+    text-align: center;
+    text-decoration: underline solid var(--blue);
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+  }
+}

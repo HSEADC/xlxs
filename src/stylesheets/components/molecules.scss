@@ -1,0 +1,84 @@
+// теги
+
+.M_Tag {
+  display: inline-flex;
+  padding: 2px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+
+  &.green {
+    background: rgba(1, 185, 174, 0.15);
+  }
+  &.blue {
+    background: rgba(0, 122, 255, 0.15);
+  }
+  &.pink {
+    background: rgba(255, 144, 233, 0.15);
+  }
+  &.orange {
+    background: rgba(255, 119, 61, 0.15);
+  }
+}
+
+.M_ArticleFilterTag {
+  background: var(--black);
+  border-radius: 48px;
+  color: var(--black);
+  font-family: 'SF Pro Display';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 28.8px */
+  letter-spacing: -0.36px;
+  padding: 12px 24px;
+  width: auto;
+
+  &.white {
+    background: var(--white);
+    color: var(--black);
+  }
+}
+
+.M_ArticlePreview {
+  display: flex;
+  width: 421px;
+  height: 317px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 10px;
+
+  .A_ArticleName {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+}
+
+.M_SmilePlusText {
+  display: flex;
+  align-items: flex-start;
+  gap: 17px;
+}
+
+.M_FeedBack {
+  display: flex;
+  padding: 10px 23px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 14px;
+  background: var(
+    --light-specialbg-component-special-background-color-component,
+    rgba(11, 31, 53, 0.07)
+  );
+  display: flex;
+  width: 180px;
+  flex-direction: column;
+  align-items: flex-start;
+}

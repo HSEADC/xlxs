@@ -11,3 +11,10 @@
 @import 'stylesheets/about.scss';
 @import 'stylesheets/test-true.scss';
 @import 'stylesheets/style.scss';
+@import 'stylesheets/select.scss';
+
+@import 'stylesheets/components/atoms.scss';
+@import 'stylesheets/components/molecules.scss';
+@import 'stylesheets/components/organisms.scss';
+@import 'stylesheets/components/quarks.scss';
+@import 'stylesheets/components/super-organisms.scss';

@@ -1,0 +1,413 @@
+body.main {
+  background-color: var(--black);
+}
+
+.Q_SearchIcon {
+  width: 17.58px;
+  height: 18.42px;
+  background-position: top center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-image: url('images/atoms/Q_NavBarSearchIcon.svg');
+}
+
+a {
+  text-decoration: none;
+}
+
+.Q_Image {
+  width: 100%;
+  height: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+
+  &.test {
+    width: 448px;
+    height: 348px;
+  }
+
+  &.test_wide {
+    width: 914px;
+    height: 348px;
+  }
+
+  &.card {
+    width: 216px;
+    height: 282px;
+  }
+
+  &.illus {
+    width: 800px;
+  }
+
+  &.icon {
+    width: 54.014px;
+    height: 54.014px;
+    flex-shrink: 0;
+  }
+
+  // 1 art
+
+  &.svech {
+    background-image: url('images/atoms/Q_Cover_Svechnoy.png');
+    height: 380px;
+  }
+  &.svech1 {
+    background-image: url('images/atoms/Q_Shema_Svechnoy.png');
+    height: 432px;
+    margin-top: 0;
+  }
+
+  // 2 art
+
+  &.block {
+    background-image: url('images/atoms/Q_Cover_Block.png');
+    height: 380px;
+  }
+  &.block1 {
+    background-image: url('images/atoms/Q_Shema_Block.png');
+    height: 431px;
+    margin-top: 0;
+  }
+
+  // 3 art
+
+  &.linear {
+    background-image: url('images/atoms/Q_Cover_Linear.png');
+    height: 380px;
+  }
+  &.linear1 {
+    background-image: url('images/atoms/Q_Shema_Linear.png');
+    height: 431px;
+    margin-top: 0;
+  }
+
+  // 4 art
+  &.krug {
+    background-image: url('images/atoms/Q_Cover_Krug.png');
+    height: 380px;
+  }
+  &.krug1 {
+    background-image: url('images/atoms/Q_Shema_Krug.png');
+    height: 431px;
+    margin-top: 0;
+  }
+
+  // 5 art
+  &.stolb {
+    background-image: url('images/atoms/Q_Cover_Stolb.png');
+    height: 380px;
+  }
+  &.stolb1 {
+    background-image: url('images/atoms/Q_Shema_Stolb.png');
+    height: 431px;
+    margin-top: 0;
+  }
+
+  // 6 art
+  &.derevo {
+    background-image: url('images/atoms/Q_Cover_Derevo.png');
+    height: 380px;
+  }
+  &.derevo1 {
+    background-image: url('images/atoms/Q_Shema_Derevo.png');
+    height: 431px;
+    margin-top: 0;
+  }
+
+  // 7 art
+  &.obl {
+    background-image: url('images/atoms/Q_Cover_Obl.png');
+    height: 380px;
+  }
+  &.obl1 {
+    background-image: url('images/atoms/Q_Shema_Obl.png');
+    height: 431px;
+    margin-top: 0;
+  }
+
+  // 8 art
+  &.kolco {
+    background-image: url('images/atoms/Q_Cover_Kolco.png');
+    height: 380px;
+  }
+  &.kolco1 {
+    background-image: url('images/atoms/Q_Shema_Kolco.png');
+    height: 431px;
+    margin-top: 0;
+  }
+
+  // 9 art
+  &.matrica {
+    background-image: url('images/atoms/Q_Cover_Matrica.png');
+    height: 380px;
+  }
+  &.matrica1 {
+    background-image: url('images/atoms/Q_Shema_Matrica.png');
+    height: 431px;
+    margin-top: 0;
+  }
+
+  // 10 art
+  &.demo {
+    background-image: url('images/atoms/Q_Cover_Demo.png');
+    height: 380px;
+  }
+  &.demo1 {
+    background-image: url('images/atoms/Q_Shema_Demo.png');
+    height: 431px;
+    margin-top: 0;
+  }
+
+  // 11 art
+  &.calend {
+    background-image: url('images/atoms/Q_Cover_Calend.png');
+    height: 380px;
+  }
+  &.calend1 {
+    background-image: url('images/atoms/Q_Shema_Calend.png');
+    height: 431px;
+    margin-top: 0;
+  }
+
+  // 12 art
+  &.usi {
+    background-image: url('images/atoms/Q_Cover_Usi.png');
+    height: 380px;
+  }
+  &.usi1 {
+    background-image: url('images/atoms/Q_Shema_Usi.png');
+    height: 456px;
+    margin-top: 0;
+  }
+
+  // 13 art
+  &.pusyr {
+    background-image: url('images/atoms/Q_Cover_Pusyr.png');
+    height: 380px;
+  }
+  &.pusyr1 {
+    background-image: url('images/atoms/Q_Shema_Pusyr.png');
+    height: 334px;
+    margin-top: 0;
+  }
+
+  // 14 art
+  &.plotn {
+    background-image: url('images/atoms/Q_Cover_Plotn.png');
+    height: 380px;
+  }
+  &.plotn1 {
+    background-image: url('images/atoms/Q_Shema_Plotn.png');
+    height: 432px;
+    margin-top: 0;
+  }
+
+  // 15 art
+  &.hord {
+    background-image: url('images/atoms/Q_Cover_Hord.png');
+    height: 380px;
+  }
+  &.hord1 {
+    background-image: url('images/atoms/Q_Shema_Hord.png');
+    height: 431px;
+    margin-top: 0;
+  }
+
+  // 16 art
+  &.gant {
+    background-image: url('images/atoms/Q_Cover_Gant.png');
+    height: 380px;
+  }
+  &.gant1 {
+    background-image: url('images/atoms/Q_Shema_Gant.png');
+    height: 432px;
+    margin-top: 0;
+  }
+
+  // 17 art
+  &.pogresh {
+    background-image: url('images/atoms/Q_Cover_Pogresh.png');
+    height: 380px;
+  }
+  &.pogresh1 {
+    background-image: url('images/atoms/Q_Shema_Pogresh_1.png');
+    height: 375px;
+    margin-top: 0;
+  }
+  &.pogresh2 {
+    background-image: url('images/atoms/Q_Shema_Pogresh_2.png');
+    height: 352px;
+    margin-top: 0;
+  }
+
+  // 18 art
+  &.venna {
+    background-image: url('images/atoms/Q_Cover_Venna.png');
+    height: 380px;
+  }
+  &.venna1 {
+    background-image: url('images/atoms/Q_Shema_Venna.png');
+    height: 475px;
+    margin-top: 0;
+  }
+
+  // 19 art
+  &.rass {
+    background-image: url('images/atoms/Q_Cover_Rass.png');
+    height: 380px;
+  }
+  &.rass1 {
+    background-image: url('images/atoms/Q_Shema_Rass.png');
+    height: 517px;
+    margin-top: 0;
+  }
+
+  // 20 art
+  &.diapaz {
+    background-image: url('images/atoms/Q_Cover_Diapaz.png');
+    height: 380px;
+  }
+  &.diapaz1 {
+    background-image: url('images/atoms/Q_Shema_Diapaz.png');
+    height: 231px;
+    margin-top: 0;
+  }
+
+  // social medias icons
+  &.tg {
+    background-image: url('images/atoms/Q_TgIcon.svg');
+  }
+  &.vk {
+    background-image: url('images/atoms/Q_VkIcon.svg');
+  }
+  &.ut {
+    background-image: url('images/atoms/Q_UtIcon.svg');
+  }
+}
+
+.Q_Smile {
+  width: 100%;
+  height: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  width: 140px;
+  height: 48px;
+
+  &.byk {
+    background-image: url('images/atoms/Q_Byk.png');
+  }
+  &.bear {
+    background-image: url('images/atoms/Q_Bear.png');
+  }
+  &.like {
+    background-image: url('images/atoms/Q_Like.png');
+    width: 208px;
+  }
+  &.star {
+    background-image: url('images/atoms/Q_Star.png');
+  }
+  &.money {
+    background-image: url('images/atoms/Q_Money.png');
+  }
+  &.pin {
+    background-image: url('images/atoms/Q_Pin.png');
+  }
+  &.chain {
+    background-image: url('images/atoms/Q_Chain.png');
+  }
+  &.vesy {
+    background-image: url('images/atoms/Q_Vesy.png');
+  }
+  &.warn {
+    background-image: url('images/atoms/Q_Warn.png');
+    width: 208px;
+  }
+
+  &.noteb {
+    background-image: url('images/atoms/Q_Note.png');
+    height: 64px;
+    border-radius: 0px;
+    width: 294px;
+  }
+
+  &.clock {
+    background-image: url('images/atoms/Q_Clock.png');
+    width: 160px;
+    height: 64px;
+  }
+  &.smart {
+    background-image: url('images/atoms/Q_Smart.png');
+    width: 160px;
+    height: 64px;
+  }
+  &.umni {
+    background-image: url('images/atoms/Q_Umni.png');
+    width: 160px;
+    height: 64px;
+  }
+
+  &.point {
+    background-image: url('images/atoms/Q_Point.png');
+    width: 200px;
+    height: 64px;
+  }
+
+  &.count {
+    background-image: url('images/atoms/Q_Count.png');
+    width: 301px;
+    height: 64px;
+  }
+
+  &.starry {
+    background-image: url('images/atoms/Q_Starry.png');
+    width: 317px;
+    height: 64px;
+  }
+
+  &.rocket {
+    background-image: url('images/atoms/Q_Rocket.png');
+    width: 320px;
+    height: 66px;
+  }
+  &.left {
+    background-image: url('images/atoms/Q_Left.png');
+  }
+  &.right {
+    background-image: url('images/atoms/Q_Right.png');
+  }
+}
+
+.Q_Person {
+  width: 108px;
+  height: 108px;
+}
+
+hr.short {
+  border: 0.8px solid #dfdfe5;
+  width: 500px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+hr.long {
+  border: 0.8px solid #dfdfe5;
+  width: 1380px;
+  margin-bottom: 36px;
+  margin-top: 0px;
+}
+
+p {
+  color: var(--black);
+  font-family: 'SF Pro Display';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 25.2px */
+  letter-spacing: -0.315px;
+}
