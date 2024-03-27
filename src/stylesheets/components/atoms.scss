@@ -1,3 +1,7 @@
+p {
+  font-family: SF Pro, Arial, Helvetica, sans-serif;
+}
+
 .A_Logo {
   display: block;
   width: 81px;
@@ -13,7 +17,7 @@
 
 .A_NavBarCategory {
   display: block;
-  font-family: 'SF Pro Display';
+  font-family: SF Pro, Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -90,7 +94,7 @@
 }
 
 .A_Title1 {
-  font-family: 'SF Pro Display';
+  font-family: SF Pro, Arial, Helvetica, sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 500;
@@ -258,7 +262,7 @@ footer {
 
 .A_FeedBack {
   color: #0f0f0f;
-  font-family: 'SF Pro Display';
+  font-family: SF Pro, Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -271,7 +275,7 @@ footer {
 
 p {
   color: var(--black);
-  font-family: 'SF Pro Display';
+  font-family: SF Pro, Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
