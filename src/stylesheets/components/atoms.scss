@@ -104,7 +104,7 @@ p {
 
 .A_ArticleName {
   color: var(--almost-black, #161616);
-  font-family: 'SF Pro Display';
+  font-family: SF Pro, Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -125,7 +125,7 @@ p {
 // поиск
 
 .A_NavBarSearchText {
-  font-family: 'SF Pro Display';
+  font-family: SF Pro, Arial, Helvetica, sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -135,7 +135,7 @@ p {
 
 .A_ArticleSubtitle {
   color: var(--light-text-secondary-text-color-secondary, #8a8a8e);
-  font-family: 'SF Pro Display';
+  font-family: SF Pro, Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -154,7 +154,7 @@ p {
   box-shadow: 0px 0px 16.65px -6px rgba(0, 122, 255, 0.5);
   color: #fff;
 
-  font-family: 'SF Pro Display';
+  font-family: SF Pro, Arial, Helvetica, sans-serif;
   font-size: 21px;
   font-style: normal;
   font-weight: 500;
@@ -176,7 +176,7 @@ p {
   color: var(--black, #000);
   leading-trim: both;
   text-edge: cap;
-  font-family: 'SF Pro Display';
+  font-family: SF Pro, Arial, Helvetica, sans-serif;
   font-size: 27px;
   font-style: normal;
   font-weight: 700;
@@ -186,7 +186,7 @@ p {
 
 .A_Info {
   color: var(--black, #000);
-  font-family: 'SF Pro Display';
+  font-family: SF Pro, Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-style: italic;
   font-weight: 400;
@@ -199,7 +199,7 @@ p {
 
 .A_Name {
   color: var(--black, #000);
-  font-family: 'SF Pro Display';
+  font-family: SF Pro, Arial, Helvetica, sans-serif;
   font-size: 21px;
   font-style: normal;
   font-weight: 500;
@@ -209,7 +209,7 @@ p {
 
 .A_Label {
   color: var(--green, #01b9ae);
-  font-family: 'SF Pro Display';
+  font-family: SF Pro, Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -237,7 +237,7 @@ p {
   align-items: flex-start;
   flex: 1 0 0;
   color: #0f0f0f;
-  font-family: 'SF Pro Display';
+  font-family: SF Pro, Arial, Helvetica, sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;

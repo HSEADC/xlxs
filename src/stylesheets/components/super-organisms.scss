@@ -1,6 +1,6 @@
 body.main {
   background-color: var(--white);
-  font-family: 'SF Pro', Arial, Helvetica, sans-serif;
+  font-family: SF Pro, Arial, Helvetica, sans-serif;
 }
 
 .S_NavBar {
@@ -44,7 +44,7 @@ body.main {
     margin-top: -20px;
     margin-left: 60px;
     color: var(--secgray, #acadb2);
-    font-family: 'SF Pro Display';
+    font-family: SF Pro, Arial, Helvetica, sans-serif;
     font-size: 21px;
     font-style: normal;
     font-weight: 500;
@@ -247,7 +247,7 @@ body.main {
     }
     p {
       color: var(--black);
-      font-family: 'SF Pro Display';
+      font-family: SF Pro, Arial, Helvetica, sans-serif;
       font-size: 18px;
       font-style: normal;
       font-weight: 500;
@@ -258,7 +258,7 @@ body.main {
     li,
     ul {
       color: var(--black);
-      font-family: 'SF Pro Display';
+      font-family: SF Pro, Arial, Helvetica, sans-serif;
       font-size: 18px;
       font-style: normal;
       font-weight: 500;
@@ -469,7 +469,7 @@ footer {
 
             p {
               color: var(--light-text-primary-text-color-primary, #0f0f0f);
-              font-family: 'SF Pro Display';
+              font-family: SF Pro, Arial, Helvetica, sans-serif;
               font-size: 18.005px;
               font-style: normal;
               font-weight: 500;
