@@ -22,6 +22,7 @@ body.main {
   margin-top: -70px;
   background-repeat: no-repeat;
   z-index: -1;
+  height: 100vh;
 
   &.none {
     display: none;
@@ -780,11 +781,64 @@ footer {
     background-position: center;
   }
 
+  &.usi_card {
+    background-image: url('images/atoms/Q_Card_Usi.svg');
+    background-position: center;
+  }
+
+  &.svech_card {
+    background-image: url('images/atoms/Q_Card_Svech.svg');
+    background-position: center;
+  }
+
+  &.stolb_card {
+    background-image: url('images/atoms/Q_Card_Stolb.svg');
+    background-position: center;
+  }
+
+  &.derevo_card {
+    background-image: url('images/atoms/Q_Card_Derevo.svg');
+    background-position: center;
+  }
+
+  &.obl_card {
+    background-image: url('images/atoms/Q_Card_Obl.svg');
+    background-position: center;
+  }
+
+  &.kolco_card {
+    background-image: url('images/atoms/Q_Card_Kolco.svg');
+    background-position: center;
+  }
+
+  &.matrica_card {
+    background-image: url('images/atoms/Q_Card_Matrica.svg');
+    background-position: center;
+  }
+
+  &.demo_card {
+    background-image: url('images/atoms/Q_Card_Demo.svg');
+    background-position: center;
+  }
+
+  &.calend_card {
+    background-image: url('images/atoms/Q_Card_Calend.svg');
+    background-position: center;
+  }
+
+  &.pusyr_card {
+    background-image: url('images/atoms/Q_Card_Pusyr.svg');
+    background-position: center;
+  }
+
   .W_CardName {
     position: relative;
     width: 1000px;
     top: 410px;
     border-radius: 44px 44px 22px 22px;
     background: var(--light, #f3f3f8);
+  }
+  .A_Title {
+    width: 664px;
   }
 }
