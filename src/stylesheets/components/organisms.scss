@@ -431,3 +431,21 @@
     line-height: 27px; /* 150% */
   }
 }
+
+.W_CardName {
+  display: flex;
+  width: 1032px;
+  height: 180.881px;
+  padding: 0px 45.033px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 44px;
+
+  .O_CardName {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10.508px;
+  }
+}

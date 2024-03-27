@@ -757,3 +757,34 @@ footer {
     }
   }
 }
+
+.S_CardBody {
+  width: 1000px;
+  height: 590px;
+  flex-shrink: 0;
+  margin: 0 auto;
+  margin-top: 44px;
+
+  &.krug_card {
+    background-image: url('images/atoms/Q_Card_Krug.svg');
+    background-position: center;
+  }
+
+  &.block_card {
+    background-image: url('images/atoms/Q_Card_Block.svg');
+    background-position: center;
+  }
+
+  &.linear_card {
+    background-image: url('images/atoms/Q_Card_Linear.svg');
+    background-position: center;
+  }
+
+  .W_CardName {
+    position: relative;
+    width: 1000px;
+    top: 410px;
+    border-radius: 44px 44px 22px 22px;
+    background: var(--light, #f3f3f8);
+  }
+}

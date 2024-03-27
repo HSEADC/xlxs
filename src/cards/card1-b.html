@@ -3,79 +3,144 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="../images/favicon-o.png" />
+    <link rel="icon" type="image/x-icon" href="../images/favicon-g.png" />
 
-    <title>Карточка оборот</title>
+    <meta
+      name="Keywords"
+      content="XLXS, excel, аналитика, шпаргалка, учебник"
+    />
+
+    <title>Свечной график</title>
   </head>
+  <body class="article">
+    <section class="S_NavBar">
+      <div class="O_NavBar">
+        <div class="W_NavBar">
+          <a class="A_Logo black" href="/"></a>
+          <div class="W_NavBarCategories">
+            <div class="C_NavBarCategories">
+              <a class="A_NavBarCategory" href="../style.html">Стайлгайд</a>
+              <a class="A_NavBarCategory" href="../articles.html">Статьи</a>
+              <a class="A_NavBarCategory" href="../cards.html">Карточки</a>
+              <a class="A_NavBarCategory" href="../tests.html">Тесты</a>
 
-  <body class="cards">
-    <menuButns></menuButns>
-    <nav>
-      <div class="promo-menu">
-        <div class="home-navig">
-          <a href="../index.html"
-            ><img
-              class="go-home"
-              src="../images/cards/logo-tizer-blc.svg"
-              alt="лого"
-          /></a>
-          <!-- <a href="about.html" target="_blank"
-            ><img src="images/go-to-z.svg" alt="кнопка переход на заглушку"
-          /></a> -->
-
-          <a href="../style.html" target="_blank">
-            <img src="../images/icon-home.svg" alt="" />
-            <p>Стайлгайд</p>
-          </a>
-
-          <a href="../cards/card1.html"
-            ><img src="../images/icon-cards.svg" alt="" />
-            <p>Карточка</p>
-          </a>
-
-          <a href="../articles/art1.html">
-            <img src="../images/icon-read.svg" alt="" />
-            <p>Статья</p>
-          </a>
-
-          <a href="../testss/test1.html"
-            ><img src="../images/icon-win.svg" alt="" />
-            <p>Тест</p>
-          </a>
-        </div>
-
-        <div class="tg">
-          <a href="https://t.me/+mnW_0hNK9b1hMjZi">
-            <p>Подписаться</p>
-          </a>
+              <div class="W_Search"></div>
+            </div>
+          </div>
+          <div class="W_Search mobile"></div>
+          <div class="Q_NavBarBurger black"></div>
         </div>
       </div>
-    </nav>
+    </section>
 
-    <div class="card">
-      <img
-        srcset="
-          ../images/cards/card-back-1440.svg,
-          ../images/cards/card-back-360.svg  600w
-        "
-        alt=""
-      />
+    
 
-      <div class="name">
-        <h2>
-          Диаграмма <br />
-          круговая
-        </h2>
-        <h4>Читать подробнее →</h4>
-        <a href="../cards/card1.html"
-          ><img src="../images/cards/reverse.svg" alt=""
-        /></a>
-      </div>
+
+    <style>
+  .slider-container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  .slide {
+    flex: 0 0 100%;
+  }
+  .slide img {
+    width: 100%;
+    height: auto;
+  }
+  .controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    
+  }
+  .controls button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    
+  }
+</style>
+
+<div class="slider-container">
+  <div class="slider">
+    <div class="slide">
+      <div class="S_CardBody krug_card">
+        <div class="W_CardName">
+          <div class="O_CardName">
+            <div class="A_Title">Диаграмма круговая</div>
+            <a href="../articles/krug.html"><p>Читать подробнее →</p></a>
+          </div>
+          <div class="Q_Reverse"></div>
+        </div>
     </div>
-
-    <div class="btns">
-      <img src="../images/cards/left-btn.png" alt="" />
-      <img src="../images/cards/right-btn.png" alt="" />
     </div>
-  </body>
+    <div class="slide">
+      <div class="S_CardBody block_card">
+        <div class="W_CardName">
+          <div class="O_CardName">
+            <div class="A_Title">Блок-схема</div>
+            <a href="../articles/block.html"><p>Читать подробнее →</p></a>
+          </div>
+          <div class="Q_Reverse"></div>
+        </div>
+    </div>
+    </div>
+    <div class="slide">
+      <div class="S_CardBody linear_card">
+        <div class="W_CardName">
+          <div class="O_CardName">
+            <div class="A_Title">Линейный график</div>
+            <a href="../articles/linear.html"><p>Читать подробнее →</p></a>
+          </div>
+          <div class="Q_Reverse"></div>
+        </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="controls">
+  <button onclick="prevSlide()">Назад</button>
+  <button onclick="nextSlide()">Вперед</button>
+</div>
+
+<script>
+  const slider = document.querySelector('.slider');
+  const slides = document.querySelectorAll('.slide');
+  let currentIndex = 0;
+
+  function showSlide(index) {
+    if (index < 0) {
+      index = slides.length - 1;
+    } else if (index >= slides.length) {
+      index = 0;
+    }
+
+    slider.style.transform = `translateX(-${index * 100}%)`;
+    currentIndex = index;
+  }
+
+  function nextSlide() {
+    showSlide(currentIndex + 1);
+  }
+
+  function prevSlide() {
+    showSlide(currentIndex - 1);
+  }
+</script>
+
+
+
 </html>
