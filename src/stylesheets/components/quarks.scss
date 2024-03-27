@@ -12,6 +12,23 @@ body.main {
   background-image: url('images/atoms/Q_NavBarSearchIcon.svg');
 }
 
+.Q_NavBarBurger {
+  width: 100%;
+  height: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-image: url('images/atoms/Q_NavBarBurger.svg');
+  width: 32px;
+  height: 32px;
+  display: none;
+
+  @media only screen and (min-width: 360px) and (max-width: 743px) {
+    display: block;
+  }
+}
+
 a {
   text-decoration: none;
 }

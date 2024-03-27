@@ -3,6 +3,11 @@ body.main {
   font-family: SF Pro, Arial, Helvetica, sans-serif;
 }
 
+body.article {
+  background-color: var(--white);
+  font-family: SF Pro, Arial, Helvetica, sans-serif;
+}
+
 .S_NavBar {
   width: 1380px;
   display: flex;
@@ -22,19 +27,27 @@ body.main {
   margin-top: -70px;
   background-repeat: no-repeat;
   z-index: -1;
-  height: 100vh;
+  height: 102vh;
+  background-color: var(--black);
+  background-size: cover;
+  background-position: center;
 
   &.none {
     display: none;
+  }
+
+  .O_Cover {
+    width: 1380px;
+    margin: 0 auto;
+    gap: 34px;
   }
 
   .A_Title {
     right: 0;
     justify-content: center;
     align-items: center;
-    width: 780px;
-    margin-top: 270px;
-    margin-left: 60px;
+    width: 800px;
+    margin-top: 360px;
   }
 
   p {
@@ -42,8 +55,7 @@ body.main {
     width: 460px;
     justify-content: center;
     align-items: center;
-    margin-top: -20px;
-    margin-left: 60px;
+    margin-top: 10px;
     color: var(--secgray, #acadb2);
     font-family: SF Pro, Arial, Helvetica, sans-serif;
     font-size: 21px;
@@ -55,8 +67,14 @@ body.main {
 
   .A_ActionButton {
     width: 288px;
-    margin-left: 60px;
-    margin-bottom: 60px;
+    margin-top: 24px;
+  }
+
+  @media only screen and (min-width: 360px) and (max-width: 743px) {
+    .A_Title {
+      width: 296px;
+      font-size: 22px;
+    }
   }
 }
 
@@ -495,7 +513,7 @@ footer {
 
 .S_SearchArt {
   display: flex;
-  width: 1377.75px;
+  width: 1380px;
   height: 258px;
   justify-content: center;
   align-items: flex-start;
@@ -504,12 +522,43 @@ footer {
   background-image: url('images/atoms/Q_MainBanner.png');
   margin: 0 auto;
   margin-top: 24px;
+
+  @media only screen and (min-width: 360px) and (max-width: 743px) {
+    display: flex;
+    width: 330px;
+    height: 260px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 0 auto;
+    margin-top: 28px;
+    background-image: url('images/atoms/Q_MainBanner_Mobile.svg');
+
+    .W_Hero {
+      width: 294px;
+      margin: 0 auto;
+      padding: 0;
+      gap: 8px;
+
+      p {
+        width: 294px;
+        margin: 0 auto;
+      }
+
+      .A_Title {
+        font-size: 36px;
+        width: 294px;
+        line-height: 38px;
+        margin: 0 auto;
+      }
+    }
+  }
 }
 
 .S_ArticleCollection {
   width: 1380px;
   margin: 0 auto;
-  margin-top: 32px;
+  margin-top: 54px;
 
   .W_ArticleCollection {
     display: flex;
@@ -541,7 +590,7 @@ footer {
 
 .S_SearchCard {
   display: flex;
-  width: 1377.75px;
+  width: 1380px;
   height: 258px;
   justify-content: center;
   align-items: flex-start;
@@ -550,6 +599,37 @@ footer {
   background-image: url('images/atoms/Q_MainBanner_Card.png');
   margin: 0 auto;
   margin-top: 24px;
+
+  @media only screen and (min-width: 360px) and (max-width: 743px) {
+    display: flex;
+    width: 330px;
+    height: 260px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 0 auto;
+    margin-top: 28px;
+    background-image: url('images/atoms/Q_MainBanner_Card_Mobile.svg');
+
+    .W_Hero {
+      width: 294px;
+      margin: 0 auto;
+      padding: 0;
+      gap: 8px;
+
+      p {
+        width: 294px;
+        margin: 0 auto;
+      }
+
+      .A_Title {
+        font-size: 36px;
+        width: 294px;
+        line-height: 38px;
+        margin: 0 auto;
+      }
+    }
+  }
 }
 
 .S_CardCollection {
@@ -574,31 +654,76 @@ footer {
       width: 1380px;
     }
   }
+}
 
-  p.watch {
-    margin: 0 auto;
-    margin-top: 36px;
+.S_TestCollection {
+  width: 1380px;
+  margin: 0 auto;
+  margin-top: 54px;
+
+  .W_TestCollection {
+    display: flex;
     width: 1380px;
-    text-align: center;
-    text-decoration: underline solid var(--blue);
-    text-underline-offset: 5px;
-    text-decoration-thickness: 2px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+    margin-top: 24px;
+
+    .W_TestLine {
+      display: flex;
+      width: 1380px;
+      align-items: flex-start;
+      gap: 27px;
+      width: 1380px;
+    }
   }
 }
 
-.S_TestsCollection {
+.S_SearchTest {
+  display: flex;
   width: 1380px;
+  height: 258px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 18px;
+  border-radius: 12px;
+  background-image: url('images/atoms/Q_MainBanner_Tests.png');
   margin: 0 auto;
-  margin-top: 80px;
+  margin-top: 24px;
 
-  p.watch {
+  p {
+    width: 380px;
+  }
+
+  @media only screen and (min-width: 360px) and (max-width: 743px) {
+    display: flex;
+    width: 330px;
+    height: 260px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
     margin: 0 auto;
-    margin-top: 36px;
-    width: 1380px;
-    text-align: center;
-    text-decoration: underline solid var(--blue);
-    text-underline-offset: 5px;
-    text-decoration-thickness: 2px;
+    margin-top: 28px;
+    background-image: url('images/atoms/Q_MainBanner_Card_Mobile.svg');
+
+    .W_Hero {
+      width: 294px;
+      margin: 0 auto;
+      padding: 0;
+      gap: 8px;
+
+      p {
+        width: 294px;
+        margin: 0 auto;
+      }
+
+      .A_Title {
+        font-size: 36px;
+        width: 294px;
+        line-height: 38px;
+        margin: 0 auto;
+      }
+    }
   }
 }
 
@@ -624,25 +749,30 @@ footer {
     width: 100vw;
     background-size: cover;
 
-    .A_Title {
-      width: 300px;
-      text-align: center;
-      margin: 0 auto;
-      margin-top: 160px;
-    }
+    .O_Cover {
+      width: 330px;
 
-    p {
-      font-size: 14px;
-      text-align: center;
-      margin: 0 auto;
-      width: 300px;
-      margin-top: -20px;
-    }
+      .A_Title {
+        width: 300px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 130px;
+      }
 
-    .A_ActionButton {
-      width: 190px;
-      margin: 0 auto;
-      margin-top: -20px;
+      p {
+        font-size: 14px;
+        text-align: center;
+        margin: 0 auto;
+        width: 300px;
+        margin-top: 20px;
+      }
+
+      .A_ActionButton {
+        width: 190px;
+        margin: 0 auto;
+        margin-top: 20px;
+        display: flex;
+      }
     }
   }
 
@@ -671,7 +801,7 @@ footer {
     }
   }
 
-  .S_TestsCollection {
+  .S_TestCollection {
     width: 330px;
     margin: 0 auto;
 
@@ -680,6 +810,26 @@ footer {
       margin-bottom: 28px;
       font-size: 28px;
       line-height: 28px;
+    }
+
+    .W_TestCollection {
+      width: 330px;
+      margin: 0 auto;
+
+      .W_TestLine {
+        display: flex;
+        width: 330px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+
+        .W_TestPreview {
+          gap: 18px;
+          p {
+            width: 290px;
+          }
+        }
+      }
     }
   }
 
