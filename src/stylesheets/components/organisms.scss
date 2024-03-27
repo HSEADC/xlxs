@@ -319,6 +319,15 @@
   align-items: flex-start;
   gap: 9px;
 
+  @media only screen and (min-width: 360px) and (max-width: 743px) {
+    .O_CardPreview {
+      width: 330px;
+      height: 206px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
   &.gist {
     background-image: url('images/atoms/Q_Card_Gist.png');
   }
