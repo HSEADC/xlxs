@@ -240,6 +240,8 @@ body.article {
 
   footer {
     margin-top: 140px;
+    display: flex;
+    margin: 0 auto;
   }
 }
 
@@ -908,9 +910,17 @@ footer {
     background-image: url('images/atoms/Q_Card_Krug.svg');
     background-position: center;
   }
+  &.krug_card_1 {
+    background-image: url('images/atoms/Q_Card_Krug_1.svg');
+    background-position: center;
+  }
 
   &.block_card {
     background-image: url('images/atoms/Q_Card_Block.svg');
+    background-position: center;
+  }
+  &.block_card_1 {
+    background-image: url('images/atoms/Q_Card_Block_1.svg');
     background-position: center;
   }
 
@@ -918,9 +928,17 @@ footer {
     background-image: url('images/atoms/Q_Card_Linear.svg');
     background-position: center;
   }
+  &.linear_card_1 {
+    background-image: url('images/atoms/Q_Card_Linear_1.svg');
+    background-position: center;
+  }
 
   &.usi_card {
     background-image: url('images/atoms/Q_Card_Usi.svg');
+    background-position: center;
+  }
+  &.usi_card_1 {
+    background-image: url('images/atoms/Q_Card_Usi_1.svg');
     background-position: center;
   }
 
@@ -928,9 +946,17 @@ footer {
     background-image: url('images/atoms/Q_Card_Svech.svg');
     background-position: center;
   }
+  &.svech_card_1 {
+    background-image: url('images/atoms/Q_Card_Svech_1.svg');
+    background-position: center;
+  }
 
   &.stolb_card {
     background-image: url('images/atoms/Q_Card_Stolb.svg');
+    background-position: center;
+  }
+  &.stolb_card_1 {
+    background-image: url('images/atoms/Q_Card_Stolb_1.svg');
     background-position: center;
   }
 
@@ -938,9 +964,17 @@ footer {
     background-image: url('images/atoms/Q_Card_Derevo.svg');
     background-position: center;
   }
+  &.derevo_card_1 {
+    background-image: url('images/atoms/Q_Card_Derevo_1.svg');
+    background-position: center;
+  }
 
   &.obl_card {
     background-image: url('images/atoms/Q_Card_Obl.svg');
+    background-position: center;
+  }
+  &.obl_card_1 {
+    background-image: url('images/atoms/Q_Card_Obl_1.svg');
     background-position: center;
   }
 
@@ -948,9 +982,17 @@ footer {
     background-image: url('images/atoms/Q_Card_Kolco.svg');
     background-position: center;
   }
+  &.kolco_card_1 {
+    background-image: url('images/atoms/Q_Card_Kolco_1.svg');
+    background-position: center;
+  }
 
   &.matrica_card {
     background-image: url('images/atoms/Q_Card_Matrica.svg');
+    background-position: center;
+  }
+  &.matrica_card_1 {
+    background-image: url('images/atoms/Q_Card_Matrica_1.svg');
     background-position: center;
   }
 
@@ -958,14 +1000,26 @@ footer {
     background-image: url('images/atoms/Q_Card_Demo.svg');
     background-position: center;
   }
+  &.demo_card_1 {
+    background-image: url('images/atoms/Q_Card_Demo_1.svg');
+    background-position: center;
+  }
 
   &.calend_card {
     background-image: url('images/atoms/Q_Card_Calend.svg');
     background-position: center;
   }
+  &.calend_card_1 {
+    background-image: url('images/atoms/Q_Card_Calend_1.svg');
+    background-position: center;
+  }
 
   &.pusyr_card {
     background-image: url('images/atoms/Q_Card_Pusyr.svg');
+    background-position: center;
+  }
+  &.pusyr_card {
+    background-image: url('images/atoms/Q_Card_Pusyr_1.svg');
     background-position: center;
   }
 

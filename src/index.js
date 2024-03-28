@@ -25,25 +25,4 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     })
   }
-
-  // JavaScript код для изменения картинки на другую и обратно по кнопке с анимацией CSS
-  const image = document.getElementById('image')
-  const changeButton = document.getElementById('changeButton')
-  let isImage1 = true
-
-  changeButton.addEventListener('click', function () {
-    if (isImage1) {
-      image.src = 'images/atoms/Q_Rass.png'
-    } else {
-      image.src = 'images/atoms/Q_Rass.png'
-    }
-
-    image.classList.add('hidden')
-
-    setTimeout(() => {
-      image.classList.remove('hidden')
-    }, 50) // Промежуток времени перед удалением класса hidden, чтобы анимация успела сработать
-
-    isImage1 = !isImage1
-  })
 })
