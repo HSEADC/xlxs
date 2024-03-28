@@ -299,6 +299,76 @@ module.exports = {
       chunks: ['index']
     }),
 
+    // Article 21
+    new HtmlWebpackPlugin({
+      template: './src/articles/kagi.html',
+      filename: './articles/kagi.html',
+      chunks: ['index']
+    }),
+
+    // Article 22
+    new HtmlWebpackPlugin({
+      template: './src/articles/duga.html',
+      filename: './articles/duga.html',
+      chunks: ['index']
+    }),
+
+    // Article 23
+    new HtmlWebpackPlugin({
+      template: './src/articles/radial.html',
+      filename: './articles/radial.html',
+      chunks: ['index']
+    }),
+
+    // Article 24
+    new HtmlWebpackPlugin({
+      template: './src/articles/teplo.html',
+      filename: './articles/teplo.html',
+      chunks: ['index']
+    }),
+
+    // Article 25
+    new HtmlWebpackPlugin({
+      template: './src/articles/rosa.html',
+      filename: './articles/rosa.html',
+      chunks: ['index']
+    }),
+
+    // Article 26
+    new HtmlWebpackPlugin({
+      template: './src/articles/marim.html',
+      filename: './articles/marim.html',
+      chunks: ['index']
+    }),
+
+    // Article 27
+    new HtmlWebpackPlugin({
+      template: './src/articles/bar.html',
+      filename: './articles/bar.html',
+      chunks: ['index']
+    }),
+
+    // Article 28
+    new HtmlWebpackPlugin({
+      template: './src/articles/spiral.html',
+      filename: './articles/spiral.html',
+      chunks: ['index']
+    }),
+
+    // Article 29
+    new HtmlWebpackPlugin({
+      template: './src/articles/podschet.html',
+      filename: './articles/podschet.html',
+      chunks: ['index']
+    }),
+
+    // Article 30
+    new HtmlWebpackPlugin({
+      template: './src/articles/krest.html',
+      filename: './articles/krest.html',
+      chunks: ['index']
+    }),
+
     // Card 1
     new HtmlWebpackPlugin({
       template: './src/cards/card1.html',

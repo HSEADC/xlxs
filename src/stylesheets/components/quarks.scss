@@ -305,6 +305,61 @@ a {
     margin-top: 0;
   }
 
+  // 21 art
+  &.kagi {
+    background-image: url('images/atoms/Q_Cover_Kagi.png');
+    height: 380px;
+  }
+  &.kagi1 {
+    background-image: url('images/atoms/Q_Shema_Kagi.png');
+    height: 389px;
+    margin-top: 0;
+  }
+
+  // 22 art
+  &.duga {
+    background-image: url('images/atoms/Q_Cover_Duga.png');
+    height: 380px;
+  }
+  &.duga1 {
+    background-image: url('images/atoms/Q_Shema_Duga.png');
+    height: 431px;
+    margin-top: 0;
+  }
+
+  // 23 art
+  &.radial {
+    background-image: url('images/atoms/Q_Cover_Radial.png');
+    height: 380px;
+  }
+  &.radial1 {
+    background-image: url('images/atoms/Q_Shema_Radial.png');
+    height: 389px;
+    margin-top: 0;
+  }
+
+  // 24 art
+  &.teplo {
+    background-image: url('images/atoms/Q_Cover_Teplo.png');
+    height: 380px;
+  }
+  &.teplo1 {
+    background-image: url('images/atoms/Q_Shema_Teplo.png');
+    height: 389px;
+    margin-top: 0;
+  }
+
+  // 25 art
+  &.rosa {
+    background-image: url('images/atoms/Q_Cover_Rosa.png');
+    height: 380px;
+  }
+  &.rosa1 {
+    background-image: url('images/atoms/Q_Shema_Rosa.png');
+    height: 389px;
+    margin-top: 0;
+  }
+
   // social medias icons
   &.tg {
     background-image: url('images/atoms/Q_TgIcon.svg');

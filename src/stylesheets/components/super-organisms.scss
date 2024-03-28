@@ -372,6 +372,14 @@ body.article {
           &.ksusha {
             background-image: url('images/atoms/Q_Ksusha.png');
           }
+
+          &.varya {
+            background-image: url('images/atoms/Q_Varya.png');
+          }
+
+          &.matv {
+            background-image: url('images/atoms/Q_Matv.png');
+          }
         }
 
         .W_PersonText {
@@ -526,7 +534,7 @@ footer {
   @media only screen and (min-width: 360px) and (max-width: 743px) {
     display: flex;
     width: 330px;
-    height: 260px;
+    height: 258px;
     flex-direction: column;
     align-items: flex-start;
     gap: 40px;
@@ -603,7 +611,7 @@ footer {
   @media only screen and (min-width: 360px) and (max-width: 743px) {
     display: flex;
     width: 330px;
-    height: 260px;
+    height: 258px;
     flex-direction: column;
     align-items: flex-start;
     gap: 40px;
@@ -698,7 +706,7 @@ footer {
   @media only screen and (min-width: 360px) and (max-width: 743px) {
     display: flex;
     width: 330px;
-    height: 260px;
+    height: 258px;
     flex-direction: column;
     align-items: flex-start;
     gap: 40px;
