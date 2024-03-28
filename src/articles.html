@@ -42,34 +42,22 @@
     </section>
 
     <div class="W_Tags">
-      <div class="M_TagArt">
-        <div class="Q_SmileTag tag1"></div>
-        <div class="A_Tag">Сравнение</div>
-      </div>
 
-      <div class="M_TagArt">
-        <div class="Q_SmileTag tag2"></div>
-        <div class="A_Tag">Взаимосвязи</div>
-      </div>
-
-      <div class="M_TagArt">
-        <div class="Q_SmileTag tag3"></div>
-        <div class="A_Tag">Пропорции</div>
-      </div>
-
-      <div class="M_TagArt">
-        <div class="Q_SmileTag tag4"></div>
-        <div class="A_Tag">Часть к целому</div>
-      </div>
+    <div id="tags">
+      <button class="A_tag_A" data-tag="all">ВСЕ</button>
+      <button class="A_tag_A blue" data-tag="srav">⚖️ CРАВНЕНИЯ</button>
+      <button class="A_tag_A orange" data-tag="vz">🖇 ВЗАИМОСВЯЗИ</button>
+      <button class="A_tag_A pink" data-tag="prop">🧮 ПРОПОРЦИИ</button>
+      <button class="A_tag_A blue" data-tag="part">🍰 ЧАСТЬ К ЦЕЛОМУ</button>
     </div>
+  </div>
+  
 
   <section class="S_ArticleCollection">
     <div class="A_Title">Статьи</div>
-    <div class="W_ArticleCollection">
+    <div class="W_ArticleCollection" id="items">
       <!-- линия 1 -->
-      <div class="W_ArticleLine">
-
-        <a href="articles/svech.html"><div class="O_ArticlePreview">
+        <a href="articles/svech.html"><div class="O_ArticlePreview item" data-tags="vz">
           <div class="Q_Image preview p_svech"></div>
           <div class="W_ArticlePreview">
             <div class="M_Tag orange">
@@ -82,7 +70,7 @@
         </div></a>
 
 
-        <a href="articles/block.html"><div class="O_ArticlePreview">
+        <a href="articles/block.html"><div class="O_ArticlePreview item" data-tags="srav">
           <div class="Q_Image preview p_block"></div>
           <div class="W_ArticlePreview">
             <div class="M_Tag blue">
@@ -94,7 +82,7 @@
         </div></a>
 
 
-        <a href="articles/linear.html"><div class="O_ArticlePreview">
+        <a href="articles/linear.html"><div class="O_ArticlePreview item" data-tags="vz">
           <div class="Q_Image preview p_linear"></div>
           <div class="W_ArticlePreview">
             <div class="M_Tag orange">
@@ -106,7 +94,7 @@
         </div></a>
 
 
-        <a href="articles/krug.html"><div class="O_ArticlePreview">
+        <a href="articles/krug.html"><div class="O_ArticlePreview item" data-tags="part">
           <div class="Q_Image preview p_krug"></div>
           <div class="W_ArticlePreview">
             <div class="M_Tag green">
@@ -117,12 +105,9 @@
           </div>
         </div></a>
 
-      </div>
-
       <!-- линия 2 -->
-      <div class="W_ArticleLine">
 
-        <a href="articles/stolb.html"><div class="O_ArticlePreview">
+        <a href="articles/stolb.html"><div class="O_ArticlePreview item" data-tags="srav">
           <div class="Q_Image preview p_stolb"></div>
           <div class="W_ArticlePreview">
             <div class="M_Tag blue">
@@ -134,7 +119,7 @@
         </div></a>
 
 
-        <a href="articles/derevo.html"><div class="O_ArticlePreview">
+        <a href="articles/derevo.html"><div class="O_ArticlePreview item" data-tags="prop">
           <div class="Q_Image preview p_derevo"></div>
           <div class="W_ArticlePreview">
             <div class="M_Tag pink">
@@ -146,7 +131,7 @@
         </div></a>
 
 
-        <a href="articles/obl.html"><div class="O_ArticlePreview">
+        <a href="articles/obl.html"><div class="O_ArticlePreview item" data-tags="vz">
           <div class="Q_Image preview p_obl"></div>
           <div class="W_ArticlePreview">
             <div class="M_Tag orange">
@@ -158,7 +143,7 @@
         </div></a>
 
 
-        <a href="articles/kolco.html"><div class="O_ArticlePreview">
+        <a href="articles/kolco.html"><div class="O_ArticlePreview item" data-tags="prop">
           <div class="Q_Image preview p_kolco"></div>
           <div class="W_ArticlePreview">
             <div class="M_Tag pink">
@@ -168,12 +153,10 @@
             <div class="A_ArticleSubtitle">Круговая диаграмма, или диаграмма-торт, только с вырезанной центральной</div>
           </div>
         </div></a>
-      </div>
 
       <!-- линия 3 -->
-      <div class="W_ArticleLine">
 
-        <a href="articles/matrica.html"><div class="O_ArticlePreview">
+        <a href="articles/matrica.html"><div class="O_ArticlePreview item" data-tags="prop">
           <div class="Q_Image preview p_matrica"></div>
           <div class="W_ArticlePreview">
             <div class="M_Tag pink">
@@ -185,7 +168,7 @@
         </div></a>
 
 
-        <a href="articles/demo.html"><div class="O_ArticlePreview">
+        <a href="articles/demo.html"><div class="O_ArticlePreview item" data-tags="part">
           <div class="Q_Image preview p_demo"></div>
           <div class="W_ArticlePreview">
             <div class="M_Tag green">
@@ -197,7 +180,7 @@
         </div></a>
 
 
-        <a href="articles/calend.html"><div class="O_ArticlePreview">
+        <a href="articles/calend.html"><div class="O_ArticlePreview item" data-tags="prop">
           <div class="Q_Image preview p_calend"></div>
           <div class="W_ArticlePreview">
             <div class="M_Tag pink">
@@ -209,7 +192,7 @@
         </div></a>
 
 
-        <a href="articles/usi.html"><div class="O_ArticlePreview">
+        <a href="articles/usi.html"><div class="O_ArticlePreview item" data-tags="srav">
           <div class="Q_Image preview p_usi"></div>
           <div class="W_ArticlePreview">
             <div class="M_Tag blue">
@@ -219,12 +202,11 @@
             <div class="A_ArticleSubtitle">Простой, любимый усатик, который всегда поддержит и поможет</div>
           </div>
         </div></a>
-      </div>
+
 
       <!-- линия 4 -->
-      <div class="W_ArticleLine">
 
-        <a href="articles/pusyr.html"><div class="O_ArticlePreview">
+        <a href="articles/pusyr.html"><div class="O_ArticlePreview item" data-tags="vz">
           <div class="Q_Image preview p_pusyr"></div>
           <div class="W_ArticlePreview">
             <div class="M_Tag orange">
@@ -236,7 +218,7 @@
         </div></a>
 
 
-        <a href="articles/plotn.html"><div class="O_ArticlePreview">
+        <a href="articles/plotn.html"><div class="O_ArticlePreview item" data-tags="srav"> 
           <div class="Q_Image preview p_plotn"></div>
           <div class="W_ArticlePreview">
             <div class="M_Tag blue">
@@ -248,7 +230,7 @@
         </div></a>
 
 
-        <a href="articles/hord.html"><div class="O_ArticlePreview">
+        <a href="articles/hord.html"><div class="O_ArticlePreview item" data-tags="prop">
           <div class="Q_Image preview p_hord"></div>
           <div class="W_ArticlePreview">
             <div class="M_Tag pink">
@@ -260,7 +242,7 @@
         </div></a>
 
 
-        <a href="articles/gant.html"><div class="O_ArticlePreview">
+        <a href="articles/gant.html"><div class="O_ArticlePreview item" data-tags="vz">
           <div class="Q_Image preview p_gant"></div>
           <div class="W_ArticlePreview">
             <div class="M_Tag orange">
@@ -270,12 +252,10 @@
             <div class="A_ArticleSubtitle">Тип диаграммы, который используется для сравнения значений на плоскости</div>
           </div>
         </div></a>
-      </div>
 
       <!-- линия 5 -->
-      <div class="W_ArticleLine">
 
-        <a href="articles/pogresh.html"><div class="O_ArticlePreview">
+        <a href="articles/pogresh.html"><div class="O_ArticlePreview item" data-tags="part">
           <div class="Q_Image preview p_pogresh"></div>
           <div class="W_ArticlePreview">
             <div class="M_Tag green">
@@ -287,7 +267,7 @@
         </div></a>
 
 
-        <a href="articles/venna.html"><div class="O_ArticlePreview">
+        <a href="articles/venna.html"><div class="O_ArticlePreview item" data-tags="part">
           <div class="Q_Image preview p_venna"></div>
           <div class="W_ArticlePreview">
             <div class="M_Tag green">
@@ -299,7 +279,7 @@
         </div></a>
 
 
-        <a href="articles/rass.html"><div class="O_ArticlePreview">
+        <a href="articles/rass.html"><div class="O_ArticlePreview item" data-tags="srav">
           <div class="Q_Image preview p_rass"></div>
           <div class="W_ArticlePreview">
             <div class="M_Tag blue">
@@ -311,7 +291,7 @@
         </div></a>
 
 
-        <a href="articles/diapaz.html"><div class="O_ArticlePreview">
+        <a href="articles/diapaz.html"><div class="O_ArticlePreview item" data-tags="srav">
           <div class="Q_Image preview p_diapaz"></div>
           <div class="W_ArticlePreview">
             <div class="M_Tag blue">
@@ -321,12 +301,10 @@
             <div class="A_ArticleSubtitle">Также известна как график рассеяния, точечный график, координатный график</div>
           </div>
         </div></a>
-      </div>
 
        <!-- линия 6 -->
-       <div class="W_ArticleLine">
 
-        <a href="articles/duga.html"><div class="O_ArticlePreview">
+        <a href="articles/duga.html"><div class="O_ArticlePreview item" data-tags="prop">
           <div class="Q_Image preview p_duga"></div>
           <div class="W_ArticlePreview">
             <div class="M_Tag pink">
@@ -338,7 +316,7 @@
         </div></a>
 
 
-        <a href="articles/teplo.html"><div class="O_ArticlePreview">
+        <a href="articles/teplo.html"><div class="O_ArticlePreview item"  data-tags="vz">
           <div class="Q_Image preview p_teplo"></div>
           <div class="W_ArticlePreview">
             <div class="M_Tag orange">
@@ -350,7 +328,7 @@
         </div></a>
 
 
-        <a href="articles/radial.html"><div class="O_ArticlePreview">
+        <a href="articles/radial.html"><div class="O_ArticlePreview item" data-tags="part">
           <div class="Q_Image preview p_radial"></div>
           <div class="W_ArticlePreview">
             <div class="M_Tag green">
@@ -363,7 +341,7 @@
         </div></a>
 
 
-        <a href="articles/kagi.html"><div class="O_ArticlePreview">
+        <a href="articles/kagi.html"><div class="O_ArticlePreview item" data-tags="part">
           <div class="Q_Image preview p_kagi"></div>
           <div class="W_ArticlePreview">
             <div class="M_Tag green">
@@ -373,12 +351,10 @@
             <div class="A_ArticleSubtitle">Используется для отображения уровней спроса и предложения конкретного</div>
           </div>
         </div></a>
-      </div>
 
       <!-- линия 7 -->
-      <div class="W_ArticleLine">
 
-        <a href="articles/bar.html"><div class="O_ArticlePreview">
+        <a href="articles/bar.html"><div class="O_ArticlePreview item" data-tags="part">
           <div class="Q_Image preview p_bar"></div>
           <div class="W_ArticlePreview">
             <div class="M_Tag green">
@@ -390,7 +366,7 @@
         </div></a>
 
 
-        <a href="articles/marim.html"><div class="O_ArticlePreview">
+        <a href="articles/marim.html"><div class="O_ArticlePreview item" data-tags="prop">
           <div class="Q_Image preview p_marim"></div>
           <div class="W_ArticlePreview">
             <div class="M_Tag pink">
@@ -402,7 +378,7 @@
         </div></a>
 
 
-        <a href="articles/spiral.html"><div class="O_ArticlePreview">
+        <a href="articles/spiral.html"><div class="O_ArticlePreview item" data-tags="vz">
           <div class="Q_Image preview p_spiral"></div>
           <div class="W_ArticlePreview">
             <div class="M_Tag orange">
@@ -414,7 +390,7 @@
         </div></a>
 
 
-        <a href="articles/krest.html"><div class="O_ArticlePreview">
+        <a href="articles/krest.html"><div class="O_ArticlePreview item" data-tags="part">
           <div class="Q_Image preview p_krest"></div>
           <div class="W_ArticlePreview">
             <div class="M_Tag green">
@@ -424,12 +400,10 @@
             <div class="A_ArticleSubtitle">Этот график используется для отображения корреляции спроса</div>
           </div>
         </div></a>
-      </div>
 
       <!-- линия 8 -->
-      <div class="W_ArticleLine">
 
-        <a href="articles/podschet.html"><div class="O_ArticlePreview">
+        <a href="articles/podschet.html"><div class="O_ArticlePreview item" data-tags="srav">
           <div class="Q_Image preview p_podschet"></div>
           <div class="W_ArticlePreview">
             <div class="M_Tag blue">
@@ -441,7 +415,7 @@
         </div></a>
 
 
-        <a href="articles/rosa.html"><div class="O_ArticlePreview">
+        <a href="articles/rosa.html"><div class="O_ArticlePreview item" data-tags="part">
           <div class="Q_Image preview p_rosa"></div>
           <div class="W_ArticlePreview">
             <div class="M_Tag green">
@@ -456,8 +430,6 @@
 
     </div>
   </section>
-
-
 
     <footer>
       <div class="W_Links">

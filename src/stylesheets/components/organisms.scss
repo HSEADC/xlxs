@@ -123,11 +123,6 @@
   border-radius: 0px 0px 17px 17px;
   background: #fff;
 
-  /* тень */
-  box-shadow: 0px 12.314px 16.419px 0px rgba(0, 0, 0, 0.04),
-    0px 4.105px 8.21px 0px rgba(0, 0, 0, 0.04),
-    0px 0px 1.026px 0px rgba(0, 0, 0, 0.04);
-
   .Q_Image {
     &.preview {
       width: 100%;
@@ -250,7 +245,7 @@
     align-items: flex-start;
     gap: 9px;
     border-radius: 0px 0px 17px 17px;
-    background: #fff;
+    background: #f2f2f7;
   }
 }
 
@@ -548,4 +543,19 @@
       width: 140px;
     }
   }
+}
+
+.image-container {
+  position: relative;
+  width: 300px;
+}
+
+#image {
+  width: 100%;
+  height: auto;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.hidden {
+  opacity: 0;
 }

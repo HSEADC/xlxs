@@ -571,28 +571,13 @@ footer {
   .W_ArticleCollection {
     display: flex;
     width: 1380px;
-    flex-direction: column;
     align-items: flex-start;
-    gap: 28px;
-    margin-top: 24px;
+    align-content: flex-start;
+    flex-wrap: wrap;
 
-    .W_ArticleLine {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      gap: 28px;
-      align-self: stretch;
+    .O_ArticlePreview {
+      border: 9px solid rgb(255, 255, 255);
     }
-  }
-
-  p.watch {
-    margin: 0 auto;
-    margin-top: 36px;
-    width: 1380px;
-    text-align: center;
-    text-decoration: underline solid var(--blue);
-    text-underline-offset: 5px;
-    text-decoration-thickness: 2px;
   }
 }
 
@@ -798,14 +783,6 @@ footer {
     .W_ArticleCollection {
       width: 330px;
       margin: 0 auto;
-      .W_ArticleLine {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 24px;
-        width: 330px;
-        margin: 0 auto;
-      }
     }
   }
 
@@ -886,6 +863,7 @@ footer {
   footer {
     height: auto;
     width: 330px;
+    display: flex;
     margin: 0 auto;
 
     hr.long {
@@ -905,9 +883,10 @@ footer {
         align-items: flex-start;
         gap: 20px;
         align-self: stretch;
+
         .O_Links {
           display: flex;
-          width: 388px;
+          width: 330px;
           flex-direction: column;
           align-items: flex-start;
           gap: 12px;
@@ -923,6 +902,7 @@ footer {
   flex-shrink: 0;
   margin: 0 auto;
   margin-top: 44px;
+  margin-bottom: 44px;
 
   &.krug_card {
     background-image: url('images/atoms/Q_Card_Krug.svg');
@@ -989,14 +969,131 @@ footer {
     background-position: center;
   }
 
-  .W_CardName {
-    position: relative;
-    width: 1000px;
-    top: 410px;
-    border-radius: 44px 44px 22px 22px;
-    background: var(--light, #f3f3f8);
+  @media only screen and (min-width: 360px) and (max-width: 743px) {
+    &.krug_card {
+      height: 559px;
+      width: 330px;
+      background-size: cover;
+      background-clip: ceil;
+      border-radius: 22px;
+    }
+
+    &.block_card {
+      height: 559px;
+      width: 330px;
+      background-size: cover;
+      background-clip: ceil;
+      border-radius: 22px;
+    }
+
+    &.linear_card {
+      height: 559px;
+      width: 330px;
+      background-size: cover;
+      background-clip: ceil;
+      border-radius: 22px;
+    }
+
+    &.usi_card {
+      height: 559px;
+      width: 330px;
+      background-size: cover;
+      background-clip: ceil;
+      border-radius: 22px;
+    }
+
+    &.svech_card {
+      height: 559px;
+      width: 330px;
+      background-size: cover;
+      background-clip: ceil;
+      border-radius: 22px;
+    }
+
+    &.stolb_card {
+      height: 559px;
+      width: 330px;
+      background-size: cover;
+      background-clip: ceil;
+      border-radius: 22px;
+    }
+
+    &.derevo_card {
+      height: 559px;
+      width: 330px;
+      background-size: cover;
+      background-clip: ceil;
+      border-radius: 22px;
+    }
+
+    &.obl_card {
+      height: 559px;
+      width: 330px;
+      background-size: cover;
+      background-clip: ceil;
+      border-radius: 22px;
+    }
+
+    &.kolco_card {
+      height: 559px;
+      width: 330px;
+      background-size: cover;
+      background-clip: ceil;
+      border-radius: 22px;
+    }
+
+    &.matrica_card {
+      height: 559px;
+      width: 330px;
+      background-size: cover;
+      background-clip: ceil;
+      border-radius: 22px;
+    }
+
+    &.demo_card {
+      height: 559px;
+      width: 330px;
+      background-size: cover;
+      background-clip: ceil;
+      border-radius: 22px;
+    }
+
+    &.calend_card {
+      height: 559px;
+      width: 330px;
+      background-size: cover;
+      background-clip: ceil;
+      border-radius: 22px;
+    }
+
+    &.pusyr_card {
+      height: 559px;
+      width: 330px;
+      background-size: cover;
+      background-clip: ceil;
+      border-radius: 22px;
+    }
   }
+}
+
+.W_CardName {
+  position: relative;
+  width: 1000px;
+  top: 410px;
+  border-radius: 44px 44px 22px 22px;
+  background: var(--light, #f3f3f8);
+
   .A_Title {
     width: 664px;
+  }
+
+  @media only screen and (min-width: 360px) and (max-width: 743px) {
+    width: 330px;
+    border-radius: 22px;
+    height: 160px;
+
+    .A_Title {
+      font-size: 24px;
+    }
   }
 }

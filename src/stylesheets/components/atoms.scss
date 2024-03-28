@@ -198,6 +198,16 @@ p {
   font-weight: 500;
   line-height: 22.5px; /* 142.857% */
 }
+.A_ActionButtonT:hover {
+  transition: 0.3s;
+  color: black;
+  background-color: white;
+}
+.A_ActionButtonT:active {
+  transition: 0.3s;
+  color: white;
+  background-color: var(--blue);
+}
 
 .A_Autors {
   color: var(--black, #000);
@@ -209,6 +219,68 @@ p {
   font-weight: 700;
   line-height: 37.5px; /* 138.889% */
   letter-spacing: -0.405px;
+}
+
+#tags {
+  display: flex;
+  width: 1380px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.A_tag_A {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 25px;
+  margin: 0 15px 15px 0;
+  outline: none;
+  line-height: 64px;
+  height: 64px;
+  font-size: 20px;
+  border: none;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+  cursor: pointer;
+  user-select: none;
+  appearance: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  transition: box-shadow 0.2s;
+  border-radius: 12px;
+
+  &.green {
+    background: rgba(1, 185, 174, 0.15);
+    color: var(--green, #01b9ae);
+  }
+
+  &.blue {
+    background: rgba(0, 122, 255, 0.15);
+    color: var(--blue, #007aff);
+  }
+
+  &.orange {
+    background: rgba(255, 119, 61, 0.15);
+    color: var(--orange, #ff773d);
+  }
+
+  &.pink {
+    background: rgba(255, 144, 233, 0.15);
+    color: var(--pink, var(--pinki, #ff90e9));
+  }
+}
+.A_tag_A:focus-visible {
+  border: 1px solid #4c51f9;
+  outline: none;
+}
+.A_tag_A:hover {
+  transition: all 0.2s;
+  box-shadow: 0 7px 14px rgb(65 132 144 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
+}
+.A_tag_A:active {
+  background-color: var(--blue);
 }
 
 .A_Info {
