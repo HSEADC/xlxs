@@ -160,7 +160,7 @@ p {
   background: var(--blue, #007aff);
   box-shadow: 0px 0px 16.65px -6px rgba(0, 122, 255, 0.5);
   color: #fff;
-
+  z-index: 100;
   font-family: SF Pro, Arial, Helvetica, sans-serif;
   font-size: 21px;
   font-style: normal;
@@ -176,6 +176,18 @@ p {
     justify-content: center;
     align-items: center;
     gap: 2.506px;
+  }
+
+  .A_ActionButton:hover {
+    color: black;
+    background-color: white;
+    transition: 0.3s;
+  }
+
+  .A_ActionButton:active {
+    color: var(--blue);
+    background-color: white;
+    transition: 0.3s;
   }
 }
 
