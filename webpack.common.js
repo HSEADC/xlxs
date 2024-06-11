@@ -134,6 +134,7 @@ module.exports = {
       filename: './tests.html',
       chunks: ['index'] // добавляем ко всем html, которые у нас были до это пары
     }),
+
     //Articles
     new HtmlWebpackPlugin({
       template: './src/articles.html',
@@ -158,6 +159,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/testss/test1-true.html',
       filename: './testss/test1-true.html',
+      chunks: ['index'] // добавляем ко всем html, которые у нас были до это пары
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/testss/test-usi.html',
+      filename: './testss/test-usi.html',
       chunks: ['index'] // добавляем ко всем html, которые у нас были до это пары
     }),
 
