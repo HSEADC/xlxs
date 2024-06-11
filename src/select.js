@@ -1,83 +1,83 @@
-import Cookies from 'js-cookie'
-import './select.css'
+// import Cookies from 'js-cookie'
+// import './select.css'
 
-const selectOptions = ['#веловс', '#цветы']
+// const selectOptions = ['#веловс', '#цветы']
 
-function initModal() {
-  const openModal = document.querySelector('.openModal')
-  const closeModal = document.querySelector('.closeModal')
-  const modal = document.querySelector('.modal')
+// function initModal() {
+//   const openModal = document.querySelector('.openModal')
+//   const closeModal = document.querySelector('.closeModal')
+//   const modal = document.querySelector('.modal')
 
-  openModal.addEventListener('click', () => {
-    modal.classList.add('visible')
-  })
+//   openModal.addEventListener('click', () => {
+//     modal.classList.add('visible')
+//   })
 
-  closeModal.addEventListener('click', () => {
-    modal.classList.remove('visible')
-  })
-}
+//   closeModal.addEventListener('click', () => {
+//     modal.classList.remove('visible')
+//   })
+// }
 
-function initSwitch() {
-  const checkbox = document.querySelector('input[type=checkbox]')
-  checkbox.addEventListener('change', () => {
-    if (checkbox.checked) {
-      Cookies.set('theme', 'dark')
-      console.log(Cookies.get('theme'))
-    } else {
-      Cookies.remove('theme')
-      console.log(Cookies.get('theme'))
-    }
-  })
-}
+// function initSwitch() {
+//   const checkbox = document.querySelector('input[type=checkbox]')
+//   checkbox.addEventListener('change', () => {
+//     if (checkbox.checked) {
+//       Cookies.set('theme', 'dark')
+//       console.log(Cookies.get('theme'))
+//     } else {
+//       Cookies.remove('theme')
+//       console.log(Cookies.get('theme'))
+//     }
+//   })
+// }
 
-function changeTheme() {
-  const body = document.querySelector('body')
+// function changeTheme() {
+//   const body = document.querySelector('body')
 
-  if (Cookies.get('theme') === 'dark') {
-    body.classList.add('dark')
-  } else {
-    body.classList.remove('dark')
-  }
-}
+//   if (Cookies.get('theme') === 'dark') {
+//     body.classList.add('dark')
+//   } else {
+//     body.classList.remove('dark')
+//   }
+// }
 
-function initSelect() {
-  const selectElement = document.querySelector('.O_Select')
-  const optionListItem = document.querySelector('C_SelectOptionList')
-  const selectInput = document.querySelector('.A_SelectInput')
-  const dropdownButton = document.querySelector('.A_SelectDropdownButton')
+// function initSelect() {
+//   const selectElement = document.querySelector('.O_Select')
+//   const optionListItem = document.querySelector('C_SelectOptionList')
+//   const selectInput = document.querySelector('.A_SelectInput')
+//   const dropdownButton = document.querySelector('.A_SelectDropdownButton')
 
-  selectOptions.forEach((option) => {
-    const listItem = document.createElement('div')
-    listItem.classList.add('A_SelectOptionListItem')
-    listItem.innerText = option
+//   selectOptions.forEach((option) => {
+//     const listItem = document.createElement('div')
+//     listItem.classList.add('A_SelectOptionListItem')
+//     listItem.innerText = option
 
-    listItem.addEventListener('click', () => {
-      const listItems = document.querySelector('A_SelectOptionListItem')
+//     listItem.addEventListener('click', () => {
+//       const listItems = document.querySelector('A_SelectOptionListItem')
 
-      for (let index = 0; index < listItems.length; index++) {
-        const element = listItems[index]
-        element.classList.remove('active')
-      }
-      element.classList.add('active')
+//       for (let index = 0; index < listItems.length; index++) {
+//         const element = listItems[index]
+//         element.classList.remove('active')
+//       }
+//       element.classList.add('active')
 
-      selectInput.value = option
-      selectElement.classList.remove('focus')
-    })
+//       selectInput.value = option
+//       selectElement.classList.remove('focus')
+//     })
 
-    optionListItem.appendChild(listItem)
-  })
+//     optionListItem.appendChild(listItem)
+//   })
 
-  selectElement.addEventListener('click', () => {
-    selectElement.classList.add('focus')
-  })
-  dropdownButton.addEventListener('click', () => {
-    selectElement.classList.toggle('focus')
-  })
-}
+//   selectElement.addEventListener('click', () => {
+//     selectElement.classList.add('focus')
+//   })
+//   dropdownButton.addEventListener('click', () => {
+//     selectElement.classList.toggle('focus')
+//   })
+// }
 
-document.addEventListener('DOMContentLoaded', () => {
-  changeTheme()
-  initModal()
-  initSwitch()
-  initSelect()
-})
+// document.addEventListener('DOMContentLoaded', () => {
+//   changeTheme()
+//   initModal()
+//   initSwitch()
+//   initSelect()
+// })

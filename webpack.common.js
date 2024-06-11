@@ -10,7 +10,8 @@ module.exports = {
   entry: {
     index: './src/index.js',
     theory: './src/theory.js',
-    select: './src/select.js'
+    select: './src/select.js',
+    test: './src/testss/test.js'
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -150,7 +151,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/testss/test1.html',
       filename: './testss/test1.html',
-      chunks: ['index'] // добавляем ко всем html, которые у нас были до это пары
+      chunks: ['test'] // добавляем ко всем html, которые у нас были до это пары
     }),
 
     new HtmlWebpackPlugin({
