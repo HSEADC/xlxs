@@ -395,3 +395,166 @@ p {
   line-height: 120%; /* 25.2px */
   letter-spacing: -0.315px;
 }
+
+.A_Question {
+  width: 494px;
+  flex-shrink: 0;
+  color: var(--black, #000);
+  font-family: 'SF Pro Display';
+  font-size: 37.5px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 37.5px */
+}
+
+.W_Answers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.C_Answers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.A_Answer {
+  display: flex;
+  width: 468.75px;
+  padding: 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 4.578px;
+  border-radius: 13.5px;
+  background: #fff;
+  color: var(--black, #000);
+  font-family: 'SF Pro Display';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 100% */
+}
+
+.A_Answer:hover {
+  background: #ff90e9;
+  color: #fff;
+}
+
+.W_BodyTest {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 80px;
+  width: 1031.25px;
+  padding: 45px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 36px;
+  border-radius: 22.5px;
+  background: var(--light, #f3f3f8);
+}
+
+.W_Header {
+  display: flex;
+  width: 945px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.W_Result {
+}
+
+.A_ResultHeader:nth-child(1) {
+  color: var(--black, #000);
+  font-family: 'SF Pro Display';
+  font-size: 37.5px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 37.5px; /* 100% */
+}
+
+.A_ResultHeader:nth-child(2) {
+  color: var(--black, #000);
+  font-family: 'SF Pro Display';
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  width: 860px;
+}
+
+.M_Result {
+  display: flex;
+  width: 1032px;
+  padding: 45px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 36px;
+  border-radius: 22.5px;
+  background: var(--light, #f3f3f8);
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.test a {
+  display: flex;
+  width: 1032px;
+  padding: 24.3px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 22.5px;
+  background: #007aff;
+  font-family: 'SF Pro Display';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 120% */
+  letter-spacing: -0.405px;
+  color: #fff;
+  margin: 0 auto;
+  margin-top: 16px;
+}
+
+.A_CardInfo {
+  color: var(--black, #000);
+
+  /* p | 21px */
+  font-family: 'SF Pro Display';
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 25.2px */
+  letter-spacing: -0.315px;
+  width: 536px;
+  position: relative;
+  top: 45px;
+  left: 45px;
+  height: 250px;
+}
+
+.A_Error {
+  color: var(--black, #000);
+  text-align: center;
+
+  /* h2 */
+  font-family: 'Druk Wide Cyr';
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px; /* 100% */
+  text-transform: uppercase;
+}
+
+.A_ErrorText {
+  color: var(--black, #000);
+  text-align: center;
+  /* h3 */
+  font-family: 'SF Pro Display';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 33.6px */
+  letter-spacing: -0.42px;
+}

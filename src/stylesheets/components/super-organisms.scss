@@ -1160,3 +1160,18 @@ footer {
   height: 564px;
   border-radius: 22px;
 }
+
+.S_Error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 736px;
+
+  .A_ActionButton {
+    width: 300px;
+  }
+}

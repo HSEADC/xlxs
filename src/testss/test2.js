@@ -1,17 +1,18 @@
-import imgHost from '../images/testss/true-1440.svg'
+import imgHost from '../images/testss/Q-Test-Res-1440.svg'
 const stage = {
-  question: 'Как называется этот тип диаграмм?',
+  question: 'Что визуализирует спиральный график?',
   answers: [
-    { text: 'Ящик с бородой', count: 0 },
-    { text: 'Бочка с чем-то', count: 0 },
-    { text: 'Ящик с усами', count: 1 },
-    { text: 'Коробка с барабаном', count: 0 }
+    { text: 'Взаимосвязи величин', count: 0 },
+    { text: 'Циклические паттерны', count: 1 },
+    { text: 'Расписание', count: 0 },
+    { text: 'Корреляции переменных', count: 0 }
   ]
 }
 
 const resultTable = {
-  preview: 'Всё верно!',
-  text: 'подробнее',
+  preview:
+    'Спиральный график идеально подходит если Вам необходимо визуализировать циклические паттерны. Например, данные за год по месяцам',
+  text: 'Все верно! Циклические паттерны',
   textArticle: 'прочти статью'
 }
 

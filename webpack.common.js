@@ -11,7 +11,8 @@ module.exports = {
     index: './src/index.js',
     theory: './src/theory.js',
     select: './src/select.js',
-    test: './src/testss/test.js',
+    test: './src/testss/test1.js',
+    test2: './src/testss/test2.js',
     block: './src/cards/block.js'
   },
   output: {
@@ -127,6 +128,27 @@ module.exports = {
       chunks: ['index'] // добавляем ко всем html, которые у нас были до это пары
     }),
 
+    // 404
+    new HtmlWebpackPlugin({
+      template: './src/404.html',
+      filename: './404.html',
+      chunks: ['index'] // добавляем ко всем html, которые у нас были до это пары
+    }),
+
+    // 500
+    new HtmlWebpackPlugin({
+      template: './src/500.html',
+      filename: './500.html',
+      chunks: ['index'] // добавляем ко всем html, которые у нас были до это пары
+    }),
+
+    // 505
+    new HtmlWebpackPlugin({
+      template: './src/505.html',
+      filename: './505.html',
+      chunks: ['index'] // добавляем ко всем html, которые у нас были до это пары
+    }),
+
     // Section
     //Tests
     new HtmlWebpackPlugin({
@@ -153,19 +175,19 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/testss/test1.html',
       filename: './testss/test1.html',
-      chunks: ['test'] // добавляем ко всем html, которые у нас были до это пары
+      chunks: ['test', 'index'] // добавляем ко всем html, которые у нас были до это пары
     }),
 
     new HtmlWebpackPlugin({
-      template: './src/testss/test1-true.html',
-      filename: './testss/test1-true.html',
-      chunks: ['index'] // добавляем ко всем html, которые у нас были до это пары
+      template: './src/testss/test2.html',
+      filename: './testss/test2.html',
+      chunks: ['test2', 'index'] // добавляем ко всем html, которые у нас были до это пары
     }),
 
     new HtmlWebpackPlugin({
       template: './src/testss/test-usi.html',
       filename: './testss/test-usi.html',
-      chunks: ['index'] // добавляем ко всем html, которые у нас были до это пары
+      chunks: ['test', 'index'] // добавляем ко всем html, которые у нас были до это пары
     }),
 
     // Article 1
@@ -378,172 +400,108 @@ module.exports = {
       chunks: ['index']
     }),
 
-    // Card 1
-    new HtmlWebpackPlugin({
-      template: './src/cards/card1-b.html',
-      filename: './cards/card1-b.html'
-    }),
-
     // Card Krug
     new HtmlWebpackPlugin({
       template: './src/cards/krug.html',
-      filename: './cards/krug.html'
+      filename: './cards/krug.html',
+      chunks: ['block', 'index']
     }),
-    // Card Krug
-    new HtmlWebpackPlugin({
-      template: './src/cards/krug1.html',
-      filename: './cards/krug1.html'
-    }),
+
     // Card Svech
     new HtmlWebpackPlugin({
       template: './src/cards/svech.html',
-      filename: './cards/svech.html'
+      filename: './cards/svech.html',
+      chunks: ['block', 'index']
     }),
-    // Card Svech
-    new HtmlWebpackPlugin({
-      template: './src/cards/svech1.html',
-      filename: './cards/svech1.html'
-    }),
+
     // Card Derevo
     new HtmlWebpackPlugin({
       template: './src/cards/derevo.html',
-      filename: './cards/derevo.html'
+      filename: './cards/derevo.html',
+      chunks: ['block', 'index']
     }),
-    // Card Derevo
-    new HtmlWebpackPlugin({
-      template: './src/cards/derevo1.html',
-      filename: './cards/derevo1.html'
-    }),
+
     // Card kolco
     new HtmlWebpackPlugin({
       template: './src/cards/kolco.html',
-      filename: './cards/kolco.html'
+      filename: './cards/kolco.html',
+      chunks: ['block', 'index']
     }),
-    // Card kolco
-    new HtmlWebpackPlugin({
-      template: './src/cards/kolco1.html',
-      filename: './cards/kolco1.html'
-    }),
+
     // Card demo
     new HtmlWebpackPlugin({
       template: './src/cards/demo.html',
-      filename: './cards/demo.html'
+      filename: './cards/demo.html',
+      chunks: ['block', 'index']
     }),
-    // Card demo
-    new HtmlWebpackPlugin({
-      template: './src/cards/demo1.html',
-      filename: './cards/demo1.html'
-    }),
+
     // Card Obl
     new HtmlWebpackPlugin({
       template: './src/cards/obl.html',
-      filename: './cards/obl.html'
+      filename: './cards/obl.html',
+      chunks: ['block', 'index']
     }),
-    // Card Obl
-    new HtmlWebpackPlugin({
-      template: './src/cards/obl1.html',
-      filename: './cards/obl1.html'
-    }),
+
     // Card Stolb
     new HtmlWebpackPlugin({
       template: './src/cards/stolb.html',
-      filename: './cards/stolb.html'
+      filename: './cards/stolb.html',
+      chunks: ['block', 'index']
     }),
-    // Card Stolb
-    new HtmlWebpackPlugin({
-      template: './src/cards/stolb1.html',
-      filename: './cards/stolb1.html'
-    }),
+
     // Card Usi
     new HtmlWebpackPlugin({
       template: './src/cards/usi.html',
-      filename: './cards/usi.html'
-    }),
-    // Card Usi
-    new HtmlWebpackPlugin({
-      template: './src/cards/usi1.html',
-      filename: './cards/usi1.html'
+      filename: './cards/usi.html',
+      chunks: ['block', 'index']
     }),
     // Card Linear
     new HtmlWebpackPlugin({
       template: './src/cards/linear.html',
-      filename: './cards/linear.html'
+      filename: './cards/linear.html',
+      chunks: ['block', 'index']
     }),
-    // Card Linear
-    new HtmlWebpackPlugin({
-      template: './src/cards/linear1.html',
-      filename: './cards/linear1.html'
-    }),
+
     // Card block
     new HtmlWebpackPlugin({
       template: './src/cards/block.html',
       filename: './cards/block.html',
       chunks: ['block', 'index']
     }),
-    // Card block
-    new HtmlWebpackPlugin({
-      template: './src/cards/block1.html',
-      filename: './cards/block1.html'
-    }),
+
     // Card matrica
     new HtmlWebpackPlugin({
       template: './src/cards/matrica.html',
-      filename: './cards/matrica.html'
+      filename: './cards/matrica.html',
+      chunks: ['block', 'index']
     }),
-    // Card matrica
-    new HtmlWebpackPlugin({
-      template: './src/cards/matrica1.html',
-      filename: './cards/matrica1.html'
-    }),
+
     // Card calend
     new HtmlWebpackPlugin({
       template: './src/cards/calend.html',
-      filename: './cards/calend.html'
+      filename: './cards/calend.html',
+      chunks: ['block', 'index']
     }),
-    // Card calend
-    new HtmlWebpackPlugin({
-      template: './src/cards/calend1.html',
-      filename: './cards/calend1.html'
-    }),
-    // Card usi
-    new HtmlWebpackPlugin({
-      template: './src/cards/usi.html',
-      filename: './cards/usi.html'
-    }),
-    // Card usi
-    new HtmlWebpackPlugin({
-      template: './src/cards/usi1.html',
-      filename: './cards/usi1.html'
-    }),
+
     // Card pusyr
     new HtmlWebpackPlugin({
       template: './src/cards/pusyr.html',
-      filename: './cards/pusyr.html'
+      filename: './cards/pusyr.html',
+      chunks: ['block', 'index']
     }),
-    // Card pusyr
-    new HtmlWebpackPlugin({
-      template: './src/cards/pusyr1.html',
-      filename: './cards/pusyr1.html'
-    }),
+
     // Card plotn
     new HtmlWebpackPlugin({
       template: './src/cards/plotn.html',
-      filename: './cards/plotn.html'
+      filename: './cards/plotn.html',
+      chunks: ['block', 'index']
     }),
-    // Card plotn
-    new HtmlWebpackPlugin({
-      template: './src/cards/plotn1.html',
-      filename: './cards/plotn1.html'
-    }),
+
     // Card hord
     new HtmlWebpackPlugin({
       template: './src/cards/hord.html',
-      filename: './cards/hord.html'
-    }),
-    // Card hord
-    new HtmlWebpackPlugin({
-      template: './src/cards/hord1.html',
-      filename: './cards/hord1.html'
+      filename: './cards/hord.html',
+      chunks: ['block', 'index']
     }),
 
     // Responsive
