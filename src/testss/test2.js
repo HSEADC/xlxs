@@ -98,7 +98,7 @@ function showResult() {
   section.prepend(results)
 
   const button = document.createElement('div')
-  button.innerHTML = `<a href='./'>Хочу пройти ещё тест</a>`
+  button.innerHTML = `<a href='../'>Хочу пройти ещё тест</a>`
 
   section.append(button)
 }
