@@ -1,4 +1,4 @@
-import imgHost from '../images/testss/Q-Test-Res-1440.svg'
+import imgHost from '../images/testss/Q-Test-Res-1.png'
 const stage = {
   question: 'Как называется этот тип диаграмм?',
   answers: [
@@ -11,9 +11,8 @@ const stage = {
 
 const resultTable = {
   preview:
-    'Кольцевая диаграмма — это один из видов финансового графика. Он показывает, как менялась цена актива за определённый временной промежуток!',
-  text: 'Да! Это кольцевая диаграмма',
-  textArticle: 'прочти статью'
+    'Диаграммы размаха («ящик с усами») (Box and Whisker Plot или Box Plot) – это удобный способ визуального представления групп числовых данных через квартили. Диаграммы размаха, как правило, используются в описательной статистике и позволяют быстро исследовать один или более наборов данных.',
+  text: 'Да! Это ящик с усами'
 }
 
 //функции
@@ -90,15 +89,11 @@ function showResult() {
   headerArticle.innerHTML = resultTable.preview
   article.prepend(headerArticle)
 
-  const imageArticle = document.createElement('div')
-  imageArticle.innerHTML = `<img src=${imgHost}>`
-  article.prepend(imageArticle)
-
   article.append(results)
   section.prepend(results)
 
   const button = document.createElement('div')
-  button.innerHTML = `<a href='http://localhost:8080'>Хочу пройти ещё тест</a>`
+  button.innerHTML = `<a href='../tests.html'>Хочу пройти ещё тест</a>`
 
   section.append(button)
 }

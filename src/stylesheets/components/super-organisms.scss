@@ -661,7 +661,6 @@ footer {
     width: 1380px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 28px;
     margin-top: 24px;
 
     .W_TestLine {
@@ -670,6 +669,7 @@ footer {
       align-items: flex-start;
       gap: 27px;
       width: 1380px;
+      margin-bottom: 28px;
     }
   }
 }

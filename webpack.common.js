@@ -13,6 +13,18 @@ module.exports = {
     select: './src/select.js',
     test: './src/testss/test1.js',
     test2: './src/testss/test2.js',
+    test3: './src/testss/test3.js',
+    test4: './src/testss/test4.js',
+    test5: './src/testss/test5.js',
+    test6: './src/testss/test6.js',
+    test7: './src/testss/test7.js',
+    test8: './src/testss/test8.js',
+    test9: './src/testss/test9.js',
+    test10: './src/testss/test10.js',
+    test11: './src/testss/test11.js',
+    test13: './src/testss/test13.js',
+    test14: './src/testss/test14.js',
+
     block: './src/cards/block.js'
   },
   output: {
@@ -183,6 +195,90 @@ module.exports = {
       filename: './testss/test2.html',
       chunks: ['test2', 'index'] // добавляем ко всем html, которые у нас были до это пары
     }),
+
+    new HtmlWebpackPlugin({
+      template: './src/testss/test3.html',
+      filename: './testss/test3.html',
+      chunks: ['test3', 'index'] // добавляем ко всем html, которые у нас были до это пары
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/testss/test4.html',
+      filename: './testss/test4.html',
+      chunks: ['test4', 'index'] // добавляем ко всем html, которые у нас были до это пары
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/testss/test5.html',
+      filename: './testss/test5.html',
+      chunks: ['test5', 'index'] // добавляем ко всем html, которые у нас были до это пары
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/testss/test6.html',
+      filename: './testss/test6.html',
+      chunks: ['test6', 'index'] // добавляем ко всем html, которые у нас были до это пары
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/testss/test7.html',
+      filename: './testss/test7.html',
+      chunks: ['test7', 'index'] // добавляем ко всем html, которые у нас были до это пары
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/testss/test8.html',
+      filename: './testss/test8.html',
+      chunks: ['test8', 'index'] // добавляем ко всем html, которые у нас были до это пары
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/testss/test9.html',
+      filename: './testss/test9.html',
+      chunks: ['test9', 'index'] // добавляем ко всем html, которые у нас были до это пары
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/testss/test10.html',
+      filename: './testss/test10.html',
+      chunks: ['test10', 'index'] // добавляем ко всем html, которые у нас были до это пары
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/testss/test11.html',
+      filename: './testss/test11.html',
+      chunks: ['test11', 'index'] // добавляем ко всем html, которые у нас были до это пары
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/testss/test12.html',
+      filename: './testss/test12.html',
+      chunks: ['test12', 'index'] // добавляем ко всем html, которые у нас были до это пары
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/testss/test13.html',
+      filename: './testss/test13.html',
+      chunks: ['test13', 'index'] // добавляем ко всем html, которые у нас были до это пары
+    }),
+
+    // new HtmlWebpackPlugin({
+    //   template: './src/testss/test14.html',
+    //   filename: './testss/test14.html',
+    //   chunks: ['test14', 'index'] // добавляем ко всем html, которые у нас были до это пары
+    // }),
+
+    // new HtmlWebpackPlugin({
+    //   template: './src/testss/test15.html',
+    //   filename: './testss/test15.html',
+    //   chunks: ['test15', 'index'] // добавляем ко всем html, которые у нас были до это пары
+    // }),
+
+    // new HtmlWebpackPlugin({
+    //   template: './src/testss/test16.html',
+    //   filename: './testss/test16.html',
+    //   chunks: ['test16', 'index'] // добавляем ко всем html, которые у нас были до это пары
+    // }),
 
     new HtmlWebpackPlugin({
       template: './src/testss/test-usi.html',

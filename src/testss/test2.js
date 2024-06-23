@@ -1,4 +1,4 @@
-import imgHost from '../images/testss/Q-Test-Res-1440.svg'
+import imgHost from '../images/testss/Q-Test-Res-2.png'
 const stage = {
   question: 'Что визуализирует спиральный график?',
   answers: [
@@ -11,7 +11,7 @@ const stage = {
 
 const resultTable = {
   preview:
-    'Спиральный график идеально подходит если Вам необходимо визуализировать циклические паттерны. Например, данные за год по месяцам',
+    'Спиральный график — это визуальное представление данных, где данные отображаются вдоль спирали, образующей столбики от центра к периферии. Этот тип графика широко используется для отображения временных или циклических данных, где изменения наблюдаются с течением времени или в зависимости от других переменных.',
   text: 'Все верно! Циклические паттерны',
   textArticle: 'прочти статью'
 }
@@ -98,7 +98,7 @@ function showResult() {
   section.prepend(results)
 
   const button = document.createElement('div')
-  button.innerHTML = `<a href='../'>Хочу пройти ещё тест</a>`
+  button.innerHTML = `<a href='../tests.html'>Хочу пройти ещё тест</a>`
 
   section.append(button)
 }
