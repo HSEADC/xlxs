@@ -405,6 +405,16 @@ p {
   font-style: normal;
   font-weight: 700;
   line-height: 100%; /* 37.5px */
+
+  @media only screen and (min-width: 744px) and (max-width: 1439px) {
+    font-size: 3.125vw;
+    width: 34.961vw;
+  }
+
+  @media only screen and (min-width: 360px) and (max-width: 743px) {
+    font-size: 24px;
+    width: 282px;
+  }
 }
 
 .W_Answers {
@@ -434,34 +444,23 @@ p {
   font-weight: 500;
   line-height: 24px; /* 100% */
   text-align: center;
+
+  @media only screen and (min-width: 744px) and (max-width: 1439px) {
+    font-size: 20px;
+    width: 35.645vw;
+  }
+  @media only screen and (min-width: 360px) and (max-width: 743px) {
+    font-size: 14px;
+    line-height: 15px;
+    width: 138px;
+    text-align: left;
+    padding: 16px 24px;
+  }
 }
 
 .A_Answer:hover {
   background: #ff90e9;
   color: #fff;
-}
-
-.W_BodyTest {
-  display: flex;
-  margin: 0 auto;
-  margin-top: 80px;
-  width: 1031.25px;
-  padding: 45px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 36px;
-  border-radius: 22.5px;
-  background: var(--light, #f3f3f8);
-}
-
-.W_Header {
-  display: flex;
-  width: 945px;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.W_Result {
 }
 
 .A_ResultHeader:nth-child(1) {
@@ -471,6 +470,11 @@ p {
   font-style: normal;
   font-weight: 700;
   line-height: 37.5px; /* 100% */
+
+  @media only screen and (min-width: 744px) and (max-width: 1439px) {
+    font-size: 3.125vw;
+    width: 71.875vw;
+  }
 }
 
 .A_ResultHeader:nth-child(2) {
@@ -483,6 +487,11 @@ p {
   margin-top: 24px;
   margin-bottom: 24px;
   width: 860px;
+
+  @media only screen and (min-width: 744px) and (max-width: 1439px) {
+    font-size: 1.758vw;
+    width: 71.875vw;
+  }
 }
 
 .M_Result {
@@ -495,7 +504,19 @@ p {
   border-radius: 22.5px;
   background: var(--light, #f3f3f8);
   margin: 0 auto;
-  margin-top: 80px;
+  margin-top: 60px;
+
+  @media only screen and (min-width: 744px) and (max-width: 1439px) {
+    width: 80.664vw;
+
+    img {
+      width: 71.875vw;
+      height: 24.609vw;
+      object-fit: cover;
+      background-position: center;
+      border-radius: 1.953vw;
+    }
+  }
 }
 
 .test a {
@@ -516,6 +537,10 @@ p {
   color: #fff;
   margin: 0 auto;
   margin-top: 16px;
+
+  @media only screen and (min-width: 744px) and (max-width: 1439px) {
+    width: 80.664vw;
+  }
 }
 
 .A_CardInfo {

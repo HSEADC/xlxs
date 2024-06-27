@@ -507,10 +507,12 @@ hr.long {
   height: 100%;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   width: 432px;
   height: 292px;
+  border-radius: 22px;
 
   .testg2 {
     background-image: url('images/testss/Q_Cover_Test_2.svg');
@@ -559,9 +561,27 @@ hr.long {
   .testg13 {
     background-image: url('images/testss/Q_Cover_Test_13.svg');
   }
+
+  @media only screen and (min-width: 744px) and (max-width: 1439px) {
+    width: 34.473vw;
+    height: 22.822vw;
+    object-fit: cover;
+    background-repeat: no-repeat;
+  }
+  @media only screen and (min-width: 360px) and (max-width: 743px) {
+    width: 282px;
+    height: 176px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    border-radius: 14px;
+  }
 }
 
 .Q_ErrorIcon404 {
   width: 716px;
   margin: 0 auto;
+}
+
+.A_Input:focus {
+  border: 3px solid #555;
 }
