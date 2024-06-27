@@ -9,7 +9,7 @@ const isMobile = window.innerWidth <= 744
 if (isMobile) {
   burgerMenu.classList.remove('hidden')
 
-  //нажимаем на бургер
+  //нажимаем на бургер - появляется секшн
   burgerMenu.addEventListener('click', () => {
     mobileMenu.classList.remove('hidden')
     mobileMenu.classList.add('show')
@@ -27,7 +27,7 @@ if (isMobile) {
     })
   })
 
-  //  Закрытие меню при клике на Q_Close
+  // закрываем меню при крестике
   closeButton.addEventListener('click', () => {
     mobileMenu.classList.add('hidden')
     burgerMenu.classList.remove('hidden')
@@ -40,9 +40,9 @@ if (isMobile) {
     })
   })
 } else {
-  //  Скрываем  Q_burgerMenu и M_mobileMenuPoint  на  desktop
+  // скрываем если не мобила
   burgerMenu.classList.add('hidden')
-  document.querySelectorAll('.M_mobileMenuPoint').forEach((point) => {
+  document.querySelectorAll('.M_Menu').forEach((point) => {
     point.classList.add('hidden')
   })
 }
