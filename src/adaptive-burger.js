@@ -21,7 +21,7 @@ if (isMobile) {
     closeButton.classList.remove('hidden')
     closeButton.classList.add('show')
 
-    document.querySelectorAll('.M_mobileMenuPoint').forEach((point) => {
+    document.querySelectorAll('.M_Menu').forEach((point) => {
       point.classList.remove('hidden')
       point.classList.add('show')
     })
@@ -35,12 +35,12 @@ if (isMobile) {
     closeButton.classList.add('hidden')
     bgg.classList.add('hidden')
     bgg.classList.remove('show')
-    document.querySelectorAll('.M_mobileMenuPoint').forEach((point) => {
+    document.querySelectorAll('.M_Menu').forEach((point) => {
       point.classList.add('hidden')
     })
   })
 } else {
-  // скрываем если не мобила
+  // скрываем если
   burgerMenu.classList.add('hidden')
   document.querySelectorAll('.M_Menu').forEach((point) => {
     point.classList.add('hidden')

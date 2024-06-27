@@ -1,8 +1,5 @@
 import './index.css'
 
-// console.log('Hello!')
-// console.log('Hello, world!')
-
 const menuButton = document.querySelector('.Q_NavBarBurger')
 const closeButton = document.querySelector('.Q_Close')
 const menu = document.querySelector('.M_Menu')
@@ -39,29 +36,3 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   }
 })
-
-// function menuInit() {
-//   menuContent.style.paddingLeft = +marginleft + 'px'
-//   closeButton.style.right = +marginleft + 'px'
-//   menuButton.addEventListener('click', menuOpen)
-//   closeButton.addEventListener('click', menuClose)
-// }
-
-// function menuOpen() {
-//   menu.style.right = '-' + marginleft + 'px'
-//   document.body.style.overflow = 'hidden'
-// }
-
-// function menuClose() {
-//   menu.style.right = '-120vw'
-//   document.body.style.overflow = 'scroll'
-// }
-
-// document.addEventListener('DOMContentLoaded', () => {
-//   marginInit()
-
-//   if (mediaphone.matches) {
-//     menuInit()
-//   }
-
-// })
