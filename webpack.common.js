@@ -11,6 +11,7 @@ module.exports = {
     index: './src/index.js',
     theory: './src/theory.js',
     select: './src/select.js',
+    //тестики
     test: './src/testss/test1.js',
     test2: './src/testss/test2.js',
     test3: './src/testss/test3.js',
@@ -24,8 +25,9 @@ module.exports = {
     test11: './src/testss/test11.js',
     test13: './src/testss/test13.js',
     test14: './src/testss/test14.js',
-
-    block: './src/cards/block.js'
+    // модуль переворота карточек
+    block: './src/cards/block.js',
+    burger: './src/adaptive-burger.js'
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -123,7 +125,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: './index.html',
-      chunks: ['index'] // добавляем ко всем html, которые у нас были до это пары
+      chunks: ['index', 'burger'] // добавляем ко всем html, которые у нас были до это пары
     }),
 
     // Main
@@ -137,6 +139,13 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/style.html',
       filename: './style.html',
+      chunks: ['index'] // добавляем ко всем html, которые у нас были до это пары
+    }),
+
+    // Search-Page!!
+    new HtmlWebpackPlugin({
+      template: './src/search.html',
+      filename: './search.html',
       chunks: ['index'] // добавляем ко всем html, которые у нас были до это пары
     }),
 

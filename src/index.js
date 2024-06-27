@@ -3,6 +3,19 @@ import './index.css'
 // console.log('Hello!')
 // console.log('Hello, world!')
 
+const menuButton = document.querySelector('.Q_NavBarBurger')
+const closeButton = document.querySelector('.Q_Close')
+const menu = document.querySelector('.M_Menu')
+const menuContent = document.querySelector('.M_Menu > .C_NavBarCategories')
+const marginget = document.querySelector('.O_Footer')
+const marginleft = parseInt(
+  window.getComputedStyle(marginget).getPropertyValue('margin-left')
+)
+
+const mediaphone = window.matchMedia(
+  '(min-width: 360px) and (max-width: 767px)'
+)
+
 // JavaScript код для фильтрации элементов по тегам
 document.addEventListener('DOMContentLoaded', function () {
   const tags = document.querySelectorAll('#tags button')
@@ -26,3 +39,29 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   }
 })
+
+// function menuInit() {
+//   menuContent.style.paddingLeft = +marginleft + 'px'
+//   closeButton.style.right = +marginleft + 'px'
+//   menuButton.addEventListener('click', menuOpen)
+//   closeButton.addEventListener('click', menuClose)
+// }
+
+// function menuOpen() {
+//   menu.style.right = '-' + marginleft + 'px'
+//   document.body.style.overflow = 'hidden'
+// }
+
+// function menuClose() {
+//   menu.style.right = '-120vw'
+//   document.body.style.overflow = 'scroll'
+// }
+
+// document.addEventListener('DOMContentLoaded', () => {
+//   marginInit()
+
+//   if (mediaphone.matches) {
+//     menuInit()
+//   }
+
+// })
