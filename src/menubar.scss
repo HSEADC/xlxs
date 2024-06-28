@@ -109,6 +109,10 @@
       display: flex;
       width: 84.167vw;
 
+      @media only screen and (min-width: 1441px) and (max-width: 30000px) {
+        width: 1212px;
+      }
+
       .C_NavBarCategories {
         display: flex;
         align-items: center;
