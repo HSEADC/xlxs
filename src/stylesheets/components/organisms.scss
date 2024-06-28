@@ -48,13 +48,23 @@
   border-radius: 0px 0px 17px 17px;
   background: #fff;
 
+  @media only screen and (min-width: 744px) and (max-width: 1439px) {
+    width: 30.078vw;
+  }
+
   .Q_Image {
     &.preview {
       width: 100%;
       height: 100%;
       width: 324px;
       height: 168px;
+      background-size: cover;
+      @media only screen and (min-width: 744px) and (max-width: 1439px) {
+        width: 30.078vw;
+        border-radius: 12px;
+      }
     }
+
     &.p_stolb {
       background-image: url('images/atoms/Q_Stolb.png');
     }
@@ -160,6 +170,12 @@
     &.p_krest {
       background-image: url('images/atoms/Q_Krest.png');
     }
+
+    @media only screen and (min-width: 744px) and (max-width: 1439px) {
+      width: 30.078vw;
+      background-position: center;
+      background-size: cover;
+    }
   }
 
   .W_ArticlePreview {
@@ -171,6 +187,11 @@
     gap: 9px;
     border-radius: 0px 0px 17px 17px;
     background: #f2f2f7;
+
+    @media only screen and (min-width: 744px) and (max-width: 1439px) {
+      width: 30.078vw;
+      margin-top: -10px;
+    }
   }
 }
 
@@ -215,6 +236,12 @@
   margin: 0 auto;
   margin-top: 32px;
   width: 1380px;
+
+  @media only screen and (min-width: 744px) and (max-width: 1439px) {
+    display: flex;
+    width: 95.703vw;
+    margin: 0 auto;
+  }
 
   @media only screen and (min-width: 360px) and (max-width: 743px) {
     display: flex;
@@ -432,7 +459,7 @@
   height: 100%;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   width: 676px;
   height: 266px;

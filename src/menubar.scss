@@ -4,6 +4,9 @@
   position: relative;
   margin: 0 auto;
   z-index: 10;
+  @media only screen and (min-width: 744px) and (max-width: 1439px) {
+    width: 95.703vw;
+  }
 }
 
 .O_NavBar {
@@ -21,6 +24,10 @@
   column-gap: 20px;
   margin: 0 auto;
 
+  @media only screen and (min-width: 744px) and (max-width: 1439px) {
+    width: 95.703vw;
+  }
+
   .W_NavBar {
     gap: 48px;
     width: 100%;
@@ -32,6 +39,10 @@
 
     @media only screen and (min-width: 360px) and (max-width: 743px) {
       gap: 200px;
+    }
+
+    @media only screen and (min-width: 744px) and (max-width: 1439px) {
+      width: 91vw;
     }
 
     .O_SearchBar {

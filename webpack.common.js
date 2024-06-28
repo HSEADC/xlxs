@@ -2,6 +2,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin')
+// const CopyPlugin = require('copy-webpack-plugin')
+// const SitemapPlugin = require('sitemap-webpack-plugin').default
 
 const webpack = require('webpack')
 const path = require('path')
@@ -27,7 +29,10 @@ module.exports = {
     test14: './src/testss/test14.js',
     // модуль переворота карточек
     block: './src/cards/block.js',
-    burger: './src/adaptive-burger.js'
+    burger: './src/adaptive-burger.js',
+    search_vanilla: './src/search-vanilla.js'
+    // menubar: './src/menubar.jsx',
+    // search: './src/search.jsx'
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -102,6 +107,21 @@ module.exports = {
   },
 
   plugins: [
+    // new SitemapPlugin({ base: 'https://xlxs-adc.ac', paths }),
+
+    // new CopyPlugin({
+    //   patterns: [
+    //     {
+    //       from: path.resolve(__dirname, 'src/images/'),
+    //       to: path.resolve(__dirname, 'dev_build/images/')
+    //     },
+    //     {
+    //       from: path.resolve(__dirname, 'src/images/'),
+    //       to: path.resolve(__dirname, 'docs/images/')
+    //     }
+    //   ]
+    // }),
+
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css',
       chunkFilename: '[id].[contenthash].css'
@@ -122,6 +142,25 @@ module.exports = {
     }),
 
     // Index
+    // new HtmlWebpackPlugin({
+    //   template: './src/index.ejs',
+    //   filename: './index.html',
+    //   chunks: ['index', 'menubar']
+    // }),
+
+    new HtmlWebpackPlugin({
+      template: './src/search-vanilla.html',
+      filename: './search-vanilla.html',
+      chunks: ['search_vanilla', 'menubar']
+    }),
+    // searchPage
+    new HtmlWebpackPlugin({
+      template: './src/search.html',
+      filename: './search.html',
+      chunks: ['search', 'menubar']
+    }),
+
+    // Index
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: './index.html',
@@ -139,13 +178,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/style.html',
       filename: './style.html',
-      chunks: ['index'] // добавляем ко всем html, которые у нас были до это пары
-    }),
-
-    // Search-Page!!
-    new HtmlWebpackPlugin({
-      template: './src/search.html',
-      filename: './search.html',
       chunks: ['index'] // добавляем ко всем html, которые у нас были до это пары
     }),
 

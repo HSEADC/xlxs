@@ -437,6 +437,10 @@ footer {
   align-items: flex-start;
   flex-shrink: 0;
 
+  @media only screen and (min-width: 744px) and (max-width: 1439px) {
+    width: 95.703vw;
+  }
+
   .W_Links {
     display: flex;
     flex-direction: column;
@@ -480,6 +484,10 @@ footer {
           align-self: stretch;
           width: 324px;
 
+          @media only screen and (min-width: 744px) and (max-width: 1439px) {
+            padding: 0;
+          }
+
           .W_TextWrapper {
             display: flex;
             flex-direction: column;
@@ -487,6 +495,10 @@ footer {
             align-items: flex-start;
             gap: 4.501px;
             flex: 1 0 0;
+
+            @media only screen and (min-width: 744px) and (max-width: 1439px) {
+              gap: 0;
+            }
 
             p {
               color: var(--light-text-primary-text-color-primary, #0f0f0f);
@@ -524,6 +536,37 @@ footer {
   background-image: url('images/atoms/Q_MainBanner.png');
   margin: 0 auto;
   margin-top: 24px;
+
+  @media only screen and (min-width: 744px) and (max-width: 1439px) {
+    display: flex;
+    width: 95.703vw;
+    height: 258px;
+    flex-direction: column;
+    background-position: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 0 auto;
+    margin-top: 28px;
+
+    .W_Hero {
+      width: 43.945vw;
+      margin: 0 auto;
+      padding: 0;
+      gap: 8px;
+
+      p {
+        width: 43.945vw;
+        margin: 0 auto;
+      }
+
+      .A_Title {
+        font-size: 36px;
+        width: 43.945vw;
+        line-height: 38px;
+        margin: 0 auto;
+      }
+    }
+  }
 
   @media only screen and (min-width: 360px) and (max-width: 743px) {
     display: flex;
@@ -571,6 +614,29 @@ footer {
 
     .O_ArticlePreview {
       border: 9px solid rgb(255, 255, 255);
+
+      @media only screen and (min-width: 744px) and (max-width: 1439px) {
+        border: 0px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 744px) and (max-width: 1439px) {
+    width: 95.703vw;
+
+    .W_ArticleCollection {
+      width: 95.703vw;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      align-content: flex-start;
+      gap: 24px;
+      align-self: stretch;
+      flex-wrap: wrap;
+    }
+    .O_ArticlePreview {
+      width: 30.078vw;
+      background-size: cover;
     }
   }
 }
@@ -586,6 +652,37 @@ footer {
   background-image: url('images/atoms/Q_MainBanner_Card.png');
   margin: 0 auto;
   margin-top: 24px;
+
+  @media only screen and (min-width: 744px) and (max-width: 1439px) {
+    display: flex;
+    width: 95.703vw;
+    height: 258px;
+    flex-direction: column;
+    background-position: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 0 auto;
+    margin-top: 28px;
+
+    .W_Hero {
+      width: 43.945vw;
+      margin: 0 auto;
+      padding: 0;
+      gap: 8px;
+
+      p {
+        width: 43.945vw;
+        margin: 0 auto;
+      }
+
+      .A_Title {
+        font-size: 36px;
+        width: 43.945vw;
+        line-height: 38px;
+        margin: 0 auto;
+      }
+    }
+  }
 
   @media only screen and (min-width: 360px) and (max-width: 743px) {
     display: flex;
@@ -639,6 +736,30 @@ footer {
       gap: 8px;
       align-self: stretch;
       width: 1380px;
+
+      @media only screen and (min-width: 744px) and (max-width: 1439px) {
+        width: 95.703vw;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 744px) and (max-width: 1439px) {
+    width: 95.703vw;
+
+    .W_CardCollection {
+      width: 95.703vw;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      align-content: flex-start;
+      gap: 24px;
+      align-self: stretch;
+      flex-wrap: wrap;
+    }
+    .O_CardPreview {
+      width: 23.047vw;
+      height: 21.094vw;
+      background-size: cover;
     }
   }
 }
@@ -659,9 +780,39 @@ footer {
       display: flex;
       width: 1380px;
       align-items: flex-start;
-      gap: 27px;
       width: 1380px;
-      margin-bottom: 28px;
+      align-self: stretch;
+    }
+  }
+
+  @media only screen and (min-width: 744px) and (max-width: 1439px) {
+    width: 95.703vw;
+
+    .W_TestLine {
+      width: 95.703vw;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      align-self: stretch;
+    }
+
+    .W_TestCollection {
+      width: 95.703vw;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      align-content: flex-start;
+      align-self: stretch;
+      flex-wrap: wrap;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+      align-self: stretch;
+    }
+    .O_TestPreview {
+      width: 47.266vw;
+      background-size: cover;
     }
   }
 }
@@ -680,6 +831,37 @@ footer {
 
   p {
     width: 380px;
+  }
+
+  @media only screen and (min-width: 744px) and (max-width: 1439px) {
+    display: flex;
+    width: 95.703vw;
+    height: 258px;
+    flex-direction: column;
+    background-position: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 0 auto;
+    margin-top: 28px;
+
+    .W_Hero {
+      width: 43.945vw;
+      margin: 0 auto;
+      padding: 0;
+      gap: 8px;
+
+      p {
+        width: 43.945vw;
+        margin: 0 auto;
+      }
+
+      .A_Title {
+        font-size: 36px;
+        width: 43.945vw;
+        line-height: 38px;
+        margin: 0 auto;
+      }
+    }
   }
 
   @media only screen and (min-width: 360px) and (max-width: 743px) {
@@ -802,6 +984,7 @@ footer {
         flex-direction: column;
         align-items: flex-start;
         gap: 8px;
+        margin-bottom: 8px;
 
         .W_TestPreview {
           gap: 18px;
