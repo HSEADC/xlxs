@@ -654,6 +654,7 @@ footer {
     align-items: flex-start;
     align-content: flex-start;
     flex-wrap: wrap;
+    margin-top: 24px;
 
     .O_ArticlePreview {
       border: 9px solid rgb(255, 255, 255);
@@ -675,6 +676,7 @@ footer {
       gap: 24px;
       align-self: stretch;
       flex-wrap: wrap;
+      margin-top: 24px;
     }
     .O_ArticlePreview {
       width: 30.078vw;
@@ -771,6 +773,7 @@ footer {
     gap: 6px;
     align-self: stretch;
     flex-wrap: wrap;
+    margin-top: 24px;
   }
 
   @media only screen and (min-width: 744px) and (max-width: 1439px) {
@@ -784,6 +787,7 @@ footer {
       gap: 8px;
       align-self: stretch;
       flex-wrap: wrap;
+      margin-top: 24px;
     }
     .O_CardPreview {
       width: 23.047vw;

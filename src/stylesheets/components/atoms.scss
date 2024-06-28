@@ -526,6 +526,12 @@ p {
     font-size: 3.125vw;
     width: 71.875vw;
   }
+
+  @media only screen and (min-width: 360px) and (max-width: 743px) {
+    font-size: 24px;
+    line-height: 24px;
+    width: 282px;
+  }
 }
 
 .A_ResultHeader:nth-child(2) {
@@ -542,6 +548,13 @@ p {
   @media only screen and (min-width: 744px) and (max-width: 1439px) {
     font-size: 1.758vw;
     width: 71.875vw;
+  }
+
+  @media only screen and (min-width: 360px) and (max-width: 743px) {
+    font-size: 15px;
+    line-height: 120%;
+    width: 282px;
+    margin-bottom: 12px;
   }
 }
 
@@ -568,6 +581,22 @@ p {
       border-radius: 1.953vw;
     }
   }
+
+  @media only screen and (min-width: 360px) and (max-width: 743px) {
+    width: 330px;
+    border-radius: 22.5px;
+    height: 80vh;
+    gap: 36px;
+    padding: 24px;
+
+    img {
+      width: 282px;
+      height: 232px;
+      object-fit: cover;
+      background-position: center;
+      border-radius: 30px;
+    }
+  }
 }
 
 .test a {
@@ -591,6 +620,13 @@ p {
 
   @media only screen and (min-width: 744px) and (max-width: 1439px) {
     width: 80.664vw;
+  }
+
+  @media only screen and (min-width: 360px) and (max-width: 743px) {
+    width: 330px;
+    font-size: 18px;
+    height: 18px;
+    border-radius: 14px;
   }
 }
 
