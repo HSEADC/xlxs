@@ -32,6 +32,23 @@ body.article {
     width: 1380px;
     margin: 0 auto;
     gap: 34px;
+
+    @media only screen and (min-width: 744px) and (max-width: 1439px) {
+      width: 95.703vw;
+
+      p {
+        font-size: 18px;
+      }
+
+      .A_ActionButton {
+        font-size: 18px;
+        width: 268px;
+      }
+
+      .A_Title {
+        line-height: 37.5px; /* 100% */
+      }
+    }
   }
 
   .A_Title {
@@ -68,6 +85,10 @@ body.article {
       font-size: 22px;
     }
   }
+}
+
+.Q_Image {
+  background-position: center;
 }
 
 .S_Now {
@@ -241,10 +262,16 @@ body.article {
   width: 1380px;
   margin: auto;
 
+  @media only screen and (min-width: 744px) and (max-width: 1439px) {
+    width: 95.703vw;
+  }
+
   .Q_Image {
     margin: auto;
     display: flex;
     margin-top: 24px;
+    border-radius: 45px;
+    background-size: cover;
   }
 
   .S_ArticleBody {
@@ -255,6 +282,10 @@ body.article {
     gap: 24px;
     margin: 0 auto;
     margin-top: 44px;
+
+    @media only screen and (min-width: 744px) and (max-width: 1024px) {
+      width: 91.935vw;
+    }
 
     .A_Title {
     }
@@ -307,6 +338,10 @@ body.article {
     border-radius: 24px;
     background: #f2f2f7;
 
+    @media only screen and (min-width: 744px) and (max-width: 1024px) {
+      width: 91.935vw;
+    }
+
     @media only screen and (min-width: 360px) and (max-width: 743px) {
       display: flex;
       padding: 27px 39px;
@@ -336,6 +371,10 @@ body.article {
   gap: 24px;
   margin: 0 auto;
   margin-top: 44px;
+
+  @media only screen and (min-width: 744px) and (max-width: 1024px) {
+    width: 91.935vw;
+  }
 
   @media only screen and (min-width: 360px) and (max-width: 743px) {
     width: 330px;
@@ -402,6 +441,10 @@ body.article {
   margin: 0 auto;
   margin-top: 96px;
   gap: 40px;
+
+  @media only screen and (min-width: 744px) and (max-width: 1024px) {
+    width: 91.935vw;
+  }
 
   @media only screen and (min-width: 360px) and (max-width: 743px) {
     width: 330px;
@@ -627,7 +670,6 @@ footer {
     .W_ArticleCollection {
       width: 95.703vw;
       display: flex;
-      justify-content: center;
       align-items: flex-start;
       align-content: flex-start;
       gap: 24px;
@@ -722,25 +764,13 @@ footer {
   margin-top: 54px;
 
   .W_CardCollection {
+    width: 1382px;
     display: flex;
-    width: 1380px;
-    flex-direction: column;
     align-items: flex-start;
-    gap: 28px;
-    margin-top: 24px;
-
-    .W_CardLine {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      gap: 8px;
-      align-self: stretch;
-      width: 1380px;
-
-      @media only screen and (min-width: 744px) and (max-width: 1439px) {
-        width: 95.703vw;
-      }
-    }
+    align-content: flex-start;
+    gap: 6px;
+    align-self: stretch;
+    flex-wrap: wrap;
   }
 
   @media only screen and (min-width: 744px) and (max-width: 1439px) {
@@ -749,10 +779,9 @@ footer {
     .W_CardCollection {
       width: 95.703vw;
       display: flex;
-      justify-content: center;
       align-items: flex-start;
       align-content: flex-start;
-      gap: 24px;
+      gap: 8px;
       align-self: stretch;
       flex-wrap: wrap;
     }
@@ -760,6 +789,10 @@ footer {
       width: 23.047vw;
       height: 21.094vw;
       background-size: cover;
+
+      p {
+        font-size: 16px;
+      }
     }
   }
 }
@@ -772,6 +805,7 @@ footer {
   .W_TestCollection {
     display: flex;
     width: 1380px;
+    gap: 12px;
     flex-direction: column;
     align-items: flex-start;
     margin-top: 24px;
@@ -782,6 +816,7 @@ footer {
       align-items: flex-start;
       width: 1380px;
       align-self: stretch;
+      gap: 12px;
     }
   }
 
