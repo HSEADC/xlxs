@@ -334,6 +334,7 @@ p {
 }
 .A_tag_A:active {
   background-color: var(--blue);
+  color: #fff;
 }
 
 .A_Info {
@@ -450,7 +451,7 @@ p {
   width: 494px;
   flex-shrink: 0;
   color: var(--black, #000);
-  font-family: 'SF Pro Display';
+  font-family: SF Pro, Arial, Helvetica, sans-serif;
   font-size: 37.5px;
   font-style: normal;
   font-weight: 700;
@@ -488,7 +489,7 @@ p {
   border-radius: 13.5px;
   background: #fff;
   color: var(--black, #000);
-  font-family: 'SF Pro Display';
+  font-family: SF Pro, Arial, Helvetica, sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -515,7 +516,7 @@ p {
 
 .A_ResultHeader:nth-child(1) {
   color: var(--black, #000);
-  font-family: 'SF Pro Display';
+  font-family: SF Pro, Arial, Helvetica, sans-serif;
   font-size: 37.5px;
   font-style: normal;
   font-weight: 700;
@@ -529,7 +530,7 @@ p {
 
 .A_ResultHeader:nth-child(2) {
   color: var(--black, #000);
-  font-family: 'SF Pro Display';
+  font-family: SF Pro, Arial, Helvetica, sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -578,7 +579,7 @@ p {
   gap: 10px;
   border-radius: 22.5px;
   background: #007aff;
-  font-family: 'SF Pro Display';
+  font-family: SF Pro, Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -597,7 +598,7 @@ p {
   color: var(--black, #000);
 
   /* p | 21px */
-  font-family: 'SF Pro Display';
+  font-family: SF Pro, Arial, Helvetica, sans-serif;
   font-size: 21px;
   font-style: normal;
   font-weight: 500;
@@ -627,7 +628,7 @@ p {
   color: var(--black, #000);
   text-align: center;
   /* h3 */
-  font-family: 'SF Pro Display';
+  font-family: SF Pro, Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
