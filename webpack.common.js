@@ -157,7 +157,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/search.html',
       filename: './search.html',
-      chunks: ['search', 'menubar']
+      chunks: ['search', 'menubar', 'index']
     }),
 
     // Index

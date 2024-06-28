@@ -1,14 +1,13 @@
 import Airtable from 'airtable'
 
 const token =
-  'patd2wiwzbVK3lWvz.a78294c47d622efa508bc74c9add5e0c7dbeeaa8098034c655afa7815950e25f'
+  'pat6LzOtD6z112u0y.092fca3b1384eb7feb00a630917d85e3341fd2a1b27e8d0122ddb40b139d0051'
 
 Airtable.configure({
   endpointUrl: 'https://api.airtable.com',
   apiKey: token
 })
-const base1 = Airtable.base('app01KNDrzVa26N5e')
-const base2 = Airtable.base('appZHHrH4PFKJs8gA')
+let base = Airtable.base('appsTXv3Z43NBOCb6')
 
 function getPostTeasers() {
   return new Promise((resolve, reject) => {
