@@ -9,6 +9,10 @@ body.style {
     text-transform: uppercase;
     color: black;
     font-size: 3.33vw;
+
+    @media only screen and (min-width: 360px) and (max-width: 743px) {
+      font-size: 32px;
+    }
   }
 
   h3,
@@ -33,17 +37,33 @@ body.style {
   }
 
   h5 {
-    font-size: 1.33vw;
+    font-size: 20px;
+    line-height: 120%;
   }
 
   section.s1 {
     background-image: url('images/style/bg-1440.png');
-    height: 100vh;
+    height: 52.083vw;
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media only screen and (min-width: 360px) and (max-width: 743px) {
+      background-image: url('images/style/bg-360.svg');
+      width: 100vw;
+      height: 816px;
+      margin: 0 auto;
+    }
   }
 
   img {
     margin: 2.78vw;
+    background-size: cover;
+    width: 61.823vw;
+
+    @media only screen and (min-width: 360px) and (max-width: 743px) {
+      width: 356px;
+    }
   }
 
   .start {
@@ -58,12 +78,30 @@ body.style {
     display: flex;
     gap: 27.75px;
     padding-top: 1.94vw;
+
+    @media only screen and (min-width: 360px) and (max-width: 743px) {
+      flex-direction: column;
+      margin-top: 20px;
+      gap: 16px;
+
+      p {
+        font-size: 16px;
+      }
+    }
   }
 
   h4 {
-    font-size: 1.6vw;
+    font-size: 28px;
     width: 64.31vw;
     color: white;
+
+    @media only screen and (min-width: 744px) and (max-width: 1439px) {
+      font-size: 22px;
+    }
+
+    @media only screen and (min-width: 360px) and (max-width: 743px) {
+      font-size: 16px;
+    }
   }
 
   p {
@@ -88,18 +126,24 @@ body.style {
 
     h2 {
       font-size: 3.33vw;
-      margin-bottom: 0.83vw;
+      margin-bottom: 3vw;
     }
 
     h5 {
       width: 34vw;
+
+      @media only screen and (min-width: 360px) and (max-width: 743px) {
+        width: 90vw;
+      }
     }
 
     h1 {
-      font-size: 5vw;
+      font-size: 4.44vw;
       color: rgba(0, 0, 0, 0.2);
       text-transform: lowercase;
       margin-bottom: 9.58vw;
+      line-height: 100%;
+      margin-top: 20px;
     }
 
     .miss {
@@ -108,8 +152,13 @@ body.style {
       display: flex;
       flex-direction: row;
       gap: 7vw;
-      padding: 1.67vw;
+      padding: 3.67vw;
       margin-bottom: 1.67vw;
+
+      @media only screen and (min-width: 360px) and (max-width: 743px) {
+        border-radius: 16px;
+        padding: 16px;
+      }
 
       h5 {
         width: 50vw;
@@ -120,7 +169,11 @@ body.style {
       background-color: white;
       border-radius: 0.83vw;
       gap: 7vw;
-      padding: 1.67vw;
+      padding: 3.67vw;
+      @media only screen and (min-width: 360px) and (max-width: 743px) {
+        border-radius: 16px;
+        padding: 16px;
+      }
 
       h2 {
         padding-bottom: 2.5vw;
@@ -132,12 +185,20 @@ body.style {
         gap: 0.83vw;
         padding-bottom: 0.83vw;
 
+        @media only screen and (min-width: 360px) and (max-width: 743px) {
+          flex-direction: column;
+        }
+
         h5:first-child {
           border-radius: 18px;
           background: #007aff;
           color: white;
           width: 45.11vw;
           padding: 1.46vw;
+
+          @media only screen and (min-width: 360px) and (max-width: 743px) {
+            width: 100%;
+          }
         }
 
         h5:nth-child(2) {
@@ -146,6 +207,11 @@ body.style {
           color: white;
           width: 45.11vw;
           padding: 1.46vw;
+
+          @media only screen and (min-width: 360px) and (max-width: 743px) {
+            width: 100%;
+            padding: 16px;
+          }
         }
       }
 
@@ -154,12 +220,21 @@ body.style {
         flex-direction: row;
         gap: 0.83vw;
 
+        @media only screen and (min-width: 360px) and (max-width: 743px) {
+          flex-direction: column;
+        }
+
         h5:first-child {
           border-radius: 18px;
           background: #ff90e9;
           color: white;
           width: 45.11vw;
           padding: 1.46vw;
+
+          @media only screen and (min-width: 360px) and (max-width: 743px) {
+            width: 100%;
+            padding: 16px;
+          }
         }
 
         h5:nth-child(2) {
@@ -168,6 +243,11 @@ body.style {
           color: white;
           width: 45.11vw;
           padding: 1.46vw;
+
+          @media only screen and (min-width: 360px) and (max-width: 743px) {
+            width: 100%;
+            padding: 16px;
+          }
         }
       }
     }
@@ -176,10 +256,16 @@ body.style {
   section.s3 {
     display: flex;
     flex-direction: row;
-    padding: 2.64vw;
-    gap: 28vw;
+    padding: 3.67vw;
+    gap: 12vw;
     margin-top: 8.33vw;
     margin-bottom: 4.17vw;
+
+    @media only screen and (min-width: 360px) and (max-width: 743px) {
+      flex-direction: column;
+      gap: 12px;
+      width: 356px;
+    }
 
     h2 {
       font-size: 3.33vw;
@@ -194,14 +280,14 @@ body.style {
     }
 
     .rig-s3 {
-      width: 37.67vw;
+      width: 50vw;
     }
   }
 
   section.s4 {
     background-color: white;
     border-radius: 2.22vw;
-    padding: 1.67vw;
+    padding: 3.67vw;
 
     .s4-s4 {
       display: flex;
@@ -216,21 +302,24 @@ body.style {
 
       img {
         margin: 0;
-        margin-top: -6vw;
+        background-size: cover;
+        width: 30vw;
       }
     }
 
     h3 {
-      font-size: 1.53vw;
+      font-size: 16px;
       width: 17vw;
-      font-family: 'CoFo Kak Trial', Arial, Helvetica, sans-serif;
+      font-family: 'Druk Wide Cyr', Arial, Helvetica, sans-serif;
       color: rgba(0, 0, 0, 0.3);
     }
 
     .s4-1,
-    .s4-2 {
+    .s4-2,
+    .s4-3 {
       display: flex;
       flex-direction: row;
+      margin-top: 20px;
 
       h5 {
         width: 35.42vw;
@@ -239,11 +328,14 @@ body.style {
     .photos {
       display: flex;
       flex-direction: row;
-      gap: 5vw;
+      margin-top: 40px;
+      width: 88.889vw;
 
       img {
-        height: 24vw;
+        height: 22vw;
         margin-left: 0;
+        margin: 1vw;
+        width: 57vw;
       }
     }
 
@@ -253,25 +345,26 @@ body.style {
       flex-direction: row;
 
       h5 {
-        width: 30.42vw;
+        width: 45.42vw;
       }
     }
 
     .im {
       img {
         margin-top: 6.25vw;
-        width: 96.25vw;
+        width: 88.889vw;
         margin-bottom: 2.92vw;
         margin-left: 0;
+        background-size: cover;
       }
     }
   }
 
   section.s5 {
     background-color: black;
-    border-radius: 2.22vw;
     padding: 1.67vw;
     margin-top: 3.33vw;
+    padding: 3.67vw;
 
     .s5-1,
     .s5-2 {
@@ -279,8 +372,9 @@ body.style {
       flex-direction: row;
 
       img {
-        margin-top: -2vw;
-        margin-left: 22vw;
+        margin-left: 15vw;
+        width: 42vw;
+        background-size: cover;
       }
     }
 
@@ -300,7 +394,7 @@ body.style {
     h3 {
       color: white;
       opacity: 0.5;
-      width: 14vw;
+      width: 20vw;
       margin-bottom: 2vw;
     }
 
@@ -318,8 +412,7 @@ body.style {
 
   section.s6 {
     background-color: black;
-    padding: 1.67vw;
-    margin-top: -3vw;
+    padding: 3.67vw;
 
     h2,
     h3,
@@ -338,15 +431,32 @@ body.style {
       }
     }
 
+    .setkal {
+      img {
+        margin: 0.78vw;
+        background-size: cover;
+        width: 44vw;
+      }
+    }
+
     h2 {
       margin-top: 5vw;
     }
 
     .gr {
       img {
-        width: 98vw;
+        width: 92vw;
+        background-size: cover;
         margin-top: 6vw;
         margin-left: 0vw;
+      }
+    }
+
+    .konec {
+      img {
+        width: 88vw;
+        margin: 0 auto;
+        align-items: center;
       }
     }
   }
