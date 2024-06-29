@@ -1134,6 +1134,7 @@ footer {
   margin: 0 auto;
   margin-top: 44px;
   margin-bottom: 44px;
+  background-repeat: no-repeat;
 
   &.krug_card {
     background-image: url('images/atoms/Q_Card_Krug.svg');
@@ -1247,8 +1248,26 @@ footer {
     background-image: url('images/atoms/Q_Card_Pusyr.svg');
     background-position: center;
   }
-  &.pusyr_card {
+  &.pusyr_card_1 {
     background-image: url('images/atoms/Q_Card_Pusyr_1.svg');
+    background-position: center;
+  }
+
+  &.hord_card {
+    background-image: url('images/atoms/Q_Card_Hord.svg');
+    background-position: center;
+  }
+  &.hord_card_1 {
+    background-image: url('images/atoms/Q_Card_Hord_1.svg');
+    background-position: center;
+  }
+
+  &.plotn_card {
+    background-image: url('images/atoms/Q_Card_Plotn.svg');
+    background-position: center;
+  }
+  &.plotn_card_1 {
+    background-image: url('images/atoms/Q_Card_Plotn_1.svg');
     background-position: center;
   }
 
@@ -1266,6 +1285,8 @@ footer {
     &.calend_card,
     &.pusyr_card,
     &.matrica_card,
+    &.hord_card,
+    &.plotn_card,
     &.krug_card_1,
     &.block_card_1,
     &.linear_card_1,
@@ -1278,7 +1299,9 @@ footer {
     &.demo_card_1,
     &.calend_card_1,
     &.pusyr_card_1,
-    &.matrica_card_1 {
+    &.matrica_card_1,
+    &.hord_card_1,
+    &.plotn_card_1 {
       height: 47.59vw;
       width: 80.664vw;
       background-size: cover;
@@ -1288,37 +1311,137 @@ footer {
   }
 
   @media only screen and (min-width: 360px) and (max-width: 743px) {
-    &.krug_card,
-    &.block_card,
-    &.linear_card,
-    &.usi_card,
-    &.svech_card,
-    &.stolb_card,
-    &.derevo_card,
-    &.obl_card,
-    &.kolco_card,
-    &.demo_card,
-    &.calend_card,
-    &.pusyr_card,
-    &.matrica_card,
-    &.krug_card_1,
-    &.block_card_1,
-    &.linear_card_1,
-    &.usi_card_1,
-    &.svech_card_1,
-    &.stolb_card_1,
-    &.derevo_card_1,
-    &.obl_card_1,
-    &.kolco_card_1,
-    &.demo_card_1,
-    &.calend_card_1,
-    &.pusyr_card_1,
+    width: 330px;
+
+    &.krug_card {
+      background-image: url('images/atoms/Q_Card_Krug_M.png');
+    }
+    &.krug_card_1 {
+      background-image: url('images/atoms/Q_Card_Krug_M_1.png');
+    }
+
+    &.block_card {
+      background-image: url('images/atoms/Q_Card_Block_M.png');
+    }
+    &.block_card_1 {
+      background-image: url('images/atoms/Q_Card_Block_M_1.png');
+    }
+
+    &.linear_card {
+      background-image: url('images/atoms/Q_Card_Linear_M.png');
+      background-position: center;
+    }
+    &.linear_card_1 {
+      background-image: url('images/atoms/Q_Card_Linear_M_1.png');
+      background-position: center;
+    }
+
+    &.usi_card {
+      background-image: url('images/atoms/Q_Card_Usi_M.png');
+      background-position: center;
+    }
+    &.usi_card_1 {
+      background-image: url('images/atoms/Q_Card_Usi_M_1.png');
+      background-position: center;
+    }
+
+    &.svech_card {
+      background-image: url('images/atoms/Q_Card_Svech_M.png');
+      background-position: center;
+    }
+    &.svech_card_1 {
+      background-image: url('images/atoms/Q_Card_Svech_M_1.png');
+      background-position: center;
+    }
+
+    &.stolb_card {
+      background-image: url('images/atoms/Q_Card_Stolb_M.png');
+      background-position: center;
+    }
+    &.stolb_card_1 {
+      background-image: url('images/atoms/Q_Card_Stolb_M_1.png');
+      background-position: center;
+    }
+
+    &.derevo_card {
+      background-image: url('images/atoms/Q_Card_Derevo_M.png');
+      background-position: center;
+    }
+    &.derevo_card_1 {
+      background-image: url('images/atoms/Q_Card_Derevo_M_1.png');
+      background-position: center;
+    }
+
+    &.obl_card {
+      background-image: url('images/atoms/Q_Card_Obl_M.png');
+      background-position: center;
+    }
+    &.obl_card_1 {
+      background-image: url('images/atoms/Q_Card_Obl_M_1.png');
+      background-position: center;
+    }
+
+    &.kolco_card {
+      background-image: url('images/atoms/Q_Card_Kolco_M.png');
+      background-position: center;
+    }
+    &.kolco_card_1 {
+      background-image: url('images/atoms/Q_Card_Kolco_M_1.png');
+      background-position: center;
+    }
+
+    &.matrica_card {
+      background-image: url('images/atoms/Q_Card_Matrica_M.png');
+      background-position: center;
+    }
     &.matrica_card_1 {
-      height: 559px;
-      width: 330px;
-      background-size: cover;
-      background-clip: ceil;
-      border-radius: 22px;
+      background-image: url('images/atoms/Q_Card_Matrica_M_1.png');
+      background-position: center;
+    }
+
+    &.demo_card {
+      background-image: url('images/atoms/Q_Card_Demo_M.png');
+      background-position: center;
+    }
+    &.demo_card_1 {
+      background-image: url('images/atoms/Q_Card_Demo_M_1.png');
+      background-position: center;
+    }
+
+    &.calend_card {
+      background-image: url('images/atoms/Q_Card_Calend_M.png');
+      background-position: center;
+    }
+    &.calend_card_1 {
+      background-image: url('images/atoms/Q_Card_Calend_M_1.png');
+      background-position: center;
+    }
+
+    &.pusyr_card {
+      background-image: url('images/atoms/Q_Card_Pusyr_M.png');
+      background-position: center;
+    }
+    &.pusyr_card_1 {
+      background-image: url('images/atoms/Q_Card_Pusyr_M_1.png');
+      background-position: center;
+    }
+
+    &.hord_card {
+      background-image: url('images/atoms/Q_Card_Hord_M.png');
+      background-position: center;
+    }
+    &.hord_card_1 {
+      background-image: url('images/atoms/Q_Card_Hord_M_1.png');
+      background-position: center;
+    }
+
+    &.plotn_card {
+      background-image: url('images/atoms/Q_Card_Plotn_M.png');
+      background-position: center;
+    }
+    &.plotn_card_1 {
+      background-image: url('images/atoms/Q_Card_Plotn_M_1.png');
+      background-position: center;
     }
   }
 }
@@ -1331,7 +1454,7 @@ footer {
   background: var(--light, #f3f3f8);
 
   .A_Title {
-    width: 664px;
+    width: 720px;
   }
 
   @media only screen and (min-width: 744px) and (max-width: 1439px) {
