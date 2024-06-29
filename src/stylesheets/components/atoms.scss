@@ -100,6 +100,7 @@ p {
 
   @media only screen and (min-width: 744px) and (max-width: 1439px) {
     font-size: 32px;
+    line-height: 120%;
   }
 
   @media only screen and (min-width: 360px) and (max-width: 743px) {
@@ -251,6 +252,7 @@ p {
     display: flex;
     width: 95.703vw;
     margin: 0 auto;
+    margin-top: 12px;
   }
 
   @media only screen and (min-width: 360px) and (max-width: 743px) {
@@ -276,7 +278,6 @@ p {
   text-decoration: none;
   color: black;
   background-color: #fff;
-  box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
   cursor: pointer;
   user-select: none;
   appearance: none;
@@ -330,7 +331,6 @@ p {
 }
 .A_tag_A:hover {
   transition: all 0.2s;
-  box-shadow: 0 7px 14px rgb(65 132 144 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
 }
 .A_tag_A:active {
   background-color: var(--blue);

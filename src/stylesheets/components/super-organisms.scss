@@ -258,6 +258,10 @@ body.article {
     margin-top: 140px;
     display: flex;
     margin: 0 auto;
+
+    .A_Logo {
+      display: block;
+    }
   }
 }
 
@@ -797,6 +801,7 @@ footer {
       align-self: stretch;
       flex-wrap: wrap;
       margin-top: 24px;
+      justify-content: left;
     }
     .O_CardPreview {
       width: 23.047vw;
@@ -1437,5 +1442,25 @@ footer {
     gap: 24px;
     align-self: stretch;
     width: 282px;
+  }
+}
+
+.W_Names {
+  display: flex;
+  align-items: left;
+  gap: 64px;
+
+  @media only screen and (min-width: 360px) and (max-width: 743px) {
+    display: flex;
+    width: 446px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 58px;
+  }
+
+  .A_FeedBack {
+    line-height: 120%;
+    margin-top: 8px;
   }
 }
