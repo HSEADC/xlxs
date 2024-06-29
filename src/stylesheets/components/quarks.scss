@@ -568,52 +568,56 @@ hr.long {
   height: 292px;
   border-radius: 22px;
 
-  .testg2 {
+  &.testg2 {
     background-image: url('images/testss/Q_Cover_Test_2.svg');
   }
 
-  .testg3 {
+  &.testg3 {
     background-image: url('images/testss/Q_Cover_Test_3.svg');
   }
 
-  .testg4 {
+  &.testg4 {
     background-image: url('images/testss/Q_Cover_Test_4.svg');
   }
 
-  .testg5 {
+  &.testg5 {
     background-image: url('images/testss/Q_Cover_Test_5.svg');
   }
 
-  .testg6 {
+  &.testg6 {
     background-image: url('images/testss/Q_Cover_Test_6.svg');
   }
 
-  .testg7 {
+  &.testg7 {
     background-image: url('images/testss/Q_Cover_Test_7.svg');
   }
 
-  .testg8 {
+  &.testg8 {
     background-image: url('images/testss/Q_Cover_Test_8.svg');
   }
 
-  .testg9 {
+  &.testg9 {
     background-image: url('images/testss/Q_Cover_Test_9.svg');
   }
 
-  .testg10 {
+  &.testg10 {
     background-image: url('images/testss/Q_Cover_Test_10.svg');
   }
 
-  .testg11 {
+  &.testg11 {
     background-image: url('images/testss/Q_Cover_Test_11.svg');
   }
 
-  .testg12 {
+  &.testg12 {
     background-image: url('images/testss/Q_Cover_Test_13.svg');
   }
 
-  .testg13 {
+  &.testg13 {
     background-image: url('images/testss/Q_Cover_Test_13.svg');
+  }
+
+  &.testg14 {
+    background-image: url('images/testss/Q_Cover_Test_14.svg');
   }
 
   @media only screen and (min-width: 744px) and (max-width: 1439px) {

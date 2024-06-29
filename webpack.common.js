@@ -27,7 +27,7 @@ module.exports = {
     test11: './src/testss/test11.js',
     test13: './src/testss/test13.js',
     test14: './src/testss/test14.js',
-    // модуль переворота карточек
+
     block: './src/cards/block.js',
     burger: './src/adaptive-burger.js',
     search: './src/search-vanilla.js',
@@ -302,23 +302,11 @@ module.exports = {
       chunks: ['test13', 'index'] // добавляем ко всем html, которые у нас были до это пары
     }),
 
-    // new HtmlWebpackPlugin({
-    //   template: './src/testss/test14.html',
-    //   filename: './testss/test14.html',
-    //   chunks: ['test14', 'index'] // добавляем ко всем html, которые у нас были до это пары
-    // }),
-
-    // new HtmlWebpackPlugin({
-    //   template: './src/testss/test15.html',
-    //   filename: './testss/test15.html',
-    //   chunks: ['test15', 'index'] // добавляем ко всем html, которые у нас были до это пары
-    // }),
-
-    // new HtmlWebpackPlugin({
-    //   template: './src/testss/test16.html',
-    //   filename: './testss/test16.html',
-    //   chunks: ['test16', 'index'] // добавляем ко всем html, которые у нас были до это пары
-    // }),
+    new HtmlWebpackPlugin({
+      template: './src/testss/test14.html',
+      filename: './testss/test14.html',
+      chunks: ['test14', 'index'] // добавляем ко всем html, которые у нас были до это пары
+    }),
 
     new HtmlWebpackPlugin({
       template: './src/testss/test-usi.html',
