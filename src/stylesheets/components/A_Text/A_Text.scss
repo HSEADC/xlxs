@@ -1,0 +1,28 @@
+.A_Text {
+  font-size: 18px;
+  color: black;
+}
+
+.A_Text:nth-child(1) {
+  color: var(--almost-black, #161616);
+  font-family: SF Pro, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: -0.3px;
+  margin-left: 16px;
+  margin-top: 8px;
+}
+
+.A_Text:nth-child(2) {
+  color: var(--light-text-secondary-text-color-secondary, #8a8a8e);
+  font-family: SF Pro, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.21px;
+  margin-left: 16px;
+  margin-top: 4px;
+}

@@ -1,0 +1,46 @@
+.A_Button {
+  display: flex;
+  /* line-height: 51px; */
+  height: 44px;
+  width: 44px;
+  top: -44px;
+  position: relative;
+  text-align: center;
+  background-color: var(--green);
+  color: black;
+  border-radius: 0.5rem;
+  user-select: none;
+  left: 316px;
+  cursor: pointer;
+
+  @media only screen and (min-width: 744px) and (max-width: 1439px) {
+    left: calc(25vw - 44px);
+  }
+
+  @media only screen and (min-width: 360px) and (max-width: 743px) {
+    display: none;
+  }
+
+  &.disabled {
+    opacity: 0.4;
+  }
+  &.resetField {
+    background-color: transparent;
+    color: var(--black);
+    position: absolute;
+    display: flex;
+    line-height: 40px;
+    height: 44px;
+    top: 17px;
+    left: 1300px;
+
+    @media only screen and (min-width: 744px) and (max-width: 1439px) {
+      left: calc(95.703vw - 80px);
+    }
+  }
+  &.primary {
+    background-image: url('../../../images/search.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

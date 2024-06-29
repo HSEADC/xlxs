@@ -1,19 +1,20 @@
-import { getPostTeasers } from './search-vanilla-data'
 import './search-vanilla.css'
+import { getPostTeasers } from './search-vanilla-data.js'
+
+let content
 
 function initSearch() {
-  const O_Search = document.querySelector('.O_Search')
-  const A_Button = document.querySelector('.A_Button')
-  const A_SearchInput = document.querySelector('.A_SearchInput')
+  const O_Search = document.querySelector('.O_SearchBar')
+  const A_SearchInput = O_Search.querySelector('.A_Input')
+  const A_Button = O_Search.querySelector('.A_Button')
 
-  let requestText = getSearchRequest()
+  let requestText = getSearchRequest() //посмотрели адрес поиска ???
 
   if (requestText != undefined) {
-    A_SearchInput.value = requestText
+    A_SearchInput.value = requestText //закидываем, чтобы не стиралось значение
 
-    //будет работать, когда подключим данные
     if (content) {
-      SearchContent(requestText)
+      SearchContent(requestText) //если есть контент, запускаем рендер контента
     }
   } else {
     A_SearchInput.value = ''
@@ -27,64 +28,145 @@ function initSearch() {
     } else {
       A_Button.classList.add('disabled')
     }
-  })
 
-  A_Button.addEventListener('click', (e) => {
-    if (!e.target.classList.contains('disabled')) {
-      requestText = A_SearchInput
-      setSearchRequest()
-      SearchContent(requestText)
-    }
+    console.log(content)
   })
 
   A_SearchInput.addEventListener('keydown', (e) => {
     requestText = e.target.value
 
     if (e.key === 'Enter') {
-      setSearchRequest()
+      setSearchRequest(requestText)
+    }
+  })
+
+  A_Button.addEventListener('click', (e) => {
+    if (!e.target.classList.contains('disabled')) {
+      requestText = A_SearchInput.value
+      setSearchRequest(requestText)
+      SearchContent(requestText)
     }
   })
 }
 
+//извлекает текст поискового запроса из параметра URL страницы, если он есть
 function getSearchRequest() {
+  // Создаем новый объект URL, чтобы получить доступ к параметрам поиска в URL
   const url = new URL(window.location.href)
+  // Создается объект URLSearchParams, который содержит параметры поискового запроса из URL.
   const searchParams = new URLSearchParams(url.search)
 
+  // Проверяем, есть ли параметр request в URL.
+  // Если есть, возвращаем значение этого параметра
   if (searchParams.has('request')) {
     return searchParams.get('request')
   }
 }
 
-function setSearchRequest() {
+// устанавливает поисковой запрос в URL страницы, добавляя его к текущему адресу
+function setSearchRequest(requestText) {
+  // Получаем путь URL без параметров.
   const url = window.location.href.split('?')[0]
 
-  window.location.href = url + 'request=' + requestText
+  // Устанавливаем новый URL с добавлением параметра request.
+  window.location.href = url + '?request=' + requestText
 }
 
+//фильтрует контент на основе поискового запроса и отображает
+// только соответствующий контент или выводит сообщение "Ничего не найдено"
+
+function SearchContent(requestText) {
+  //запускаем рендер
+  const contentItemsContainer = document.querySelector('.S_Content')
+  contentItemsContainer.innerHTML = ''
+  // const requestText = requestText.toLowerCase()
+  let contentItemIds = []
+
+  content.forEach((contentItem) => {
+    // обрабатываем контент. для каждой карточки нам нужно сотворить что-то страшное
+    const nbspRegex = /[\u202F\u00A0]/gm //ищет неразрывные пробелы (`\u202F` и `\u00A0`) в глобальном контексте (`gm`).
+    const punctuationRegex = /[.,\/#!$%\^&\*;:{}=\-_`~()]/gm //ищет знаки пунктуации в глобальном контексте.
+
+    const title = contentItem.title
+      .replaceAll(nbspRegex, ' ')
+      .replaceAll(punctuationRegex, '')
+      .toLowerCase()
+
+    const description = contentItem.description
+      .replaceAll(nbspRegex, ' ')
+      .replaceAll(punctuationRegex, '')
+      .toLowerCase()
+
+    if (requestText.length >= 3) {
+      if (
+        title.includes(requestText.toLowerCase()) ||
+        description.includes(requestText.toLowerCase())
+      ) {
+        contentItemIds.push(contentItem.id)
+      }
+    } else {
+      contentItemIds.push(contentItem.id)
+    }
+  })
+
+  if (contentItemIds.length > 0) {
+    renderCardsByIds(contentItemsContainer, contentItemIds)
+    //если не пусто, запускаем создание карточек по идентификатору
+  } else {
+    renderNothingFound() //иначе выводим ошибку
+  }
+}
+
+//ошибка при рендере
+function renderNothingFound() {
+  const contentItemsContainer = document.querySelector('.S_Content')
+  contentItemsContainer.innerHTML = 'Ничего не найдено'
+}
+
+//отображает карточки контента по их идентификаторам в указанном контейнере
+function renderCardsByIds(container, ids) {
+  ids = [...new Set(ids)] // создаём множество уникальных значений из-за особенностей Set
+
+  ids.forEach((id) => {
+    //для каждого id
+    content.forEach((item) => {
+      //для каждого объекта со строкой с инфой из БД
+      if (item.id === id) {
+        //если идентификаторы совпадают
+        container.appendChild(createContentCard(item)) //создаём карточку
+      }
+    })
+  })
+}
+
+//создает карточку контента на основе переданных данных, таких как изображение, теги, название и описание
 function createContentCard(contentItemData) {
-  const contentItem = document.createElement('div')
-  contentItem.classList.add('O_ContentItem')
+  const contentItem = document.createElement('a')
+  contentItem.classList.add('M_PostTeaser')
+  contentItem.setAttribute('href', contentItemData.url)
+
+  // const contentItemWrap = document.createElement('div')
+  // contentItemWrap.classList.add('W_CardText')
 
   const contentItemCover = document.createElement('img')
-  contentItemCover.classList.add('A_ContentItemCover')
+  contentItemCover.classList.add('QSearch')
   contentItemCover.src = contentItemData.image
 
   const contentItemTitle = document.createElement('h2')
-  contentItemTitle.classList.add('A_ContentItemTitle')
+  contentItemTitle.classList.add('A_section_card_title')
   contentItemTitle.innerText = contentItemData.title
 
   const contentItemDescription = document.createElement('p')
-  contentItemDescription.classList.add('A_ContentItemDescription')
+  contentItemDescription.classList.add('A_section_card_note')
   contentItemDescription.innerText = contentItemData.description
 
   const contentItemTags = document.createElement('div')
-  contentItemTags.classList.add('C_ContentItemTags')
+  contentItemTags.classList.add('M_tag_default')
 
   contentItemData.tags.forEach((tag) => {
     const contentItemTag = document.createElement('div')
     contentItemTag.classList.add('A_ContentItemTag')
     contentItemTag.innerText = tag
-
     contentItemTags.appendChild(contentItemTag)
   })
 
@@ -96,60 +178,11 @@ function createContentCard(contentItemData) {
   return contentItem
 }
 
-function SearchContent(requestText) {
-  const contentItemContainer = document.querySelector('.S_Content')
-  contentItemContainer.innerHTML = ''
-
-  let contentItemIds = []
-
-  content.forEach((contentItem) => {
-    const nbspRegex = /[\u202F\u00A0]/gm
-    const punctuationRegex = /[.,\/#!$%\^&\*;:{}=\-_`~()]/gm
-
-    let { title, description } = contentItem
-
-    title = title.replaceAll(nbspRegex, ' ')
-    title = title.replaceAll(punctuationRegex, '')
-
-    description = description.replaceAll(nbspRegex, ' ')
-    description = description.replaceAll(punctuationRegex, '')
-
-    if (requestText.length >= 3) {
-      if (title.includes(requestText) || description.includes(requestText)) {
-        contentItemIds.push(contentItem.id)
-      }
-    } else {
-      contentItemIds.push(contentItem.id)
-    }
-  })
-
-  if (contentItemIds.length > 0) {
-    renderCardsByIds(contentItemContainer, contentItemIds)
-  } else {
-    renderNothingFound(contentItemContainer)
-  }
-}
-
-function renderNothingFound(container) {
-  container.innerHTML = 'Ничего не найдено'
-}
-
-function renderCardsByIds(container, ids) {
-  ids = [...new Set(ids)]
-
-  ids.forEach((id) => {
-    content.forEach((item) => {
-      if (item.id == id) {
-        container.appendChild(createContentCard(item))
-      }
-    })
-  })
-}
-
 document.addEventListener('DOMContentLoaded', () => {
   getPostTeasers().then((data) => {
     content = data
     initSearch()
   })
-  //   getSearchRequest()
 })
+
+//comment

@@ -33,5 +33,4 @@ function getPostTeasers() {
     console.log(content)
   })
 }
-
 export { getPostTeasers }

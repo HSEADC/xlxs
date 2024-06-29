@@ -1,12 +1,15 @@
 body.main {
   background-color: var(--white);
   font-family: SF Pro, Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
 body.article {
   background-color: var(--white);
   font-family: SF Pro, Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
+
 .S_Cover {
   position: relative;
   display: flex;
@@ -272,6 +275,11 @@ body.article {
     margin-top: 24px;
     border-radius: 45px;
     background-size: cover;
+
+    @media only screen and (min-width: 360px) and (max-width: 743px) {
+      width: 330px;
+      border-radius: 12px;
+    }
   }
 
   .S_ArticleBody {
@@ -774,6 +782,7 @@ footer {
     align-self: stretch;
     flex-wrap: wrap;
     margin-top: 24px;
+    justify-content: center;
   }
 
   @media only screen and (min-width: 744px) and (max-width: 1439px) {
@@ -936,7 +945,7 @@ footer {
 }
 
 @media only screen and (min-width: 360px) and (max-width: 743px) {
-  .S_NavBar {
+  .S_MenuBar {
     width: 330px;
     margin: 0 auto;
     z-index: 10;

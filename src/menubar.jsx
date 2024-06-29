@@ -3,7 +3,7 @@ import React from 'react'
 import { createRoot } from 'react-dom/client'
 import * as ReactDOM from 'react-dom/client'
 
-import S_MenuBar from './components/S_MenuBar/S_MenuBar.jsx'
+import S_MenuBar from './stylesheets/components/S_MenuBar/S_MenuBar.jsx'
 import { homeURL, menu } from './menubar-data.js'
 
 console.clear()
@@ -23,5 +23,5 @@ const props = {
   homeURL,
   menu
 }
-const root = ReactDOM.createRoot(document.querySelector('.S_MenuBar '))
+const root = ReactDOM.createRoot(document.querySelector('.S_MenuBar'))
 root.render(<S_MenuBar searchInputValue={getSearchRequest()} {...props} />)

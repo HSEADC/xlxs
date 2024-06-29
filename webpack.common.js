@@ -30,9 +30,8 @@ module.exports = {
     // модуль переворота карточек
     block: './src/cards/block.js',
     burger: './src/adaptive-burger.js',
-    search_vanilla: './src/search-vanilla.js'
-    // menubar: './src/menubar.jsx',
-    // search: './src/search.jsx'
+    search: './src/search-vanilla.js',
+    menubar: './src/menubar.jsx'
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -151,7 +150,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/search-vanilla.html',
       filename: './search-vanilla.html',
-      chunks: ['search_vanilla', 'menubar']
+      chunks: ['search', 'menubar']
     }),
     // searchPage
     new HtmlWebpackPlugin({
@@ -162,16 +161,16 @@ module.exports = {
 
     // Index
     new HtmlWebpackPlugin({
-      template: './src/index.html',
+      template: './src/index.ejs',
       filename: './index.html',
-      chunks: ['index', 'burger'] // добавляем ко всем html, которые у нас были до это пары
+      chunks: ['index', 'burger', 'menubar'] // добавляем ко всем html, которые у нас были до это пары
     }),
 
     // Main
     new HtmlWebpackPlugin({
       template: './src/main.html',
       filename: './main.html',
-      chunks: ['index'] // добавляем ко всем html, которые у нас были до это пары
+      chunks: ['index', 'search', 'menubar'] // добавляем ко всем html, которые у нас были до это пары
     }),
 
     // Style
@@ -185,42 +184,42 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/404.html',
       filename: './404.html',
-      chunks: ['index'] // добавляем ко всем html, которые у нас были до это пары
+      chunks: ['index', 'search', 'menubar'] // добавляем ко всем html, которые у нас были до это пары
     }),
 
     // 500
     new HtmlWebpackPlugin({
       template: './src/500.html',
       filename: './500.html',
-      chunks: ['index'] // добавляем ко всем html, которые у нас были до это пары
+      chunks: ['index', 'search', 'menubar'] // добавляем ко всем html, которые у нас были до это пары
     }),
 
     // 505
     new HtmlWebpackPlugin({
       template: './src/505.html',
       filename: './505.html',
-      chunks: ['index'] // добавляем ко всем html, которые у нас были до это пары
+      chunks: ['index', 'search', 'menubar'] // добавляем ко всем html, которые у нас были до это пары
     }),
 
     // Section
     //Tests
     new HtmlWebpackPlugin({
-      template: './src/tests.html',
+      template: './src/tests.ejs',
       filename: './tests.html',
-      chunks: ['index'] // добавляем ко всем html, которые у нас были до это пары
+      chunks: ['index', 'burger', 'search', 'menubar'] // добавляем ко всем html, которые у нас были до это пары
     }),
 
     //Articles
     new HtmlWebpackPlugin({
-      template: './src/articles.html',
+      template: './src/articles.ejs',
       filename: './articles.html',
-      chunks: ['index'] // добавляем ко всем html, которые у нас были до это пары
+      chunks: ['index', 'burger', 'search', 'menubar'] // добавляем ко всем html, которые у нас были до это пары
     }),
     // Cards
     new HtmlWebpackPlugin({
-      template: './src/cards.html',
+      template: './src/cards.ejs',
       filename: './cards.html',
-      chunks: ['index'] // добавляем ко всем html, которые у нас были до это пары
+      chunks: ['index', 'burger', 'search', 'menubar'] // добавляем ко всем html, которые у нас были до это пары
     }),
 
     //Article
@@ -331,314 +330,314 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/articles/block.html',
       filename: './articles/block.html',
-      chunks: ['index']
+      chunks: ['index', 'burger', 'search', 'menubar']
     }),
 
     // Article 2
     new HtmlWebpackPlugin({
       template: './src/articles/calend.html',
       filename: './articles/calend.html',
-      chunks: ['index']
+      chunks: ['index', 'burger', 'search', 'menubar']
     }),
 
     // Article 3
     new HtmlWebpackPlugin({
       template: './src/articles/demo.html',
       filename: './articles/demo.html',
-      chunks: ['index']
+      chunks: ['index', 'burger', 'search', 'menubar']
     }),
 
     // Article 4
     new HtmlWebpackPlugin({
       template: './src/articles/derevo.html',
       filename: './articles/derevo.html',
-      chunks: ['index']
+      chunks: ['index', 'burger', 'search', 'menubar']
     }),
 
     // Article 5
     new HtmlWebpackPlugin({
       template: './src/articles/kolco.html',
       filename: './articles/kolco.html',
-      chunks: ['index']
+      chunks: ['index', 'burger', 'search', 'menubar']
     }),
 
     // Article 6
     new HtmlWebpackPlugin({
       template: './src/articles/krug.html',
       filename: './articles/krug.html',
-      chunks: ['index']
+      chunks: ['index', 'burger', 'search', 'menubar']
     }),
 
     // Article 7
     new HtmlWebpackPlugin({
       template: './src/articles/linear.html',
       filename: './articles/linear.html',
-      chunks: ['index']
+      chunks: ['index', 'burger', 'search', 'menubar']
     }),
 
     // Article 8
     new HtmlWebpackPlugin({
       template: './src/articles/matrica.html',
       filename: './articles/matrica.html',
-      chunks: ['index']
+      chunks: ['index', 'burger', 'search', 'menubar']
     }),
 
     // Article 9
     new HtmlWebpackPlugin({
       template: './src/articles/obl.html',
       filename: './articles/obl.html',
-      chunks: ['index']
+      chunks: ['index', 'burger', 'search', 'menubar']
     }),
 
     // Article 10
     new HtmlWebpackPlugin({
       template: './src/articles/stolb.html',
       filename: './articles/stolb.html',
-      chunks: ['index']
+      chunks: ['index', 'burger', 'search', 'menubar']
     }),
 
     // Article 11
     new HtmlWebpackPlugin({
       template: './src/articles/svech.html',
       filename: './articles/svech.html',
-      chunks: ['index']
+      chunks: ['index', 'burger', 'search', 'menubar']
     }),
 
     // Article 12
     new HtmlWebpackPlugin({
       template: './src/articles/usi.html',
       filename: './articles/usi.html',
-      chunks: ['index']
+      chunks: ['index', 'burger', 'search', 'menubar']
     }),
 
     // Article 13
     new HtmlWebpackPlugin({
       template: './src/articles/pusyr.html',
       filename: './articles/pusyr.html',
-      chunks: ['index']
+      chunks: ['index', 'burger', 'search', 'menubar']
     }),
 
     // Article 14
     new HtmlWebpackPlugin({
       template: './src/articles/plotn.html',
       filename: './articles/plotn.html',
-      chunks: ['index']
+      chunks: ['index', 'burger', 'search', 'menubar']
     }),
 
     // Article 15
     new HtmlWebpackPlugin({
       template: './src/articles/hord.html',
       filename: './articles/hord.html',
-      chunks: ['index']
+      chunks: ['index', 'burger', 'search', 'menubar']
     }),
 
     // Article 16
     new HtmlWebpackPlugin({
       template: './src/articles/gant.html',
       filename: './articles/gant.html',
-      chunks: ['index']
+      chunks: ['index', 'burger', 'search', 'menubar']
     }),
 
     // Article 17
     new HtmlWebpackPlugin({
       template: './src/articles/pogresh.html',
       filename: './articles/pogresh.html',
-      chunks: ['index']
+      chunks: ['index', 'burger', 'search', 'menubar']
     }),
 
     // Article 18
     new HtmlWebpackPlugin({
       template: './src/articles/venna.html',
       filename: './articles/venna.html',
-      chunks: ['index']
+      chunks: ['index', 'burger', 'search', 'menubar']
     }),
 
     // Article 19
     new HtmlWebpackPlugin({
       template: './src/articles/rass.html',
       filename: './articles/rass.html',
-      chunks: ['index']
+      chunks: ['index', 'burger', 'search', 'menubar']
     }),
 
     // Article 20
     new HtmlWebpackPlugin({
       template: './src/articles/diapaz.html',
       filename: './articles/diapaz.html',
-      chunks: ['index']
+      chunks: ['index', 'burger', 'search', 'menubar']
     }),
 
     // Article 21
     new HtmlWebpackPlugin({
       template: './src/articles/kagi.html',
       filename: './articles/kagi.html',
-      chunks: ['index']
+      chunks: ['index', 'burger', 'search', 'menubar']
     }),
 
     // Article 22
     new HtmlWebpackPlugin({
       template: './src/articles/duga.html',
       filename: './articles/duga.html',
-      chunks: ['index']
+      chunks: ['index', 'burger', 'search', 'menubar']
     }),
 
     // Article 23
     new HtmlWebpackPlugin({
       template: './src/articles/radial.html',
       filename: './articles/radial.html',
-      chunks: ['index']
+      chunks: ['index', 'burger', 'search', 'menubar']
     }),
 
     // Article 24
     new HtmlWebpackPlugin({
       template: './src/articles/teplo.html',
       filename: './articles/teplo.html',
-      chunks: ['index']
+      chunks: ['index', 'burger', 'search', 'menubar']
     }),
 
     // Article 25
     new HtmlWebpackPlugin({
       template: './src/articles/rosa.html',
       filename: './articles/rosa.html',
-      chunks: ['index']
+      chunks: ['index', 'burger', 'search', 'menubar']
     }),
 
     // Article 26
     new HtmlWebpackPlugin({
       template: './src/articles/marim.html',
       filename: './articles/marim.html',
-      chunks: ['index']
+      chunks: ['index', 'burger', 'search', 'menubar']
     }),
 
     // Article 27
     new HtmlWebpackPlugin({
       template: './src/articles/bar.html',
       filename: './articles/bar.html',
-      chunks: ['index']
+      chunks: ['index', 'burger', 'search', 'menubar']
     }),
 
     // Article 28
     new HtmlWebpackPlugin({
       template: './src/articles/spiral.html',
       filename: './articles/spiral.html',
-      chunks: ['index']
+      chunks: ['index', 'burger', 'search', 'menubar']
     }),
 
     // Article 29
     new HtmlWebpackPlugin({
       template: './src/articles/podschet.html',
       filename: './articles/podschet.html',
-      chunks: ['index']
+      chunks: ['index', 'burger', 'search', 'menubar']
     }),
 
     // Article 30
     new HtmlWebpackPlugin({
       template: './src/articles/krest.html',
       filename: './articles/krest.html',
-      chunks: ['index']
+      chunks: ['index', 'burger', 'search', 'menubar']
     }),
 
     // Card Krug
     new HtmlWebpackPlugin({
       template: './src/cards/krug.html',
       filename: './cards/krug.html',
-      chunks: ['block', 'index']
+      chunks: ['block', 'index', 'search', 'menubar']
     }),
 
     // Card Svech
     new HtmlWebpackPlugin({
       template: './src/cards/svech.html',
       filename: './cards/svech.html',
-      chunks: ['block', 'index']
+      chunks: ['block', 'index', 'search', 'menubar']
     }),
 
     // Card Derevo
     new HtmlWebpackPlugin({
       template: './src/cards/derevo.html',
       filename: './cards/derevo.html',
-      chunks: ['block', 'index']
+      chunks: ['block', 'index', 'search', 'menubar']
     }),
 
     // Card kolco
     new HtmlWebpackPlugin({
       template: './src/cards/kolco.html',
       filename: './cards/kolco.html',
-      chunks: ['block', 'index']
+      chunks: ['block', 'index', 'search', 'menubar']
     }),
 
     // Card demo
     new HtmlWebpackPlugin({
       template: './src/cards/demo.html',
       filename: './cards/demo.html',
-      chunks: ['block', 'index']
+      chunks: ['block', 'index', 'search', 'menubar']
     }),
 
     // Card Obl
     new HtmlWebpackPlugin({
       template: './src/cards/obl.html',
       filename: './cards/obl.html',
-      chunks: ['block', 'index']
+      chunks: ['block', 'index', 'search', 'menubar']
     }),
 
     // Card Stolb
     new HtmlWebpackPlugin({
       template: './src/cards/stolb.html',
       filename: './cards/stolb.html',
-      chunks: ['block', 'index']
+      chunks: ['block', 'index', 'search', 'menubar']
     }),
 
     // Card Usi
     new HtmlWebpackPlugin({
       template: './src/cards/usi.html',
       filename: './cards/usi.html',
-      chunks: ['block', 'index']
+      chunks: ['block', 'index', 'search', 'menubar']
     }),
     // Card Linear
     new HtmlWebpackPlugin({
       template: './src/cards/linear.html',
       filename: './cards/linear.html',
-      chunks: ['block', 'index']
+      chunks: ['block', 'index', 'search', 'menubar']
     }),
 
     // Card block
     new HtmlWebpackPlugin({
       template: './src/cards/block.html',
       filename: './cards/block.html',
-      chunks: ['block', 'index']
+      chunks: ['block', 'index', 'search', 'menubar']
     }),
 
     // Card matrica
     new HtmlWebpackPlugin({
       template: './src/cards/matrica.html',
       filename: './cards/matrica.html',
-      chunks: ['block', 'index']
+      chunks: ['block', 'index', 'search', 'menubar']
     }),
 
     // Card calend
     new HtmlWebpackPlugin({
       template: './src/cards/calend.html',
       filename: './cards/calend.html',
-      chunks: ['block', 'index']
+      chunks: ['block', 'index', 'search', 'menubar']
     }),
 
     // Card pusyr
     new HtmlWebpackPlugin({
       template: './src/cards/pusyr.html',
       filename: './cards/pusyr.html',
-      chunks: ['block', 'index']
+      chunks: ['block', 'index', 'search', 'menubar']
     }),
 
     // Card plotn
     new HtmlWebpackPlugin({
       template: './src/cards/plotn.html',
       filename: './cards/plotn.html',
-      chunks: ['block', 'index']
+      chunks: ['block', 'index', 'search', 'menubar']
     }),
 
     // Card hord
     new HtmlWebpackPlugin({
       template: './src/cards/hord.html',
       filename: './cards/hord.html',
-      chunks: ['block', 'index']
+      chunks: ['block', 'index', 'search', 'menubar']
     }),
 
     // Responsive
@@ -673,8 +672,27 @@ module.exports = {
         template_filename: '*',
         priority: 'replace'
       }
+    ]),
+
+    new HtmlWebpackPartialsPlugin([
+      {
+        path: path.join(__dirname, './src/partials/burger.html'),
+        location: 'burger',
+        template_filename: '*',
+        priority: 'replace'
+      }
+    ]),
+
+    new HtmlWebpackPartialsPlugin([
+      {
+        path: path.join(__dirname, './src/partials/menubar.html'),
+        location: 'menubar',
+        template_filename: '*',
+        priority: 'replace'
+      }
     ])
   ],
+
   optimization: {
     minimizer: [new CssMinimizerPlugin()]
   }
